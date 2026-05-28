@@ -642,13 +642,21 @@ body::after {
 }
 
 .chapter-header {
-  margin-bottom: 24px;
-  padding: 28px 32px;
+  margin-bottom: 0;
+  padding: 28px 56px 28px 32px;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.chapter-header:hover {
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.12);
 }
 
 .chapter-header::before {
@@ -658,6 +666,21 @@ body::after {
   width: 4px;
   height: 100%;
   background: var(--gradient-hero);
+}
+
+.chapter-toggle {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--text-muted);
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+.chapter.open > .chapter-header .chapter-toggle {
+  transform: translateY(-50%) rotate(180deg);
+  color: var(--accent-blue);
 }
 
 .chapter-number {
@@ -674,11 +697,27 @@ body::after {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 12px;
+  padding-right: 24px;
 }
 
 .chapter-header .date {
   font-size: 12px;
   color: var(--text-muted);
+}
+
+/* Chapter Body — Collapsible */
+.chapter-body {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease, margin-top 0.3s ease;
+  margin-top: 0;
+}
+
+.chapter.open > .chapter-body {
+  max-height: 8000px;
+  opacity: 1;
+  margin-top: 24px;
 }
 
 /* ============ Core Conclusion ============ */
@@ -1889,6 +1928,9 @@ function showCountry(code) {
       ch.style.animation = `fadeIn 0.5s ease-out ${i * 0.1}s forwards`;
       ch.style.opacity = '0';
       setTimeout(() => { ch.style.opacity = '1'; }, i * 100 + 50);
+      // Collapse all except first
+      if (i === 0) ch.classList.add('open');
+      else ch.classList.remove('open');
     });
   }
 
@@ -1944,6 +1986,59 @@ document.querySelectorAll('.table-wrap').forEach(table => observer.observe(table
 
 // ===== Initial State =====
 initAudio();
+
+// ===== Chapter Accordion Setup =====
+(function initAccordion() {
+  document.querySelectorAll('.chapter').forEach((chapter, index) => {
+    // Wrap all content after chapter-header into chapter-body
+    const header = chapter.querySelector('.chapter-header');
+    if (!header) return;
+
+    const body = document.createElement('div');
+    body.className = 'chapter-body';
+    while (header.nextSibling) {
+      body.appendChild(header.nextSibling);
+    }
+    chapter.appendChild(body);
+
+    // Add toggle arrow
+    const toggle = document.createElement('span');
+    toggle.className = 'chapter-toggle';
+    toggle.innerHTML = '▼';
+    header.appendChild(toggle);
+
+    // Click handler
+    header.addEventListener('click', function() {
+      playClick();
+      chapter.classList.toggle('open');
+    });
+
+    // Default: chapter 1 open, others collapsed
+    if (index === 0) {
+      chapter.classList.add('open');
+    }
+  });
+})();
+
+// Auto-expand chapter when navigated to (e.g. from sidebar filter click)
+document.querySelectorAll('.filter-tag').forEach(tag => {
+  tag.addEventListener('click', function() {
+    setTimeout(() => {
+      const target = document.querySelector('.chapter:target') || 
+                     document.querySelector('.section.active .chapter.open');
+      if (!target) {
+        // expand first chapter in active section
+        const active = document.querySelector('.section.active');
+        if (active) {
+          const first = active.querySelector('.chapter');
+          if (first && !first.classList.contains('open')) {
+            first.classList.add('open');
+          }
+        }
+      }
+    }, 100);
+  });
+});
 </script>
 
 </body>
