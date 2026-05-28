@@ -343,6 +343,11 @@ body::after {
   color: var(--text-muted);
 }
 
+.nav-badge.progress {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
 .sidebar-footer {
   padding: 16px 20px;
   border-top: 1px solid var(--border-subtle);
@@ -511,6 +516,46 @@ body::after {
 
 .country-card .status.pending {
   color: var(--text-muted);
+}
+
+.country-card .status.progress {
+  color: #3b82f6;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ============ Chapter Navigation ============ */
+.chapter-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 32px 0 16px;
+  padding: 12px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+}
+.ch-btn {
+  padding: 8px 24px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+.ch-btn:hover {
+  background: rgba(255,255,255,0.06);
+  color: var(--text-primary);
+}
+.ch-btn.active {
+  background: var(--accent-cyan);
+  color: #0f172a;
+  border-color: var(--accent-cyan);
+  font-weight: 600;
 }
 
 /* ============ Vietnam Research Page ============ */
@@ -1131,7 +1176,7 @@ tbody tr:last-child td {
         <span class="nav-flag">🇻🇳</span>越南<span class="nav-badge done">完成</span>
       </div>
       <div class="nav-country" onclick="showCountry('thailand'); closeSidebar();" data-country="thailand">
-        <span class="nav-flag">🇹🇭</span>泰国<span class="nav-badge pending">待研究</span>
+        <span class="nav-flag">🇹🇭</span>泰国<span class="nav-badge progress">研究进行中</span>
       </div>
       <div class="nav-country" onclick="showCountry('indonesia'); closeSidebar();" data-country="indonesia">
         <span class="nav-flag">🇮🇩</span>印度尼西亚<span class="nav-badge pending">待研究</span>
@@ -1185,7 +1230,7 @@ tbody tr:last-child td {
         <div class="country-card" onclick="showCountry('thailand')">
           <span class="flag">🇹🇭</span>
           <div class="name">泰国</div>
-          <span class="status pending">○ 待研究</span>
+          <span class="status progress">● 研究进行中</span>
         </div>
         <div class="country-card" onclick="showCountry('indonesia')">
           <span class="flag">🇮🇩</span>
@@ -1702,14 +1747,241 @@ tbody tr:last-child td {
     <div class="section" id="section-thailand">
       <div class="research-header">
         <button class="back-btn" onclick="showOverview()">← 返回总览</button>
-        <h1>🇹🇭 泰国酒店投资市场</h1>
-        <div class="meta"><span style="color:var(--text-muted)">○ 待研究</span></div>
+        <h1>🇹🇭 泰国酒店投资市场深度研究</h1>
+        <div class="meta">
+          <span class="status-dot" style="color:#3b82f6">研究进行中</span>
+          <span>研究周期：2026年5月</span>
+        </div>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px;max-width:800px;">
+          泰国是东南亚最成熟的旅游市场，客源结构正经历历史性重构——中国不再是第一大客源，印度、马来西亚迅速崛起。中产2,700万是品质住宿最确定的增长引擎，但OTA渗透率87-92%构成最大数字化挑战。本系列从宏观基本面到本土品牌、从竞争格局到出海标的，系统呈现"品质出海"在泰国的机会地图。
+        </p>
       </div>
-      <div class="placeholder-card">
-        <div class="p-flag">🇹🇭</div>
-        <h2>泰国</h2>
-        <div class="p-status">○ 待研究</div>
-        <p>涵盖曼谷、清迈、普吉岛等核心目的地的酒店投资市场分析，包括国际品牌竞争格局与本土品牌发展机会。</p>
+
+      <!-- Quick Stats -->
+      <div class="quick-stats">
+        <div class="stat-card accent-blue">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value">7,167万</div>
+          <div class="stat-label">人口规模</div>
+          <div class="stat-note">城镇化率54% · 中位年龄41.5岁</div>
+        </div>
+        <div class="stat-card accent-cyan">
+          <div class="stat-icon">📈</div>
+          <div class="stat-value">$5,300亿</div>
+          <div class="stat-label">GDP（2024）</div>
+          <div class="stat-note">人均GDP $7,347 · 中高收入</div>
+        </div>
+        <div class="stat-card accent-purple">
+          <div class="stat-icon">✈️</div>
+          <div class="stat-value">3,555万</div>
+          <div class="stat-label">入境游客（2024）</div>
+          <div class="stat-note">全球第8 · 旅游收入$485亿</div>
+        </div>
+        <div class="stat-card accent-amber">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-value">B+</div>
+          <div class="stat-label">投资评级</div>
+          <div class="stat-note">成熟慢增 · 客源重构期</div>
+        </div>
+      </div>
+
+      <!-- Chapter 1: Market Fundamentals -->
+      <div class="chapter animate-in" id="thch1">
+        <div class="chapter-header">
+          <div class="chapter-number">第一章</div>
+          <h2>市场基本面 — 泰国宏观经济与旅游市场因子分析</h2>
+          <div class="date">2026年5月</div>
+        </div>
+
+        <div class="core-conclusion">
+          泰国是<strong>"成熟慢增"型市场</strong>，客源结构正处于历史性重构期。2024年GDP $5,300亿，人均$7,347（是越南1.7倍），但增速仅2.7%；入境游客3,555万（全球第8），但2025年中国客骤降34%，马来西亚/印度客源崛起；2,700万中产（38%）以每年2.5个百分点扩张是最大确定性；OTA渗透率87-92%是最大数字化挑战；BOI路径提供外资"万能钥匙"（100%控股+土地持有+8年免税）。中端酒店投资应追求<strong>"存量升级+结构性机会"</strong>，而非越南式的"增量扩张"。
+        </div>
+
+        <!-- 1.1 人口与城镇化 -->
+        <div class="subsection">
+          <h3>1.1 人口与城镇化 <span class="weight-badge">权重 6/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-value">7,167万</div><div class="dc-label">总人口（2024）</div><div class="dc-note">TFR仅1.21，增长停滞</div></div>
+            <div class="data-card"><div class="dc-value">41.5岁</div><div class="dc-label">中位年龄</div><div class="dc-note">65岁以上占15.36%</div></div>
+            <div class="data-card"><div class="dc-value">2,700万</div><div class="dc-label">中产规模</div><div class="dc-note">占总人口38%</div></div>
+            <div class="data-card"><div class="dc-value">54-62%</div><div class="dc-label">城镇化率</div><div class="dc-note">曼谷为核心聚集地</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            泰国2024年总人口约7,166.9万，中位年龄41.5岁，已进入深度老龄化社会。总生育率（TFR）仅1.21，远低于2.1的更替水平，人口增长已基本停滞。65岁及以上人口占比达15.36%，而0-14岁青少年占比仅14.4%，老年抚养比（23.0）已超过少儿抚养比（20.7），人口红利窗口正在关闭（<a href="https://www.populationpyramids.org/thailand" target="_blank" style="color:var(--accent-cyan)">UN WPP 2024</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>中产阶层是最大亮点</strong>：2024年泰国中产阶层人口已达约2,700万，占总人口38%，月收入在800-3,000美元之间，以每年2.5个百分点的速度扩张，预计2025年突破40%。消费观念正从"拥有"转向"体验"与"品质"，对品质住宿的需求持续增长。35岁以下人口占比约40%，属于高度活跃的数字原住民群体（<a href="https://www.thepaper.cn/newsDetail_forward_32317127" target="_blank" style="color:var(--accent-cyan)">澎湃新闻</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>对中端酒店投资的启示</strong>：老龄化意味着对康养/医疗度假型住宿需求上升，而中产扩张+年轻群体品质化消费则是中端连锁酒店的核心客群基础。但人口增长停滞意味着长期增量市场有限，酒店投资更需依赖存量升级和结构性机会。
+          </p>
+        </div>
+
+        <!-- 1.2 经济基本面 -->
+        <div class="subsection">
+          <h3>1.2 经济基本面 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-value">$5,300亿</div><div class="dc-label">GDP总量</div><div class="dc-note">东盟第二</div></div>
+            <div class="data-card"><div class="dc-value">2.7%</div><div class="dc-label">GDP增速</div><div class="dc-note">成熟慢增型</div></div>
+            <div class="data-card"><div class="dc-value">$7,347</div><div class="dc-label">人均GDP</div><div class="dc-note">是越南1.7倍</div></div>
+            <div class="data-card"><div class="dc-value">89.6%</div><div class="dc-label">家庭债务/GDP</div><div class="dc-note">ASEAN最高</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            泰国是东盟第二大经济体，人均GDP为7,346.6美元，属于中高收入国家（<a href="https://divercitytimes.com/economy/country/thailand-gdp-per-capita" target="_blank" style="color:var(--accent-cyan)">DiverCityTimes</a>）。IMF预测2024年经济增长2.7%，2025年为2.9%，主要由旅游业复苏和出口拉动。但IMF明确指出，泰国经济复苏步伐<strong>慢于地区内同类国家</strong>，潜在增长率呈下降趋势（<a href="https://www.imf.org/en/publications/cr/issues/2025/02/20/thailand-2024-article-iv-consultation-press-release-staff-report-and-statement-by-the-562284" target="_blank" style="color:var(--accent-cyan)">IMF Article IV 2024</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>FDI表现强劲</strong>：2024年BOI批准的投资申请总额达1.14万亿泰铢（约330亿美元），同比增长35%，创十年新高。其中FDI占73%，达8,321亿泰铢，同比增长25%。数字产业（数据中心/云服务）首次登顶行业榜首，投资2,433亿泰铢（<a href="https://thailand.prd.go.th/en/content/category/detail/id/52/iid/355578" target="_blank" style="color:var(--accent-cyan)">BOI Thailand</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>核心风险</strong>：家庭债务占GDP比重高达89.6%（2024年Q2），虽从2023年91.3%的高位略有下降，但仍居ASEAN首位，远超80%的警戒线（<a href="https://www.adb.org/sites/default/files/publication/1044336/tha-ado-april-2025.pdf" target="_blank" style="color:var(--accent-cyan)">ADB 2025</a>）。高家庭债务可能抑制消费增长，但对入境旅游主导的酒店市场影响有限。
+          </p>
+        </div>
+
+        <!-- 1.3 旅游流量 -->
+        <div class="subsection">
+          <h3>1.3 旅游流量 <span class="weight-badge">权重 10/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-value">3,555万</div><div class="dc-label">入境游客（2024）</div><div class="dc-note">全球第8</div></div>
+            <div class="data-card"><div class="dc-value">447万</div><div class="dc-label">中国游客（2025）</div><div class="dc-note">同比-34%</div></div>
+            <div class="data-card"><div class="dc-value">249万</div><div class="dc-label">印度游客（2025）</div><div class="dc-note">同比+17%</div></div>
+            <div class="data-card"><div class="dc-value">93国</div><div class="dc-label">免签60天</div><div class="dc-note">含中国/印度/俄罗斯</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            泰国是全球第8大入境旅游目的地、东南亚第1。2024年入境游客3,555万人次，旅游收入约485亿美元（<a href="https://www.tatnews.org/2024/12/thailand-welcomes-over-35-million-visitors-in-2024-a-milestone-paving-the-way-for-2025/" target="_blank" style="color:var(--accent-cyan)">TAT</a>）。但2025年入境游客降至3,290万人次（同比-7.23%），为多年来首次年度下降，主要受中国游客大幅萎缩拖累。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>客源结构发生重大变化</strong>：2025年马来西亚（450万）首次超越中国成为第1大客源国，中国降至447万（同比-34%），印度跃升至249万（同比+17%），成为增速最快的主要客源。中国游客骤降的原因包括：演员绑架事件影响安全形象、中国经济放缓、双重定价投诉等。业内观点认为，中国市场的流失对<strong>曼谷中端和团队游酒店冲击最大</strong>（<a href="https://content.knightfrank.com/research/2972/documents/en/bangkok-phuket-hotel-market-1h-2025-12388.pdf" target="_blank" style="color:var(--accent-cyan)">Knight Frank 1H 2025</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>DTV数字游民签证</strong>：5年有效、每次停留180天，首年收到35,000+申请，为公寓式酒店/长住型中端酒店开辟了新赛道。医疗旅游2024年收入$5.78亿，预计2033年达$33亿。曼谷酒店入住率79%，普吉77-78%。
+          </p>
+        </div>
+
+        <!-- 1.4 基础设施 -->
+        <div class="subsection">
+          <h3>1.4 基础设施与交通 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-value">2,900亿฿</div><div class="dc-label">U-Tapao航空城</div><div class="dc-note">2025年开工</div></div>
+            <div class="data-card"><div class="dc-value">2,240亿฿</div><div class="dc-label">三机场高铁</div><div class="dc-note">延期5年+</div></div>
+            <div class="data-card"><div class="dc-value">7条运营</div><div class="dc-label">曼谷轨交</div><div class="dc-note">3在建+4筹备</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            U-Tapao机场及东部航空城2025年上半年开工，总投资超2,900亿泰铢，定位为泰国第三大国际机场，目标5年内吸引5,000亿泰铢投资（<a href="https://thaitimes.com/thailand-advances-u-tapao-airport-and-eastern-aviation-city-development" target="_blank" style="color:var(--accent-cyan)">ThaiTimes</a>）。三机场高铁连接廊曼-素万那普-U-Tapao，总投资2,240亿泰铢，由正大集团主导，但项目已延迟超过5年，仍存在不确定性。曼谷轨交已开通7条线路，在建3条，筹备4条，外府规划包括普吉、清迈等轻轨。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>投资启示</strong>：U-Tapao+EEC是最大的结构性增量，将带动罗勇/春武里区域的酒店需求。但大型项目推进缓慢，投资决策不应过度依赖远期基建预期。曼谷轨交扩张对沿线中端酒店选址是明确的利好。
+          </p>
+        </div>
+
+        <!-- 1.5 政策环境 -->
+        <div class="subsection">
+          <h3>1.5 政策与监管环境 <span class="weight-badge">权重 7/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-value">100%外资</div><div class="dc-label">BOI促批</div><div class="dc-note">8年免税+土地持有</div></div>
+            <div class="data-card"><div class="dc-value">禁止持有</div><div class="dc-label">外资土地</div><div class="dc-note">代持违法</div></div>
+            <div class="data-card"><div class="dc-value">30年</div><div class="dc-label">租赁权最长</div><div class="dc-note">可续约</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            泰国《土地法典》第86条明确规定外国人不得拥有土地，代持结构（nominee）违法，普吉/苏梅/芭提雅等审查力度持续加强（<a href="https://benoit-partners.com/foreigner-land-ownership-thailand/" target="_blank" style="color:var(--accent-cyan)">Benoit & Partners</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>合法持有路径</strong>：①<strong>BOI促批</strong>：酒店项目可申请BOI，获批后可100%外资控股+持有项目土地，企业所得税免征最长8年；②<strong>公寓产权</strong>：外资配额不超过49%；③<strong>租赁权</strong>：最长30年，可续约，是最常见安全的结构；④<strong>地上权</strong>：分离土地和建筑物所有权（<a href="https://lexnovapartners.com/hotel-industry-thailand/" target="_blank" style="color:var(--accent-cyan)">Lex Nova Partners</a>）。特别鼓励可持续旅游项目（生态旅游山庄、酒店可再生能源等），与精品中端定位高度契合。
+          </p>
+        </div>
+
+        <!-- 1.6 数字化与消费 -->
+        <div class="subsection">
+          <h3>1.6 数字化与消费偏好 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-value">88%</div><div class="dc-label">互联网普及率</div><div class="dc-note">5G覆盖95%+</div></div>
+            <div class="data-card"><div class="dc-value">87-92%</div><div class="dc-label">OTA渗透率</div><div class="dc-note">Agoda主导</div></div>
+            <div class="data-card"><div class="dc-value">7,720万</div><div class="dc-label">PromptPay注册</div><div class="dc-note">900万受理点</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            Agoda在泰国市场占主导地位，佣金率18-25%。独立酒店优化前87-92%的预订来自OTA，平均OTA佣金18.5%。即使经过12个月专业优化，OTA占比仍高达65-72%。OTA取消率是直销渠道的2.3倍（<a href="https://otacost.com/thailand-data/" target="_blank" style="color:var(--accent-cyan)">OTA Cost</a>）。这对中端连锁酒店意味着：<strong>进入泰国市场必须构建强直销能力</strong>（APP/小程序/会员体系），否则利润将被OTA抽佣大幅侵蚀。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            移动支付高度成熟：PromptPay注册7,720万，占电商交易44%。TrueMoney占电子钱包市场53%。线上交易移动端占比超80%。中端连锁酒店的"技术栈"必须包括移动端直销预订引擎和本地化支付接入。
+          </p>
+        </div>
+
+        <!-- Factor Weight Summary Table -->
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>宏观因子</th><th>权重</th><th>评分</th><th>核心判断</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>旅游流量</td><td>10/10</td><td><div class="weight-bar"><div class="weight-bar-track"><div class="weight-bar-fill" style="width:100%"></div></div><span class="weight-bar-label">10/10</span></div></td><td>客源正从"中国依赖"向"多元均衡"转型</td></tr>
+              <tr><td>经济基本面</td><td>8/10</td><td><div class="weight-bar"><div class="weight-bar-track"><div class="weight-bar-fill" style="width:80%"></div></div><span class="weight-bar-label">8/10</span></div></td><td>人均$7,347但增速2.7%，"成熟慢增"型</td></tr>
+              <tr><td>基础设施</td><td>8/10</td><td><div class="weight-bar"><div class="weight-bar-track"><div class="weight-bar-fill" style="width:80%"></div></div><span class="weight-bar-label">8/10</span></div></td><td>U-Tapao+EEC最大增量，但三机场高铁延期5年</td></tr>
+              <tr><td>人口与城镇化</td><td>6/10</td><td><div class="weight-bar"><div class="weight-bar-track"><div class="weight-bar-fill" style="width:60%"></div></div><span class="weight-bar-label">6/10</span></div></td><td>中产2,700万优势明显，但TFR 1.21老龄化严重</td></tr>
+              <tr><td>政策环境</td><td>7/10</td><td><div class="weight-bar"><div class="weight-bar-track"><div class="weight-bar-fill" style="width:70%"></div></div><span class="weight-bar-label">7/10</span></div></td><td>BOI"万能钥匙"（100%控股+8年免税），但土地管制严</td></tr>
+              <tr><td>数字化消费</td><td>8/10</td><td><div class="weight-bar"><div class="weight-bar-track"><div class="weight-bar-fill" style="width:80%"></div></div><span class="weight-bar-label">8/10</span></div></td><td>远超越南，但OTA 87-92%渗透率是最大挑战</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="judgment-block">
+          <p style="color:var(--text-primary);font-weight:700;font-size:15px;margin-bottom:8px;">投资评级：B+</p>
+          <h4>关键机会</h4>
+          <ul>
+            <li>客源结构历史性重构：印度/俄罗斯/东南亚客群更匹配中端定位</li>
+            <li>2,700万中产年增2.5pp，是最确定的增长引擎</li>
+            <li>BOI路径：100%外资控股+土地持有+8年免税，与精品中端定位高度契合</li>
+            <li>DTV数字游民签证为长住型酒店开辟新赛道</li>
+          </ul>
+          <h4>核心风险</h4>
+          <ul>
+            <li>2025年入境量首次年度下降，旅游复苏非线性</li>
+            <li>OTA渗透率87-92%，出海品牌必须构建强直销能力</li>
+            <li>家庭债务89.6% ASEAN最高，抑制内需型酒店消费</li>
+            <li>土地管制严格，代持违法风险高</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Chapter 2-5 Placeholder -->
+      <div class="chapter" id="thch2" style="display:none">
+        <div class="chapter-header">
+          <div class="chapter-number">第二章</div>
+          <h2>酒店市场格局</h2>
+          <div class="date">预计2026年5月29日发布</div>
+        </div>
+        <div class="core-conclusion">研究中，敬请期待</div>
+      </div>
+      <div class="chapter" id="thch3" style="display:none">
+        <div class="chapter-header">
+          <div class="chapter-number">第三章</div>
+          <h2>本地品牌深研</h2>
+          <div class="date">预计2026年6月1日发布</div>
+        </div>
+        <div class="core-conclusion">研究中，敬请期待</div>
+      </div>
+      <div class="chapter" id="thch4" style="display:none">
+        <div class="chapter-header">
+          <div class="chapter-number">第四章</div>
+          <h2>竞争与机会</h2>
+          <div class="date">预计2026年6月2日发布</div>
+        </div>
+        <div class="core-conclusion">研究中，敬请期待</div>
+      </div>
+      <div class="chapter" id="thch5" style="display:none">
+        <div class="chapter-header">
+          <div class="chapter-number">第五章</div>
+          <h2>出海投资视角</h2>
+          <div class="date">预计2026年6月3日发布</div>
+        </div>
+        <div class="core-conclusion">研究中，敬请期待</div>
+      </div>
+
+      <!-- Chapter Navigation -->
+      <div class="chapter-nav" id="th-chapter-nav">
+        <button class="ch-btn active" onclick="showThChapter(1)">一</button>
+        <button class="ch-btn" onclick="showThChapter(2)">二</button>
+        <button class="ch-btn" onclick="showThChapter(3)">三</button>
+        <button class="ch-btn" onclick="showThChapter(4)">四</button>
+        <button class="ch-btn" onclick="showThChapter(5)">五</button>
       </div>
     </div>
 
@@ -1946,6 +2218,20 @@ function showOverview() {
   document.getElementById('section-overview').classList.add('active');
   document.getElementById('section-overview').scrollIntoView({ behavior: 'smooth', block: 'start' });
   document.querySelectorAll('.nav-country').forEach(n => n.classList.remove('active'));
+}
+
+function showThChapter(n) {
+  playClick();
+  for (let i = 1; i <= 5; i++) {
+    const ch = document.getElementById('thch' + i);
+    if (ch) ch.style.display = i === n ? 'block' : 'none';
+  }
+  const nav = document.getElementById('th-chapter-nav');
+  if (nav) {
+    nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx + 1 === n);
+    });
+  }
 }
 
 function toggleSidebar() {
