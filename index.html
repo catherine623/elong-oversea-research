@@ -1785,6 +1785,15 @@ tbody tr:last-child td {
         </div>
       </div>
 
+      <!-- Chapter Navigation —放在 quick-stats 后面、章节内容前面 -->
+      <div class="chapter-nav" id="th-chapter-nav">
+        <button class="ch-btn active" onclick="showThChapter(1)">一、市场基本面</button>
+        <button class="ch-btn" onclick="showThChapter(2)">二、酒店市场格局</button>
+        <button class="ch-btn" onclick="showThChapter(3)">三、本地品牌深研</button>
+        <button class="ch-btn" onclick="showThChapter(4)">四、竞争与机会</button>
+        <button class="ch-btn" onclick="showThChapter(5)">五、出海投资视角</button>
+      </div>
+
       <!-- Chapter 1: Market Fundamentals -->
       <div class="chapter animate-in" id="thch1">
         <div class="chapter-header">
@@ -1942,8 +1951,8 @@ tbody tr:last-child td {
       </div>
 
       <!-- Chapter 2: Hotel Market Landscape -->
-      <div class="chapter" id="thch2" style="display:none">
-        <div class="chapter-header" onclick="toggleChapter(this)">
+      <div class="chapter animate-in" id="thch2">
+        <div class="chapter-header">
           <div class="chapter-number">第二章</div>
           <h2>酒店市场格局 — 泰国酒店供需结构与投资热度分析</h2>
           <div class="date">2026年5月28日 · 15条来源</div>
@@ -2123,8 +2132,8 @@ tbody tr:last-child td {
 
         </div>
       </div>
-      <div class="chapter" id="thch3" style="display:none">
-        <div class="chapter-header" onclick="toggleChapter(this)">
+      <div class="chapter animate-in" id="thch3">
+        <div class="chapter-header">
           <div class="chapter-number">第三章</div>
           <h2>本地品牌深研 — 泰国本土酒店品牌图谱与战略分析</h2>
           <div class="date">2026年5月29日 · 14条来源</div>
@@ -2316,7 +2325,7 @@ tbody tr:last-child td {
 
         </div>
       </div>
-      <div class="chapter" id="thch4" style="display:none">
+      <div class="chapter animate-in" id="thch4">
         <div class="chapter-header">
           <div class="chapter-number">第四章</div>
           <h2>竞争与机会</h2>
@@ -2324,7 +2333,7 @@ tbody tr:last-child td {
         </div>
         <div class="core-conclusion">研究中，敬请期待</div>
       </div>
-      <div class="chapter" id="thch5" style="display:none">
+      <div class="chapter animate-in" id="thch5">
         <div class="chapter-header">
           <div class="chapter-number">第五章</div>
           <h2>出海投资视角</h2>
@@ -2333,14 +2342,6 @@ tbody tr:last-child td {
         <div class="core-conclusion">研究中，敬请期待</div>
       </div>
 
-      <!-- Chapter Navigation -->
-      <div class="chapter-nav" id="th-chapter-nav">
-        <button class="ch-btn active" onclick="showThChapter(1)">一</button>
-        <button class="ch-btn" onclick="showThChapter(2)">二</button>
-        <button class="ch-btn" onclick="showThChapter(3)">三</button>
-        <button class="ch-btn" onclick="showThChapter(4)">四</button>
-        <button class="ch-btn" onclick="showThChapter(5)">五</button>
-      </div>
     </div>
 
     <div class="section" id="section-indonesia">
@@ -2580,10 +2581,13 @@ function showOverview() {
 
 function showThChapter(n) {
   playClick();
-  for (let i = 1; i <= 5; i++) {
-    const ch = document.getElementById('thch' + i);
-    if (ch) ch.style.display = i === n ? 'block' : 'none';
-  }
+  const ch = document.getElementById('thch' + n);
+  if (!ch) return;
+  // Expand the target chapter
+  ch.classList.add('open');
+  // Scroll to it
+  ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Update nav buttons
   const nav = document.getElementById('th-chapter-nav');
   if (nav) {
     nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
