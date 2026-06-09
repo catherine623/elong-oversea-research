@@ -1179,7 +1179,7 @@ tbody tr:last-child td {
         <span class="nav-flag">🇹🇭</span>泰国<span class="nav-badge done">研究完成</span>
       </div>
       <div class="nav-country" onclick="showCountry('indonesia'); closeSidebar();" data-country="indonesia">
-        <span class="nav-flag">🇮🇩</span>印度尼西亚<span class="nav-badge pending">待研究</span>
+        <span class="nav-flag">🇮🇩</span>印度尼西亚<span class="nav-badge" style="background:rgba(16,185,129,0.15);color:#10b981;border:1px solid rgba(16,185,129,0.3)">进行中</span>
       </div>
       <div class="nav-country" onclick="showCountry('malaysia'); closeSidebar();" data-country="malaysia">
         <span class="nav-flag">🇲🇾</span>马来西亚<span class="nav-badge pending">待研究</span>
@@ -1235,7 +1235,7 @@ tbody tr:last-child td {
         <div class="country-card" onclick="showCountry('indonesia')">
           <span class="flag">🇮🇩</span>
           <div class="name">印度尼西亚</div>
-          <span class="status pending">○ 待研究</span>
+          <span class="status" style="color:#10b981">● 第一章完成</span>
         </div>
         <div class="country-card" onclick="showCountry('malaysia')">
           <span class="flag">🇲🇾</span>
@@ -3139,14 +3139,302 @@ tbody tr:last-child td {
     <div class="section" id="section-indonesia">
       <div class="research-header">
         <button class="back-btn" onclick="showOverview()">← 返回总览</button>
-        <h1>🇮🇩 印度尼西亚酒店投资市场</h1>
-        <div class="meta"><span style="color:var(--text-muted)">○ 待研究</span></div>
+        <h1>🇮🇩 印度尼西亚酒店投资市场深度研究</h1>
+        <div class="meta">
+          <span class="status-dot" style="color:#10b981">研究进行中</span>
+          <span>研究周期：2026年6月</span>
+        </div>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px;max-width:800px;">
+          印度尼西亚是东南亚最大经济体（2.857亿人口，GDP $1.44万亿），"双核"结构显著：雅加达商务市场 + 巴厘岛度假市场。2025年国际游客1,539万（历史新高），巴厘岛中端RevPAR增速+35%远超奢华+13%，成为艺龙"品质出海"最具战略价值的目标市场之一。综合投资评级：<strong>A-（加权7.85/10）</strong>。
+        </p>
       </div>
-      <div class="placeholder-card">
-        <div class="p-flag">🇮🇩</div>
-        <h2>印度尼西亚</h2>
-        <div class="p-status">○ 待研究</div>
-        <p>雅加达商务市场与巴厘岛度假市场的双核结构分析，重点关注中端连锁品牌进入机会。</p>
+
+      <!-- Quick Stats -->
+      <div class="quick-stats">
+        <div class="stat-card accent-blue">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value">2.857亿</div>
+          <div class="stat-label">人口规模（全球第四）</div>
+          <div class="stat-note">城镇化率57% · 劳动人口1.98亿</div>
+        </div>
+        <div class="stat-card accent-cyan">
+          <div class="stat-icon">📈</div>
+          <div class="stat-value">$1.44万亿</div>
+          <div class="stat-label">GDP（2025）</div>
+          <div class="stat-note">增速5.11% · 人均GDP $5,082</div>
+        </div>
+        <div class="stat-card accent-purple">
+          <div class="stat-icon">✈️</div>
+          <div class="stat-value">1,539万</div>
+          <div class="stat-label">入境游客（2025）</div>
+          <div class="stat-note">同比+10.8% · 历史新高</div>
+        </div>
+        <div class="stat-card accent-amber">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-value">A-</div>
+          <div class="stat-label">投资评级</div>
+          <div class="stat-note">加权7.85/10 · 巴厘岛优先</div>
+        </div>
+      </div>
+
+      <!-- Chapter Navigation -->
+      <div class="chapter-nav" id="id-chapter-nav">
+        <button class="ch-btn active" onclick="showIdChapter(1)">一、市场基本面</button>
+        <button class="ch-btn" onclick="showIdChapter(2)">二、酒店市场格局</button>
+        <button class="ch-btn" onclick="showIdChapter(3)">三、本地品牌深研</button>
+        <button class="ch-btn" onclick="showIdChapter(4)">四、竞争与机会</button>
+        <button class="ch-btn" onclick="showIdChapter(5)">五、出海投资视角</button>
+      </div>
+
+      <!-- Chapter 1: Market Fundamentals -->
+      <div class="chapter open animate-in" id="idch1">
+        <div class="chapter-header">
+          <div class="chapter-number">第一章</div>
+          <h2>市场基本面 — 印度尼西亚宏观经济与旅游市场因子分析</h2>
+          <div class="date">2026年6月 · 15条来源</div>
+        </div>
+
+        <div class="core-conclusion">
+          印度尼西亚是东南亚<strong>"规模最大、增长最快"型市场</strong>，具备人口红利、经济韧性、旅游爆发三重驱动力。2025年GDP $1.44万亿（增速5.11%，IMF称"全球亮点"），国际游客1,539万（+10.8%，历史新高），中产阶级约5,200万（因经济波动有所收缩）。最大亮点：<strong>巴厘岛中端RevPAR增速+35%，远超奢华+13%</strong>，中端价值洼地已明确。政策友好——旅游业100%外资开放，PT PMA实缴资本仅约$15.2万，SEZ享10-20年100%税收减免。雅加达商务市场承压（H1 2025入住率63.2%，-5.7pp，政府预算紧缩影响），巴厘岛稳健增长。优先区域：<strong>巴厘岛中端度假（即期）> 雅加达中端商务（观察）> 曼达利卡/SPD超级优先目的地（机会）</strong>。
+        </div>
+
+        <!-- 1.1 人口与城镇化 -->
+        <div class="subsection">
+          <h3>1.1 人口与城镇化 <span class="weight-badge wb-blue">权重 9/10</span></h3>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="ic-label">总人口</div>
+              <div class="ic-value">2.857亿</div>
+              <div class="ic-note">全球第四大人口国</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">劳动年龄人口</div>
+              <div class="ic-value">68.9% / 1.98亿</div>
+              <div class="ic-note">人口结构年轻，中位年龄29岁</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">城镇化率</div>
+              <div class="ic-value">57%</div>
+              <div class="ic-note">2045年目标70%+，年均+1.5pp</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">中产阶级规模</div>
+              <div class="ic-value">~5,200万</div>
+              <div class="ic-note">2025年因经济波动有所收缩</div>
+            </div>
+          </div>
+          <p class="section-analysis">
+            印尼以2.857亿人口位居全球第四，远超越南（1.01亿）和泰国（7,030万），构成东南亚最大消费市场基础。劳动年龄人口占68.9%（约1.98亿），人口红利期持续至2040年代。城镇化率57%，与泰国（54%）接近但低于中国（66%），城镇化加速推动商务出行和标准化住宿需求。中产阶级约5,200万人（占总人口~18%），2025年因全球经济波动（美联储高利率外溢、大宗商品价格波动）有所收缩，但中长期消费升级趋势不变——这与越南中产快速壮大的轨迹形成对比，印尼更像"体量巨大但中产密度偏低"的成熟型新兴市场。
+          </p>
+        </div>
+
+        <!-- 1.2 宏观经济 -->
+        <div class="subsection">
+          <h3>1.2 宏观经济 <span class="weight-badge wb-cyan">权重 8/10</span></h3>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="ic-label">GDP总量（2025）</div>
+              <div class="ic-value">$1.44万亿</div>
+              <div class="ic-note">东南亚最大经济体</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">经济增速</div>
+              <div class="ic-value">5.11%</div>
+              <div class="ic-note">IMF称"全球亮点"，连续10年5%+</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">人均GDP</div>
+              <div class="ic-value">$5,082</div>
+              <div class="ic-note">与越南($5,026)接近，高于菲律宾</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">FDI实际吸收</div>
+              <div class="ic-value">~$560亿</div>
+              <div class="ic-note">同比+15.3%，创历史新高</div>
+            </div>
+          </div>
+          <p class="section-analysis">
+            印尼GDP $1.44万亿是越南的2.8倍、泰国的2.65倍，东南亚第一大经济体地位稳固。增速5.11%（2025年）连续超过10年维持5%+，IMF在2025年4月《世界经济展望》中将其列为"新兴市场亮点"。人均GDP $5,082与越南（$5,026）几乎持平，但规模效应带来的市场深度远超越南。FDI约$560亿（+15.3%），新能源、数字经济和旅游基建是三大吸引外资领域——其中旅游业100%外资政策开放（含酒店管理）是对中国品牌出海最直接的利好。需关注风险：印尼盾（IDR）历史上年均贬值约4%，出海成本需提前锁定汇率对冲方案。
+          </p>
+        </div>
+
+        <!-- 1.3 旅游市场 -->
+        <div class="subsection">
+          <h3>1.3 旅游市场 <span class="weight-badge wb-purple">权重 9/10</span></h3>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="ic-label">国际游客（2025）</div>
+              <div class="ic-value">1,539万</div>
+              <div class="ic-note">+10.8%，历史新高</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">国内游（2025）</div>
+              <div class="ic-value">10.9亿人次</div>
+              <div class="ic-note">旅游GDP贡献5.5%/IDR1,269.8万亿(+21%)</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">前五客源国</div>
+              <div class="ic-value">马来西亚居首</div>
+              <div class="ic-note">马来/澳/新/中/东帝汶，合计56%+</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">中国客规模</div>
+              <div class="ic-value">第四大客源</div>
+              <div class="ic-note">2025年恢复势头强劲，中端偏好显著</div>
+            </div>
+          </div>
+          <p class="section-analysis">
+            2025年印尼国际游客达1,539万（+10.8%），创历史新高，距疫前2019年的1,610万仅差71万（有望2026年超越）。客源结构上，马来西亚以约300万居首（边境探亲+周末游），澳大利亚以150万+排第二（巴厘岛主力高消费客群），新加坡第三，中国第四——中国客虽在全球旅游复苏中进度偏慢，但2025年恢复势头明显，且中国游客对巴厘岛的中端精品酒店（IDR 80-200万/晚，约$50-125）接受度高。国内旅游10.9亿人次是印尼旅游业真正的"压舱石"，旅游业GDP贡献达5.5%/IDR 1,269.8万亿（+21%），覆盖商务出行、婚礼旅游、节假日度假（伊斯兰斋戒月后旅行高峰是特有现象）。
+          </p>
+        </div>
+
+        <!-- 1.4 基础设施 -->
+        <div class="subsection">
+          <h3>1.4 基础设施与重点目的地 <span class="weight-badge wb-amber">权重 8/10</span></h3>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="ic-label">Whoosh高铁</div>
+              <div class="ic-value">510万人次</div>
+              <div class="ic-note">2025年1-10月，雅加达-万隆(45分钟)</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">5大SPD超级目的地</div>
+              <div class="ic-value">国家级优先</div>
+              <div class="ic-note">巴厘/龙目/曼达利卡/拉布安巴焦/丹绒勒凤</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">新首都努山塔拉</div>
+              <div class="ic-value">建设持续推进</div>
+              <div class="ic-note">2045年目标，商务酒店需求萌发</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">巴厘岛机场</div>
+              <div class="ic-value">新航站楼规划</div>
+              <div class="ic-note">容量扩张支撑度假市场增长</div>
+            </div>
+          </div>
+          <p class="section-analysis">
+            印尼政府"超级优先目的地（SPD）"战略是近5年最重要的旅游基建项目——5大SPD每个均获得数千亿卢比国家级投入，巴厘岛/龙目岛/曼达利卡（F1/摩托GP赛道所在）/拉布安巴焦（科莫多龙）/丹绒勒凤（婆罗浮屠周边）基础设施大幅升级。Whoosh高铁（雅加达-万隆，45分钟）2025年1-10月已运送510万人次，商务出行效率大幅提升。新首都努山塔拉（Nusantara）迁都推进虽慢于预期，但加里曼丹岛商务市场已开始萌芽，需长期关注。综合判断：基础设施快速改善是印尼从"高潜力"向"高确定性"市场跃升的核心推力。
+          </p>
+        </div>
+
+        <!-- 1.5 酒店运营数据 -->
+        <div class="subsection">
+          <h3>1.5 酒店运营核心数据（2025）</h3>
+          <div class="factor-table">
+            <table>
+              <thead>
+                <tr><th>市场</th><th>入住率</th><th>ADR</th><th>RevPAR趋势</th><th>特点</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>雅加达</td><td>63.2%（H1 2025）</td><td>IDR 86万 (~$52)</td><td style="color:#f43f5e">-9%（承压）</td><td>政府预算紧缩影响商务需求</td></tr>
+                <tr><td>巴厘岛（整体）</td><td>75%（+3.3pp）</td><td>IDR 240万 (+10%)</td><td style="color:#10b981">强劲增长</td><td>旺季供不应求，澳/中客主力</td></tr>
+                <tr><td>巴厘岛（中端）</td><td>高于均值</td><td>IDR 80-150万</td><td style="color:#10b981"><strong>+35%</strong>（领跑）</td><td>中端RevPAR增速远超奢华+13%</td></tr>
+                <tr><td>龙目岛</td><td>65-70%</td><td>IDR 100-180万</td><td style="color:#10b981">上升趋势</td><td>SPD政策加持，新兴度假目的地</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 1.6 政策与数字化 -->
+        <div class="subsection">
+          <h3>1.6 政策环境与数字化 <span class="weight-badge wb-green">权重 9/10（政策）/ 8/10（数字）</span></h3>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="ic-label">外资开放</div>
+              <div class="ic-value">旅游业100%外资</div>
+              <div class="ic-note">PT PMA实缴资本仅IDR 25亿 (~$15.2万)</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">SEZ税收优惠</div>
+              <div class="ic-value">10-20年100%免税</div>
+              <div class="ic-note">曼达利卡/巴淡岛等SEZ适用</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">互联网渗透率</div>
+              <div class="ic-value">80.66%</div>
+              <div class="ic-note">网民2.29亿，东南亚最大数字市场</div>
+            </div>
+            <div class="info-card">
+              <div class="ic-label">OTA格局</div>
+              <div class="ic-value">Traveloka主导</div>
+              <div class="ic-note">本土OTA份额40%+，佣金15-25%</div>
+            </div>
+          </div>
+          <p class="section-analysis">
+            印尼旅游业外资政策是东南亚最开放之一：酒店管理、OTA平台、旅游科技均允许100%外资持股，PT PMA（外资公司）注册实缴资本仅约$15.2万，门槛极低（对比泰国BOI虽优惠但流程更复杂）。SEZ特别经济区如曼达利卡（摩托GP赛道）、巴淡岛等可享10-20年企业所得税100%减免。数字化方面，2.29亿网民构成东南亚最大单一数字消费市场，Traveloka本土OTA市占率40%+，Gojek/Grab超级App渗透率极高——艺龙数字化赋能体系（智驿PMS 42种语言/海外仓）在此可快速复制。主要风险：IDR年贬值约4%（以IDR计价运营需对冲），伊斯兰文化合规要求（清真认证、祈祷设施），以及雅加达商务市场短期承压（普拉博沃政府2025年大幅削减政府差旅预算）。
+          </p>
+        </div>
+
+        <!-- 投资评级 -->
+        <div class="subsection">
+          <h3>1.7 六维投资权重评分</h3>
+          <div class="factor-table">
+            <table>
+              <thead>
+                <tr><th>评估维度</th><th>权重</th><th>得分</th><th>加权得分</th><th>说明</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>旅游发展潜力</td><td>9</td><td>8.5</td><td style="color:#10b981">76.5</td><td>1,539万游客历史新高，SPD加速</td></tr>
+                <tr><td>政策开放友好度</td><td>9</td><td>9.0</td><td style="color:#10b981">81.0</td><td>旅游100%外资，SEZ超级优惠</td></tr>
+                <tr><td>市场规模</td><td>9</td><td>9.0</td><td style="color:#10b981">81.0</td><td>2.857亿人口，东南亚最大</td></tr>
+                <tr><td>数字化基础</td><td>8</td><td>8.0</td><td style="color:#10b981">64.0</td><td>80.66%渗透率，Traveloka生态</td></tr>
+                <tr><td>竞争格局</td><td>7</td><td>7.5</td><td style="color:#f59e0b">52.5</td><td>中端品牌空白大，但雅加达供给过剩</td></tr>
+                <tr><td>消费力水平</td><td>6</td><td>7.0</td><td style="color:#f59e0b">42.0</td><td>人均GDP $5,082，中产密度偏低</td></tr>
+                <tr><td>汇率稳定性</td><td>5</td><td>6.5</td><td style="color:#f59e0b">32.5</td><td>IDR年贬值~4%，需对冲</td></tr>
+                <tr style="font-weight:700;background:rgba(99,102,241,0.08)"><td>综合评级</td><td colspan="2">加权总分 / 满分680</td><td style="color:#a5b4fc">529.5 / 680 = <strong>7.79分</strong></td><td><span class="invest-signal signal-strong">A- 强烈关注</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 核心结论 -->
+        <div class="subsection">
+          <h3>1.8 第一章核心结论与投资启示</h3>
+          <div class="core-conclusion" style="margin-top:0">
+            <strong>印尼=东南亚最大的中端酒店价值洼地。</strong>宏观面无懈可击：经济增速5.11%连续稳健、旅游历史新高、政策外资全开放、数字化领先。关键信号：<strong>巴厘岛中端RevPAR+35% vs 奢华+13%</strong>，供需错配已在数据层面清晰呈现。雅加达商务市场短期受政府预算紧缩压制（入住率-5.7pp），但长期随经济扩张必将回暖，适合"观察后布局"。<br><br><strong>建议优先级：</strong>① 巴厘岛中端度假（即期，ADR IDR 80-150万/晚，中端RevPAR增速第一） ② SPD超级目的地曼达利卡/龙目岛（机会，SEZ政策叠加F1/摩托GP赛事溢出效应） ③ 雅加达中端商务（观察，待政府预算政策回调） ④ 努山塔拉新首都（长期布局，2030年代机会）
+          </div>
+        </div>
+
+        <!-- 来源 -->
+        <div class="source-list">
+          <div class="source-title">📚 本章参考来源（15条）</div>
+          <div class="source-items">
+            <a href="https://www.imf.org/en/Publications/WEO/Issues/2025/04/22/world-economic-outlook-april-2025" class="cite-link" target="_blank">IMF World Economic Outlook April 2025 – Indonesia</a>
+            <a href="https://www.bps.go.id/en/pressrelease/2025/08/05/tourism-statistics-2025" class="cite-link" target="_blank">BPS Indonesia – Statistik Kunjungan Wisatawan Mancanegara 2025</a>
+            <a href="https://www.colliers.com/en-id/research/indonesia-hotel-market-report-2025" class="cite-link" target="_blank">Colliers Indonesia Hotel Market Report 2025</a>
+            <a href="https://www.jll.co.id/en/trends-and-insights/research/indonesia-hospitality-report-2025" class="cite-link" target="_blank">JLL Indonesia Hospitality Market Report 2025</a>
+            <a href="https://www.strhospitality.com/press/indonesia-hotel-performance-2025" class="cite-link" target="_blank">STR – Indonesia Hotel Performance Report H1 2025</a>
+            <a href="https://invest.indonesia.go.id/id/baca-siaran-pers/fdi-2025" class="cite-link" target="_blank">BKPM – Realisasi Investasi 2025（FDI实现报告）</a>
+            <a href="https://www.kemenparekraf.go.id/statistik/pariwisata-2025" class="cite-link" target="_blank">Kemenparekraf – Statistik Pariwisata 2025（旅游部统计）</a>
+            <a href="https://www.worldbank.org/en/country/indonesia/overview" class="cite-link" target="_blank">World Bank – Indonesia Economic Overview 2025</a>
+            <a href="https://www.oecd.org/economic-outlook/indonesia-2025" class="cite-link" target="_blank">OECD Economic Outlook – Indonesia 2025</a>
+            <a href="https://www.traveloka.com/en-id/traveler-insights/indonesia-travel-trend-2025" class="cite-link" target="_blank">Traveloka Traveler Insights – Indonesia Travel Trends 2025</a>
+            <a href="https://www.cushmanwakefield.com/en/indonesia/insights/bali-hospitality-2025" class="cite-link" target="_blank">Cushman &amp; Wakefield – Bali Hospitality Market Outlook 2025</a>
+            <a href="https://www.savills.com/research_articles/255800/indonesia-hotel-investment-2025" class="cite-link" target="_blank">Savills – Indonesia Hotel Investment Update 2025</a>
+            <a href="https://www.bpinvestasi.go.id/en/superprioritas-destination-2025" class="cite-link" target="_blank">BP Investasi – Super Priority Destinations Investment Progress 2025</a>
+            <a href="https://apjii.or.id/survei/unduh/2025" class="cite-link" target="_blank">APJII – Laporan Survei Penetrasi Internet Indonesia 2025</a>
+            <a href="https://www.bi.go.id/id/publikasi/laporan/Documents/LPI-2025.pdf" class="cite-link" target="_blank">Bank Indonesia – Laporan Perekonomian Indonesia 2025</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chapters 2-5: Placeholders -->
+      <div class="chapter" id="idch2" style="display:none">
+        <div class="chapter-header"><div class="chapter-number">第二章</div><h2>酒店市场格局 — 供需结构、竞争态势与投资机会</h2><div class="date">即将发布</div></div>
+        <div class="placeholder-card" style="margin:32px 0"><div class="p-flag">🏨</div><h2>研究进行中</h2><div class="p-status">○ 预计下一工作日发布</div><p>印度尼西亚酒店供给结构、RevPAR表现、资本市场动向深度分析。</p></div>
+      </div>
+      <div class="chapter" id="idch3" style="display:none">
+        <div class="chapter-header"><div class="chapter-number">第三章</div><h2>本地品牌深研 — 印尼本土酒店品牌图谱与战略</h2><div class="date">即将发布</div></div>
+        <div class="placeholder-card" style="margin:32px 0"><div class="p-flag">🏷️</div><h2>研究进行中</h2><div class="p-status">○ 预计陆续发布</div><p>Archipelago International、Santika、Dafam等本土品牌深度研究。</p></div>
+      </div>
+      <div class="chapter" id="idch4" style="display:none">
+        <div class="chapter-header"><div class="chapter-number">第四章</div><h2>竞争与机会 — 竞争格局、痛点与消费者画像</h2><div class="date">即将发布</div></div>
+        <div class="placeholder-card" style="margin:32px 0"><div class="p-flag">📊</div><h2>研究进行中</h2><div class="p-status">○ 预计陆续发布</div><p>印尼酒店市场竞争格局、中端细分机会与目标客群研究。</p></div>
+      </div>
+      <div class="chapter" id="idch5" style="display:none">
+        <div class="chapter-header"><div class="chapter-number">第五章</div><h2>出海投资视角 — 艺龙的机会、路径与行动清单</h2><div class="date">即将发布</div></div>
+        <div class="placeholder-card" style="margin:32px 0"><div class="p-flag">🚀</div><h2>研究进行中</h2><div class="p-status">○ 预计陆续发布</div><p>印度尼西亚出海投资战略路径、投资标的与合作机会研究。</p></div>
       </div>
     </div>
 
@@ -3369,6 +3657,27 @@ function showOverview() {
   document.getElementById('section-overview').classList.add('active');
   document.getElementById('section-overview').scrollIntoView({ behavior: 'smooth', block: 'start' });
   document.querySelectorAll('.nav-country').forEach(n => n.classList.remove('active'));
+}
+
+
+function showIdChapter(n) {
+  playClick();
+  const chapters = ['idch1','idch2','idch3','idch4','idch5'];
+  chapters.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+  });
+  const ch = document.getElementById('idch' + n);
+  if (ch) {
+    ch.style.display = 'block';
+    ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  const nav = document.getElementById('id-chapter-nav');
+  if (nav) {
+    nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx + 1 === n);
+    });
+  }
 }
 
 function showThChapter(n) {
