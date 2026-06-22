@@ -3420,7 +3420,7 @@ tbody tr:last-child td {
  </div>
 
  <!-- Chapter 2: Hotel Market Structure -->
- <div class="chapter" id="idch2" style="display:none">
+ <div class="chapter animate-in" id="idch2">
  <div class="chapter-header">
  <div class="chapter-number">第二章</div>
  <h2>酒店市场格局 — 供需结构、资本动向与竞争态势</h2>
@@ -3646,15 +3646,15 @@ tbody tr:last-child td {
  </div>
  </div>
  </div>
- <div class="chapter" id="idch3" style="display:none">
+ <div class="chapter animate-in" id="idch3">
  <div class="chapter-header"><div class="chapter-number">第三章</div><h2>本地品牌深研 — 印尼本土酒店品牌图谱与战略</h2><div class="date">即将发布</div></div>
  <div class="placeholder-card" style="margin:32px 0"><div class="p-flag">🏷️</div><h2>研究进行中</h2><div class="p-status">○ 预计陆续发布</div><p>Archipelago International、Santika、Dafam等本土品牌深度研究。</p></div>
  </div>
- <div class="chapter" id="idch4" style="display:none">
+ <div class="chapter animate-in" id="idch4">
  <div class="chapter-header"><div class="chapter-number">第四章</div><h2>竞争与机会 — 竞争格局、痛点与消费者画像</h2><div class="date">即将发布</div></div>
  <div class="placeholder-card" style="margin:32px 0"><div class="p-flag">📊</div><h2>研究进行中</h2><div class="p-status">○ 预计陆续发布</div><p>印尼酒店市场竞争格局、中端细分机会与目标客群研究。</p></div>
  </div>
- <div class="chapter" id="idch5" style="display:none">
+ <div class="chapter animate-in" id="idch5">
  <div class="chapter-header"><div class="chapter-number">第五章</div><h2>出海投资视角 — 艺龙的机会、路径与行动清单</h2><div class="date">即将发布</div></div>
  <div class="placeholder-card" style="margin:32px 0"><div class="p-flag">🚀</div><h2>研究进行中</h2><div class="p-status">○ 预计陆续发布</div><p>印度尼西亚出海投资战略路径、投资标的与合作机会研究。</p></div>
  </div>
@@ -3884,16 +3884,13 @@ function showOverview() {
 
 function showIdChapter(n) {
   playClick();
-  const chapters = ['idch1','idch2','idch3','idch4','idch5'];
-  chapters.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.style.display = 'none';
-  });
   const ch = document.getElementById('idch' + n);
-  if (ch) {
-    ch.style.display = 'block';
-    ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
+  if (!ch) return;
+  // Expand the target chapter
+  ch.classList.add('open');
+  // Scroll to it
+  ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Update nav buttons
   const nav = document.getElementById('id-chapter-nav');
   if (nav) {
     nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
