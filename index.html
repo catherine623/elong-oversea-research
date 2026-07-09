@@ -1240,7 +1240,7 @@ tbody tr:last-child td {
         <div class="country-card" onclick="showCountry('malaysia')">
           <span class="flag">🇲🇾</span>
           <div class="name">马来西亚</div>
-          <span class="status pending">○ 待研究</span>
+          <span class="status" style="color:#10b981">● 全五章完成</span>
         </div>
         <div class="country-card" onclick="showCountry('philippines')">
           <span class="flag">🇵🇭</span>
@@ -4506,19 +4506,753 @@ tbody tr:last-child td {
 </div>
  </div>
 
- <div class="section" id="section-malaysia">
-      <div class="research-header">
-        <button class="back-btn" onclick="showOverview()">← 返回总览</button>
-        <h1>🇲🇾 马来西亚酒店投资市场</h1>
-        <div class="meta"><span style="color:var(--text-muted)">○ 待研究</span></div>
-      </div>
-      <div class="placeholder-card">
-        <div class="p-flag">🇲🇾</div>
-        <h2>马来西亚</h2>
-        <div class="p-status">○ 待研究</div>
-        <p>吉隆坡商务市场与兰卡威/沙巴度假市场分析，评估多语言多文化环境下的品牌运营策略。</p>
-      </div>
-    </div>
+    <div class="section" id="section-malaysia">
+ <div class="research-header">
+ <button class="back-btn" onclick="showOverview()">← 返回总览</button>
+ <h1>🇲🇾 马来西亚酒店投资市场深度研究</h1>
+ <div class="meta">
+ <span class="status-dot" style="color:#10b981">全五章完成</span>
+ <span>研究周期：2026年7月</span>
+ </div>
+ <p style="margin-top:12px;color:var(--text-secondary);font-size:14px;max-width:800px;">
+ 马来西亚正站在东南亚旅游版图的聚光灯下。2025年以4,220万国际访客首次全年超越泰国登顶东南亚，中马互免签证制度化释放持续性中国客源（2024年中国游客372.6万，+130.9%）。酒店市场呈"总量充足、结构性失衡"：全国5,204家酒店、333,780间客房，连锁化率仅18.23%，独立酒店占63.32%，3-4星级标准化中端连锁存在显著供给真空。本土品牌呈"哑铃结构"——高端集中YTL/Berjaya/Sunway，经济型覆盖Tune/Hotel Seri Malaysia，中端品质品牌严重缺位。叠加VM2026国家战略（目标4,700万访客/RM1,471亿收入）和RTS Link跨境基建红利，为中国酒店品牌出海创造了历史性窗口。综合投资评级：<strong>B+（本研究评估）</strong>。
+ </p>
+ </div>
+
+ <!-- Quick Stats -->
+ <div class="quick-stats">
+ <div class="stat-card accent-blue">
+ <div class="stat-icon">👥</div>
+ <div class="stat-value">3,420万</div>
+ <div class="stat-label">人口规模</div>
+ <div class="stat-note">城镇化率78% · 中位年龄30岁</div>
+ </div>
+ <div class="stat-card accent-cyan">
+ <div class="stat-icon">📈</div>
+ <div class="stat-value">RM2.03万亿</div>
+ <div class="stat-label">GDP（2025）/ ~$4,705亿</div>
+ <div class="stat-note">增速5.1% · 服务业占59.4%</div>
+ </div>
+ <div class="stat-card accent-purple">
+ <div class="stat-icon">✈️</div>
+ <div class="stat-value">4,220万</div>
+ <div class="stat-label">入境访客（2025）</div>
+ <div class="stat-note">+11.2% · 首超泰国登顶东南亚</div>
+ </div>
+ <div class="stat-card accent-amber">
+ <div class="stat-icon">⭐</div>
+ <div class="stat-value">B+</div>
+ <div class="stat-label">投资评级</div>
+ <div class="stat-note">本研究评估 · 中端蓝海窗口</div>
+ </div>
+ </div>
+
+ <!-- Chapter Navigation -->
+ <div class="chapter-nav" id="my-chapter-nav">
+ <button class="ch-btn active" onclick="showMyChapter(1)">一、市场基本面</button>
+ <button class="ch-btn" onclick="showMyChapter(2)">二、酒店市场格局</button>
+ <button class="ch-btn" onclick="showMyChapter(3)">三、本地品牌生态</button>
+ <button class="ch-btn" onclick="showMyChapter(4)">四、竞争与机会</button>
+ <button class="ch-btn" onclick="showMyChapter(5)">五、出海投资路径</button>
+ </div>
+
+ <!-- ==================== CHAPTER 1: Market Fundamentals ==================== -->
+ <div class="chapter open animate-in" id="mych1">
+ <div class="chapter-header">
+ <div class="chapter-number">第一章</div>
+ <h2>市场基本面 — 免签红利与旅游引擎：马来西亚宏观经济与旅游市场</h2>
+ <div class="date">2026年7月 · 18条来源</div>
+ </div>
+
+ <div class="core-conclusion">
+ 马来西亚酒店投资市场基本面正经历<strong>"政策红利+需求爆发+基建升级"</strong>三重叠加。宏观层面，2024年GDP增速5.1%，服务业占GDP近六成，为酒店需求提供稳健增长底盘。游客层面，国际访客从3,800万（2024）跃升至4,220万（2025），连续超越泰国登顶东南亚——但需注意约三分之一为一日游访客，过夜游客尚未完全恢复至2019年水平。制度层面，中马互免签证从试行走向制度化，将中国客源转化为可持续流量；VM2026国家战略以4,700万国际访客和RM1,471亿旅游收入为目标。基建层面，KLIA扩建和RTS Link打通客流瓶颈，ECRL预计2027年通车将激活东海岸酒店市场。
+ </div>
+
+ <!-- 1.1 宏观经济 -->
+ <div class="subsection">
+ <h3>1.1 宏观经济韧性：服务业驱动的增长底盘 <span class="weight-badge">权重 8/10</span></h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">GDP总量（2025）</div><div class="dc-value">RM2.03万亿</div><div class="dc-note">~$4,705亿 · 东南亚第三大经济体</div></div>
+ <div class="data-card"><div class="dc-label">经济增速（2024）</div><div class="dc-value">5.1%</div><div class="dc-note">较2023年3.6%显著提升</div></div>
+ <div class="data-card"><div class="dc-label">服务业占GDP</div><div class="dc-value">59.4%</div><div class="dc-note">同比增长5.3% · 酒店需求核心引擎</div></div>
+ <div class="data-card"><div class="dc-label">人均GNI</div><div class="dc-value">~$11,650</div><div class="dc-note">世界银行Atlas法 · 中高收入经济体</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 马来西亚2024年GDP增速5.1%，主要驱动力来自服务业和制造业的稳健扩张，以及十年来最高的投资增长速度（<a href="https://www.investmalaysia.gov.my/media/gdtn3efw/bank-negara-malaysia-economic-and-monetary-review-2024.pdf" target="_blank">BNM经济与货币回顾2024</a>）。服务业占GDP比重达59.4%，同比增长5.3%，构成酒店投资市场最直接的需求基础（<a href="https://www.dosm.gov.my/portal-main/release-content/gross-domestic-product-2024" target="_blank">DOSM: GDP 2024</a>）。2025年名义GDP达RM2.03万亿（约合4,705亿美元），国家银行将2025年增长预期设定为4.5%–5.5%（<a href="https://www.adb.org/sites/default/files/publication/1135881/mal-ado-april-2026.pdf" target="_blank">ADB经济展望</a>）。服务业占比近六成且持续扩张，意味着商务旅行、会议展览和休闲旅游三大酒店需求引擎均有坚实的宏观支撑。
+ </p>
+ </div>
+
+ <!-- 1.2 入境访客 -->
+ <div class="subsection">
+ <h3>1.2 入境访客爆发：从追赶到超越的里程碑 <span class="weight-badge">权重 9/10</span></h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">国际访客（2025）</div><div class="dc-value">4,220万</div><div class="dc-note">+11.2% · 较2019年+20.4%</div></div>
+ <div class="data-card"><div class="dc-label">旅游收入（2024）</div><div class="dc-value">RM1,060亿</div><div class="dc-note">创历史新高</div></div>
+ <div class="data-card"><div class="dc-label">国内旅游（2024）</div><div class="dc-value">2.6亿人次</div><div class="dc-note">+21.7% · 消费RM1,067亿</div></div>
+ <div class="data-card"><div class="dc-label">VM2026目标</div><div class="dc-value">4,700万</div><div class="dc-note">RM1,471亿收入 · 300+场活动</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ <strong>统计口径说明</strong>：马来西亚旅游统计采用"国际访客"口径，涵盖过夜游客和一日游访客。2024年过夜游客约2,500万、一日游访客1,300万，合计3,800万（+31.1%），旅游业收入RM1,060亿创新高（<a href="https://www.thestar.com.my/news/nation/2025/02/10/tourist-arrivals-surpass-pre-pandemic-levels-revenue-hits-record-rm106bil-in-2024-says-tiong" target="_blank">The Star</a>）。2025年国际访客达4,220万（+11.2%），Q1以1,010万首次超越泰国登顶东南亚（<a href="https://www.thestar.com.my/news/nation/2026/01/26/malaysia-records-422-million-visitors-in-2025-strengthens-collaboration-for-vm2026" target="_blank">The Star: 2025年4220万访客</a>）。但一日游访客（主要为新加坡跨境当日往返者）不产生酒店住宿需求，投资者应重点关注过夜游客数据。
+ </p>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>年份</th><th>国际访客（万人次）</th><th>同比增速</th><th>关键备注</th></tr></thead>
+ <tbody>
+ <tr><td>2023</td><td>约2,900</td><td>—</td><td>疫后恢复期</td></tr>
+ <tr><td>2024</td><td>3,800</td><td style="color:#10b981">+31.1%</td><td>超2019年，收入RM1,060亿创新高</td></tr>
+ <tr><td>2025</td><td>4,220</td><td style="color:#10b981">+11.2%</td><td>较2019年+20.4%，首次全年超越泰国</td></tr>
+ <tr><td>2026（目标）</td><td>4,700</td><td style="color:#10b981">+11.4%</td><td>VM2026国家战略目标</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+ <!-- 1.3 免签红利 -->
+ <div class="subsection">
+ <h3>1.3 免签红利：中马人文交流的制度引擎 <span class="weight-badge">权重 9/10</span></h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">中国游客（2024）</div><div class="dc-value">372.6万</div><div class="dc-note">+130.9% · 东盟之外最大客源国</div></div>
+ <div class="data-card"><div class="dc-label">互免签证协定</div><div class="dc-value">2025.07.17生效</div><div class="dc-note">30天免签 · 从试行走向制度化</div></div>
+ <div class="data-card"><div class="dc-label">2025年中国客目标</div><div class="dc-value">500万</div><div class="dc-note">VM2026目标700万</div></div>
+ <div class="data-card"><div class="dc-label">机票搜索增长</div><div class="dc-value">+100%</div><div class="dc-note">协定签署后日环比</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 中马互免签证政策是驱动中国客源爆发的核心制度变量。2023年12月中方对马来西亚试行单方面免签，马方同步对中国公民开放30天免签（<a href="https://www.yidaiyilu.gov.cn/p/0I383KQ6.html" target="_blank">一带一路官网</a>）。2025年4月16日正式签署互免签证协定，7月17日生效（<a href="https://new.qq.com/rain/a/20250717A07G5000" target="_blank">腾讯新闻</a>）。2024年中国游客达372.6万（+130.9%），中国成为马来西亚在东盟之外最大游客来源国（<a href="https://english.news.cn/20250225/6f917643a3cf444a8c4b7fcf4abcb5ab/c.html" target="_blank">新华网</a>）。免签政策将中国客源从"脉冲式增长"转化为"持续性流量"，为酒店投资提供了可预期的需求曲线。
+ </p>
+ </div>
+
+ <!-- 1.4 VM2026 -->
+ <div class="subsection">
+ <h3>1.4 VM2026国家战略：从旅游年到产业升级 <span class="weight-badge">权重 8/10</span></h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">VM2026启动</div><div class="dc-value">2025.01.06</div><div class="dc-note">首相安华亲自揭幕</div></div>
+ <div class="data-card"><div class="dc-label">国际访客目标</div><div class="dc-value">4,700万</div><div class="dc-note">RM1,471亿旅游收入</div></div>
+ <div class="data-card"><div class="dc-label">主题活动</div><div class="dc-value">300+场</div><div class="dc-note">含生态旅游/购物旅游</div></div>
+ <div class="data-card"><div class="dc-label">三大战略</div><div class="dc-value">品牌+合作+聚焦</div><div class="dc-note">国家级产业升级战略</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ Visit Malaysia 2026是马来西亚国家级旅游战略（<a href="https://www.tourism.gov.my/media/view/launch-of-visit-malaysia-2026-campaign-a-milestone-for-tourism-growth" target="_blank">Tourism Malaysia: VM2026启动</a>）。核心目标：2026年接待4,700万国际访客，实现RM1,471亿旅游收入（<a href="https://www.thestar.com.my/news/nation/2025/09/02/govt-targets-47-million-foreign-tourists-in-2026-outlines-three-strategies-for-vm2026" target="_blank">The Star: VM2026</a>）。三大战略：①强化品牌建设和营销活动创造需求；②与航空/旅行社/区域入境点合作提升客流；③聚焦目标市场和高影响力细分领域（<a href="https://www.tourism.gov.my/media/view/tourism-malaysia-unveils-strategic-roadmap-for-visit-malaysia-2026" target="_blank">Tourism Malaysia: VM2026战略</a>）。VM2026不仅是旅游营销campaign，更是将旅游业定位为GDP核心贡献产业的国家级升级战略。
+ </p>
+ </div>
+
+ <!-- 1.5 基础设施与人口 -->
+ <div class="subsection">
+ <h3>1.5 基础设施与人口红利 <span class="weight-badge">权重 8/10</span></h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">总人口（2025）</div><div class="dc-value">3,420万</div><div class="dc-note">大吉隆坡地区~800万</div></div>
+ <div class="data-card"><div class="dc-label">KLIA扩建</div><div class="dc-value">$28亿</div><div class="dc-note">目标容量1亿人次/年</div></div>
+ <div class="data-card"><div class="dc-label">RTS Link</div><div class="dc-value">2026.12完工</div><div class="dc-note">新山-新加坡5分钟通勤</div></div>
+ <div class="data-card"><div class="dc-label">ECRL东海岸铁路</div><div class="dc-value">89%完成</div><div class="dc-note">640公里 · 2027年通车</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ KLIA扩建将年旅客吞吐能力提升至1亿人次。RTS Link轻轨系统预计2026年12月完工、2027年1月运营，将新山至新加坡通勤从45分钟压缩至5分钟（<a href="https://www.thestar.com.my/news/nation/2025/12/04/malaysia-singapore-sign-additional-agreement-for-rts-link" target="_blank">The Star: RTS Link</a>）。ECRL由中国交建承建，全长640公里，总投资约RM500亿，预计2026年12月竣工（<a href="https://www.thestar.com.my/business/business-news/2025/11/24/ecrl-project-hits-89-completion-as-of-october-2025" target="_blank">The Star: ECRL完成89%</a>），将打通东海岸与西海岸经济核心区。HSR（吉隆坡-新加坡高速铁路）已于2021年终止（<a href="https://www.railjournal.com/passenger/high-speed/singapore-kuala-lumpur-high-speed-project-cancelled/" target="_blank">Rail Journal</a>），留下区域高速互联互通的空白。2024年国内旅游2.6亿人次进一步印证内需市场对酒店住宿的刚性支撑（<a href="https://www.dosm.gov.my/uploads/release-content/file_20250619114622.pdf" target="_blank">DOSM: 国内旅游2024</a>）。
+ </p>
+ </div>
+
+ <!-- 核心结论 -->
+ <div class="subsection">
+ <h3>1.6 第一章核心结论与投资启示</h3>
+ <div class="core-conclusion" style="margin-top:0">
+ <strong>马来西亚基本面="政策红利+需求爆发+基建升级"三重叠加。</strong>宏观面稳健：GDP增速5.1%、服务业占近六成。旅游面爆发：国际访客4,220万首超泰国，但需区分"总访客"与"过夜游客"口径。制度面利好：中马互免签证制度化+VM2026国家战略集中释放政策红利。基建面升级：KLIA扩建+RTS Link打通跨境瓶颈+ECRL激活东海岸。<br><br><strong>建议优先级：</strong>① 吉隆坡（即期，商业中心+MICE枢纽） ② 新山（即期，RTS Link催化+跨境溢出） ③ 槟城/兰卡威（机会，度假目的地供给瓶颈） ④ 东海岸ECRL沿线（长期，2027年通车后激活）
+ </div>
+ </div>
+
+ <!-- 来源 -->
+ <div>
+ <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（18条）</div>
+ <div style="display:flex;flex-direction:column;gap:8px">
+ <a href="https://www.investmalaysia.gov.my/media/gdtn3efw/bank-negara-malaysia-economic-and-monetary-review-2024.pdf" target="_blank">BNM – Economic and Monetary Review 2024</a>
+ <a href="https://www.dosm.gov.my/portal-main/release-content/gross-domestic-product-2024" target="_blank">DOSM – GDP 2024</a>
+ <a href="https://www.dosm.gov.my/portal-main/release-content/gross-domestic-product-2025" target="_blank">DOSM – GDP 2025</a>
+ <a href="https://www.adb.org/sites/default/files/publication/1135881/mal-ado-april-2026.pdf" target="_blank">ADB – Asian Development Outlook Malaysia 2026</a>
+ <a href="https://data.worldbank.org/indicator/NY.GNP.PCAP.CD?locations=MY" target="_blank">World Bank – Malaysia GNI per capita</a>
+ <a href="https://www.thestar.com.my/news/nation/2025/02/10/tourist-arrivals-surpass-pre-pandemic-levels-revenue-hits-record-rm106bil-in-2024-says-tiong" target="_blank">The Star – 2024 Tourism Record</a>
+ <a href="https://www.thestar.com.my/news/nation/2026/01/26/malaysia-records-422-million-visitors-in-2025-strengthens-collaboration-for-vm2026" target="_blank">The Star – 2025年4220万访客</a>
+ <a href="https://www.travelandtourworld.com/news/article/malaysia-overpowers-thailand-vietnam-singapore-indonesia-and-philippines-in-skyrocketing-tourism-and-turbocharging-new-travel-avenues-as-southeast-asias-most-visited-country-in-2025/" target="_blank">Travel and Tour World – Malaysia Overpowers SEA</a>
+ <a href="https://www.yidaiyilu.gov.cn/p/0I383KQ6.html" target="_blank">一带一路官网 – 中马互免签证</a>
+ <a href="https://english.news.cn/20250225/6f917643a3cf444a8c4b7fcf4abcb5ab/c.html" target="_blank">新华网 – 中国游客赴马+130.9%</a>
+ <a href="https://new.qq.com/rain/a/20250717A07G5000" target="_blank">腾讯新闻 – 中马互免签证正式生效</a>
+ <a href="https://www.tourism.gov.my/media/view/launch-of-visit-malaysia-2026-campaign-a-milestone-for-tourism-growth" target="_blank">Tourism Malaysia – VM2026 Launch</a>
+ <a href="https://www.tourism.gov.my/media/view/tourism-malaysia-unveils-strategic-roadmap-for-visit-malaysia-2026" target="_blank">Tourism Malaysia – VM2026 Roadmap</a>
+ <a href="https://www.thestar.com.my/news/nation/2025/09/02/govt-targets-47-million-foreign-tourists-in-2026-outlines-three-strategies-for-vm2026" target="_blank">The Star – VM2026 Strategies</a>
+ <a href="https://www.thestar.com.my/news/nation/2025/12/04/malaysia-singapore-sign-additional-agreement-for-rts-link" target="_blank">The Star – RTS Link Supplementary Agreement</a>
+ <a href="https://www.thestar.com.my/business/business-news/2025/11/24/ecrl-project-hits-89-completion-as-of-october-2025" target="_blank">The Star – ECRL 89% Complete</a>
+ <a href="https://www.dosm.gov.my/portal-main/release-content/current-population-estimates-2025" target="_blank">DOSM – Population Estimates 2025</a>
+ <a href="https://www.dosm.gov.my/uploads/release-content/file_20250619114622.pdf" target="_blank">DOSM – Domestic Tourism 2024</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- ==================== CHAPTER 2: Hotel Market Structure ==================== -->
+ <div class="chapter animate-in" id="mych2">
+ <div class="chapter-header">
+ <div class="chapter-number">第二章</div>
+ <h2>酒店市场格局 — 存量结构与连锁化浪潮：供给格局分析</h2>
+ <div class="date">2026年7月 · 20条来源</div>
+ </div>
+
+ <div class="core-conclusion">
+ 马来西亚酒店市场呈现<strong>"总量充足、结构性失衡"</strong>的供给格局。全国5,204家酒店、333,780间客房，但连锁化率仅18.23%，非品牌中端陷入价格战内卷，而短租房源（75,000个，增长165%）和OTA高佣金（15-25%）进一步挤压独立酒店生存空间。新增供给加速向奢华和吉隆坡集中（占全国49.37%），加剧区域和档次分化。吉隆坡凭借奢华引领和存量集中优势RevPAR持续修复并超越2019年水平。新山则因RTS Link（2026年底通车）成为最具想象空间的增量市场——现有18,500间客房到2030年需扩至32,000间，JLL将其类比为早期深圳。核心投资逻辑：<strong>"大存量、低连锁、中端缺口"</strong>——492.8亿美元的区域最大市场规模提供了充足基数，18.23%的连锁化率意味着品牌化渗透空间巨大。
+ </div>
+
+ <!-- 2.1 全国存量结构 -->
+ <div class="subsection">
+ <h3>2.1 全国存量结构：中端为最大基本盘，品质品牌化供给不足</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">酒店总数</div><div class="dc-value">5,204家</div><div class="dc-note">333,780间客房 · +4.1%</div></div>
+ <div class="data-card"><div class="dc-label">连锁化率</div><div class="dc-value">18.23%</div><div class="dc-note">独立酒店63.32% · 品牌化空间巨大</div></div>
+ <div class="data-card"><div class="dc-label">市场规模（2025）</div><div class="dc-value">$492.8亿</div><div class="dc-note">CAGR 7.76% →2031年$772亿</div></div>
+ <div class="data-card"><div class="dc-label">短租房源</div><div class="dc-value">75,000个</div><div class="dc-note">2020-2023增长165% · 比酒店低37%</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 按官方星级评定，五星级客房占15.3%、四星级18.5%，中档及经济型合计约66.2%——中低端是存量主体，也是最大的品质升级缺口（<a href="https://www.zcqtz.com/news6861680" target="_blank">马来西亚2024年酒店业发展报告</a>）。按住宿价位段划分，中端及中高端以43.37%占据最大市场份额，但奢华型以13.74%的CAGR成为增长最快的细分（<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence</a>）。中端市场的核心矛盾不是"房间数量不足"，而是<strong>"品质品牌化供给严重不足"</strong>——非品牌供给过剩导致价格战内卷，而具备品牌标准、数字化能力和服务品质的中端连锁酒店恰恰是最稀缺的供给。OTA佣金15-25%进一步挤压独立中端酒店利润，劳动力短缺（空缺率23%、流失率32%）加剧运营压力。
+ </p>
+ </div>
+
+ <!-- 2.2 连锁化浪潮 -->
+ <div class="subsection">
+ <h3>2.2 连锁化浪潮：独立酒店主导，品牌化转型加速</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">独立酒店份额</div><div class="dc-value">63.32%</div><div class="dc-note">连锁酒店CAGR 10.75%</div></div>
+ <div class="data-card"><div class="dc-label">万豪在马布局</div><div class="dc-value">50家</div><div class="dc-note">2024年9月达成里程碑</div></div>
+ <div class="data-card"><div class="dc-label">希尔顿东南亚</div><div class="dc-value">+17家/~4,000间</div><div class="dc-note">计划新增</div></div>
+ <div class="data-card"><div class="dc-label">锦江7天首店</div><div class="dc-value">2026.07开业</div><div class="dc-note">吉隆坡独立广场 · 四国15项目</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 万豪国际2024年9月在马来西亚达成50家酒店里程碑，希尔顿在东南亚计划新增17家物业（<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence</a>）。锦江酒店旗下7天品牌马来西亚首店2026年7月1日在吉隆坡独立广场开业，已在四国签约15个酒店项目（<a href="https://www.jiemian.com/article/14687187.html" target="_blank">界面新闻</a>）。直营数字渠道以15.73%的CAGR成为增长最快的预订渠道，OTA渠道仍占57.35%。
+ </p>
+ </div>
+
+ <!-- 2.3 吉隆坡 -->
+ <div class="subsection">
+ <h3>2.3 吉隆坡：奢华引领的区域分化与供给集中</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">吉隆坡客房</div><div class="dc-value">~70,000间</div><div class="dc-note">JLL统计市区范围</div></div>
+ <div class="data-card"><div class="dc-label">占全国客房</div><div class="dc-value">49.37%</div><div class="dc-note">大吉隆坡都市圈口径</div></div>
+ <div class="data-card"><div class="dc-label">奢华RevPAR</div><div class="dc-value">+1.1%（2025）</div><div class="dc-note">已超2019年水平22.7%</div></div>
+ <div class="data-card"><div class="dc-label">新增供给</div><div class="dc-value">~4,600间</div><div class="dc-note">2026-2028 · 60%奢华</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 吉隆坡约70,000间客房，2026-2028年新增约4,600间（60%奢华）（<a href="https://research.jllapsites.com/appd-market-report/q1-2026-hotels-kuala-lumpur/" target="_blank">JLL KL Hotels Q1 2026</a>）。2025全年奢华酒店RevPAR同比增长1.1%，已超2019年水平22.7%；2026Q1奢华RevPAR再同比增长5.7%。2024年1-8月OCC同比+5.9pp/ADR+7.8%/RevPAR+17.8%，亚太地区第四（<a href="https://www.hvs.com/article/10026-market-snapshot-asia-pacific-2024" target="_blank">HVS</a>）。Park Hyatt 2025年8月在默迪卡118开业（<a href="https://newsroom.hyatt.com/080725-Park-Hyatt-Kuala-Lumpur-Opens-In-Malaysia" target="_blank">Hyatt Newsroom</a>），但中高档新增供给面临过剩隐忧。
+ </p>
+ </div>
+
+ <!-- 2.4 区域市场 -->
+ <div class="subsection">
+ <h3>2.4 区域市场：新山跨境枢纽与度假目的地</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">新山客房</div><div class="dc-value">18,500间</div><div class="dc-note">2030年需达32,000间 · 缺口70%+</div></div>
+ <div class="data-card"><div class="dc-label">新山周末入住率</div><div class="dc-value">80-90%</div><div class="dc-note">RHB Research · 全国前五</div></div>
+ <div class="data-card"><div class="dc-label">槟城客房</div><div class="dc-value">22,500间</div><div class="dc-note">2025H1 OCC 54.8%</div></div>
+ <div class="data-card"><div class="dc-label">兰卡威游客</div><div class="dc-value">290万（2024）</div><div class="dc-note">国际客170万创纪录 · 12月OCC 78%</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ <strong>新山（Johor Bahru）</strong>：RTS Link催生的跨境投资新枢纽。新山目前约18,500间客房，到2030年需达32,000间以匹配预计年均800万过夜游客量——供给缺口超过现有存量的70%（<a href="https://www.nst.com.my/business/economy/2026/02/1370179/rts-returns-and-regional-capital-why-johor-baru-investors-radar" target="_blank">NST/JLL</a>）。JW Marriott新山2026年底开业，吸引7家机构投资者竞标。投资回报率6-8%，显著高于新加坡的2.5-4%；物业价格较新加坡低60-70%，JLL估计未来5-10年可能升值150-300%。JLL将新山类比为早期深圳（<a href="https://www.nst.com.my/business/economy/2026/02/1370179/rts-returns-and-regional-capital-why-johor-baru-investors-radar" target="_blank">NST/JLL</a>）。
+ </p>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-top:12px;">
+ <strong>槟城</strong>：22,500间客房，2025H1 OCC 54.8%/ADR RM294.80，巴都丁宜OCC 73.5%位列全国前五（<a href="https://www.klsescreener.com/v2/news/view/1622033/penang-s-hospitality-market-holds-steady-as-new-hotels-and-visitor-arrivals-increase" target="_blank">KLSE Screener</a>）。<strong>兰卡威</strong>：2024年接待290万游客，旅游收入RM70.3亿，国际游客170万创纪录（<a href="https://www.nst.com.my/property/2025/03/1184869/strong-tourism-growth-anticipated-langkawi" target="_blank">NST</a>）。<strong>沙巴</strong>：东马CAGR 11.87%为全国最快，享100%先锋免税政策（<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence</a>）。
+ </p>
+ </div>
+
+ <!-- 2.5 东南亚横向对比 -->
+ <div class="subsection">
+ <h3>2.5 东南亚横向对比：马来西亚的投资窗口</h3>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>指标</th><th>🇲🇾 马来西亚</th><th>🇻🇳 越南</th><th>🇹🇭 泰国</th><th>🇮🇩 印尼</th></tr></thead>
+ <tbody>
+ <tr><td>独立酒店份额(2025)</td><td>63.32%</td><td>69.88%</td><td>57.65%</td><td>62.85%</td></tr>
+ <tr><td>连锁酒店CAGR(2026-2031)</td><td>10.75%</td><td>11.65%</td><td>9.66%</td><td>11.14%</td></tr>
+ <tr><td>市场规模(2025)</td><td>$492.8亿</td><td>$237.3亿</td><td>$226.8亿</td><td>$244亿</td></tr>
+ <tr><td>市场CAGR(2026-2031)</td><td>7.76%</td><td>8.17%</td><td>8.13%</td><td>10.58%</td></tr>
+ <tr><td>中端及中高端份额</td><td>43.37%</td><td>48.79%</td><td>—</td><td>41.78%</td></tr>
+ </tbody>
+ </table>
+ <p style="font-size:12px;color:var(--text-muted);margin-top:8px;">数据来源：<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence (Malaysia)</a> · <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-vietnam" target="_blank">Vietnam</a> · <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-thailand" target="_blank">Thailand</a> · <a href="https://www.mordorintelligence.com/industry-reports/hospitality-real-estate-sector-in-indonesia" target="_blank">Indonesia</a></p>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ <strong>核心结论：市场盘子最大但品牌化增速偏低，连锁化窗口期明确。</strong>马来西亚酒店市场的投资逻辑可概括为<strong>"大存量、低连锁、中端缺口"</strong>——492.8亿美元的区域最大市场规模提供了充足基数，18.23%的连锁化率意味着品牌化渗透空间巨大。越南处于品牌化高速导入期，马来西亚处于品牌化结构升级期——前者赌的是增量爆发，后者赌的是存量整合。对于中国酒店投资者，马来西亚"大盘子+低连锁+中端缺口"的组合提供了比越南更确定的存量品牌化整合机会。
+ </p>
+ </div>
+
+ <!-- 核心结论 -->
+ <div class="subsection">
+ <h3>2.6 第二章核心结论与投资启示</h3>
+ <div class="core-conclusion" style="margin-top:0">
+ <strong>马来西亚酒店市场="总量充足、结构性失衡"。</strong>全国5,204家酒店、33万余间客房存量看似充裕，但中端品质品牌化供给严重不足——连锁化率仅18.23%，非品牌中端陷入价格战内卷，短租房源和OTA高佣金进一步挤压独立酒店生存空间。新增供给加速向奢华和吉隆坡集中，加剧区域和档次分化。<br><br><strong>策略建议：</strong>① 吉隆坡中端品牌化（存量整合，避开奢华过剩段） ② 新山跨境枢纽布局（RTS Link催化，最具想象空间增量市场） ③ 槟城/兰卡威/沙巴度假目的地（供给瓶颈，东马CAGR 11.87%领跑全国） ④ 品牌化连锁是两条最具结构性机会的投资主线
+ </div>
+ </div>
+
+ <!-- 来源 -->
+ <div>
+ <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（20条）</div>
+ <div style="display:flex;flex-direction:column;gap:8px">
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence – Malaysia Hospitality Industry</a>
+ <a href="https://www.verifiedmarketresearch.com/product/hospitality-in-malaysia-market/" target="_blank">Verified Market Research – Hospitality in Malaysia</a>
+ <a href="https://www.zcqtz.com/news6861680" target="_blank">马来西亚2024年酒店业发展报告</a>
+ <a href="https://www.163.com/dy/article/JVCO9QDH0552JI1P.html" target="_blank">马来西亚酒店投资价值重估</a>
+ <a href="https://research.jllapsites.com/appd-market-report/q1-2026-hotels-kuala-lumpur/" target="_blank">JLL – KL Hotels Q1 2026</a>
+ <a href="https://www.hvs.com/article/10026-market-snapshot-asia-pacific-2024" target="_blank">HVS – Market Snapshot Asia Pacific 2024</a>
+ <a href="https://newsroom.hyatt.com/080725-Park-Hyatt-Kuala-Lumpur-Opens-In-Malaysia" target="_blank">Hyatt Newsroom – Park Hyatt KL Opens</a>
+ <a href="https://www.nst.com.my/business/economy/2026/02/1370179/rts-returns-and-regional-capital-why-johor-baru-investors-radar" target="_blank">NST/JLL – RTS, Returns and Regional Capital: Johor Bahru</a>
+ <a href="https://www.nst.com.my/business/economy/2024/04/1037941/johor-baru-hotels-retail-and-fb-benefitted-swiftonomics-last-month" target="_blank">NST – Johor Baru Hotels Benefitted from Swiftonomics</a>
+ <a href="https://www.straitstimes.com/asia/se-asia/johor-hotel-rates-likely-to-go-up-starting-march-1" target="_blank">Straits Times – Hotel Rates in Johor Likely to Go Up</a>
+ <a href="https://hikersbay.com/prices/malaysia/johorbahru?lang=en" target="_blank">HikersBay – Prices in Johor Bahru 2026</a>
+ <a href="https://www.klsescreener.com/v2/news/view/1622033/penang-s-hospitality-market-holds-steady-as-new-hotels-and-visitor-arrivals-increase" target="_blank">KLSE Screener – Penang Hospitality Market</a>
+ <a href="https://www.nst.com.my/property/2025/03/1184869/strong-tourism-growth-anticipated-langkawi" target="_blank">NST – Strong Tourism Growth Anticipated for Langkawi</a>
+ <a href="https://data.tourism.gov.my/frontend/pdf/infographic_paid_accommodation_survey_performance_january-december_2024_final.pdf" target="_blank">Tourism Malaysia – 2024 Paid Accommodation Survey</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-vietnam" target="_blank">Mordor Intelligence – Vietnam Hospitality</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-thailand" target="_blank">Mordor Intelligence – Thailand Hospitality</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-real-estate-sector-in-indonesia" target="_blank">Mordor Intelligence – Indonesia Hospitality</a>
+ <a href="https://www.jiemian.com/article/14687187.html" target="_blank">界面新闻 – 7天酒店马来西亚首店启幕</a>
+ <a href="https://www.malaysia.gov.my/en/topics/hotel-grading-list" target="_blank">MyGOV – Hotel Grading List</a>
+ <a href="https://www.zcqtz.com/news6798454" target="_blank">丝路印象 – 马来西亚酒店行业现状</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- ==================== CHAPTER 3: Local Brand Ecosystem ==================== -->
+ <div class="chapter animate-in" id="mych3">
+ <div class="chapter-header">
+ <div class="chapter-number">第三章</div>
+ <h2>本地品牌生态 — 高端休闲与中端真空：本地酒店品牌图谱</h2>
+ <div class="date">2026年7月 · 45条来源</div>
+ </div>
+
+ <div class="core-conclusion">
+ 马来西亚本土酒店品牌生态呈鲜明<strong>"两极化"特征</strong>——YTL、Berjaya、Sunway等财团系集团在豪华度假和高端商务领域拥有丰富资产，通过与国际品牌（万豪、希尔顿、GHA）的深度联盟获取运营能力和客源导流；但在3-4星级标准化中端连锁领域，缺乏类似泰国Centara或印尼ARTOTEL式的本土标杆企业。这一<strong>"高端有供给、中端极缺位"</strong>的结构性真空，叠加独立酒店63.32%的高市场份额和VM2026带来的需求放量，为艺龙酒店科技等中国中端连锁品牌出海马来西亚提供了清晰的市场切入点——标准化产品、数字化运营体系和穆斯林友好适配，将是填补这一空白的核心竞争力。
+ </div>
+
+ <!-- 3.1 本土酒店集团 -->
+ <div class="subsection">
+ <h3>3.1 本土酒店集团：集中高端，各有侧重</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">YTL Hotels</div><div class="dc-value">30+家</div><div class="dc-note">全球物业 · 豪华精品度假村核心</div></div>
+ <div class="data-card"><div class="dc-label">Berjaya</div><div class="dc-value">34家</div><div class="dc-note">21个目的地 · 2024品牌重塑</div></div>
+ <div class="data-card"><div class="dc-label">Sunway</div><div class="dc-value">11-12家</div><div class="dc-note">2025年加入GHA DISCOVERY · 3000万会员</div></div>
+ <div class="data-card"><div class="dc-label">云顶集团</div><div class="dc-value">10,500间</div><div class="dc-note">7家酒店 · 综合度假娱乐+赌场</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ <strong>YTL Hotels</strong>是马来西亚最大本土酒店业主和运营商之一，全球拥有超过30家酒店物业，覆盖马来西亚、日本、澳大利亚、英国等国（<a href="https://www.ytlhotels.com/" target="_blank">YTL Hotels官网</a>）。其同时通过YTL Hospitality REIT进行资产证券化（<a href="https://www.ytlhospitalityreit.com/our-portfolio/" target="_blank">YTL Hospitality REIT</a>）。<strong>Berjaya Hospitality Group</strong>全球运营约34家酒店和度假村，2024-2025年启动品牌重塑（<a href="https://www.berjaya.com/our-businesses/hospitality/" target="_blank">Berjaya集团官网</a>）。<strong>Sunway Hotels &amp; Resorts</strong>运营11-12家酒店，2025年5月正式加入全球酒店联盟（GHA）的GHA DISCOVERY忠诚度计划，覆盖3000万会员（<a href="https://www.ttrweekly.com/site/2025/05/sunway-group-teams-up-with-gha/" target="_blank">TTR Weekly</a>）。<strong>云顶集团</strong>拥有东南亚规模最大的综合度假娱乐酒店群，7家差异化定位酒店合计约10,500间客房（<a href="https://www.gentingmalaysia.com/wp-content/uploads/2025/04/GENTING_IAR2024_v2.pdf" target="_blank">Genting Malaysia 2024年报</a>）。
+ </p>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-top:12px;">
+ <strong>Tune Hotels</strong>由亚航创始人托尼·费尔南德斯创立，以"五星睡眠、一星价格"为理念，在马来西亚运营约8家酒店（<a href="https://www.tunehotels.com/" target="_blank">Tune Hotels官网</a>）。<strong>Hotel Seri Malaysia</strong>是由旅游部支持的政府平价连锁酒店品牌，在全国运营约20家物业（<a href="https://motac.gov.my/en/jabatan-dan-agensi/hotel-seri-malaysia-chain/" target="_blank">MOTAC</a>），但缺乏标准化中端连锁的运营能力。
+ </p>
+ </div>
+
+ <!-- 3.2 国际品牌联盟 -->
+ <div class="subsection">
+ <h3>3.2 国际品牌联盟：嫁接而非自建</h3>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 本土集团普遍采用<strong>"持有物业+国际品牌管理"</strong>的合作模式。YTL与万豪保持超过20年合作关系，旗下11家酒店委托万豪管理，包括JW万豪吉隆坡、丽思卡尔顿吉隆坡（<a href="https://www.ytlhotels.com/press/press-releases/" target="_blank">YTL Hotels新闻稿</a>）。2025年9月YTL进一步与希尔顿签署协议，将四家物业转换至希尔顿旗下品牌（<a href="https://stories.hilton.com/apac/releases/hilton-expands-partnership-with-ytl-hotels-with-four-luxury-and-lifestyle-hotels" target="_blank">Hilton官方新闻</a>）。YTL与万豪合作的首家JW万豪新山酒店计划于2026年开业，2025年10月YTL与马来西亚旅游局签署VM2026战略合作谅解备忘录（<a href="https://www.tourism.gov.my/media/view/malaysia-welcomes-the-world-tourism-malaysia-and-ytl-hotels-join-forces-for-visit-malaysia-2026" target="_blank">Tourism Malaysia</a>）。这一模式使本土资本分享了国际品牌的客源网络和管理经验，但也意味着本土集团缺乏独立运营的标准化中端品牌。
+ </p>
+ </div>
+
+ <!-- 3.3 中端品牌真空 -->
+ <div class="subsection">
+ <h3>3.3 "高端有供给、中端极缺位"的品牌真空</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">独立酒店份额</div><div class="dc-value">63.32%</div><div class="dc-note">连锁化率仅18.23%</div></div>
+ <div class="data-card"><div class="dc-label">五星级占比</div><div class="dc-value">15.3%</div><div class="dc-note">四星级18.5% · 中低档66.2%</div></div>
+ <div class="data-card"><div class="dc-label">万豪运营</div><div class="dc-value">~50家</div><div class="dc-note">希尔顿24家 · 国际品牌主导高端</div></div>
+ <div class="data-card"><div class="dc-label">中端本土连锁</div><div class="dc-value" style="color:#f43f5e">真空</div><div class="dc-note">3-4星级缺乏有影响力本土玩家</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 本土品牌布局清晰映射了这一断层：YTL、Berjaya、Sunway和云顶集中在豪华度假和城市商务高端领域，Tune Hotels和Hotel Seri Malaysia覆盖经济型，但在3-4星级标准化中端连锁领域，马来西亚缺乏有影响力的本土玩家（<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence</a>）。这一真空正吸引中国酒店集团加速进入：2025年8月锦江与马来西亚本土RIYAZ合作成立RJJ Hotels，提出五年内拓展超180个项目、整体签约突破500家（<a href="https://m.jiemian.com/article/13944553.html" target="_blank">界面新闻</a>）。2026年7月7天酒店吉隆坡独立广场店开业，配备智能自助服务及穆斯林友好服务（<a href="https://ttgchina.com/2026/07/02/7%e5%a4%a9%e9%85%92%e5%ba%97%e8%90%bd%e5%ad%90%e5%90%89%e9%9a%86%e5%9d%a1-%e9%94%a6%e6%b1%9f%e5%87%ba%e6%b5%b7%e8%bf%88%e5%85%a5%e5%ae%9e%e4%bd%93%e9%98%b6%e6%ae%b5/" target="_blank">TTG China</a>）。
+ </p>
+ </div>
+
+ <!-- 3.4 数字化转型 -->
+ <div class="subsection">
+ <h3>3.4 数字化转型与品牌升级</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">MIDA激励</div><div class="dc-value">PS/ITA</div><div class="dc-note">1-3星新建酒店5年免税70%</div></div>
+ <div class="data-card"><div class="dc-label">2025H1批准项目</div><div class="dc-value">15个</div><div class="dc-note">RM736.5百万 · +31%</div></div>
+ <div class="data-card"><div class="dc-label">MAH ESG认证</div><div class="dc-value">2024.06发布</div><div class="dc-note">代表900+家酒店/15.5万间客房</div></div>
+ <div class="data-card"><div class="dc-label">数字化差距</div><div class="dc-value" style="color:#f43f5e">落后新/泰</div><div class="dc-note">86% Z世代偏好可持续旅行</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ MIDA指出，面对VM2026目标，马来西亚酒店业必须在数字化转型和绿色创新上"加速而非渐进"推进（<a href="https://www.mida.gov.my/reimagining-hospitality-a-digital-and-sustainable-pathway-for-visit-malaysia-year-2026/" target="_blank">MIDA</a>）。政府提供多层级激励：先锋地位（PS）面向1-3星新建酒店，5年70%法定收入免税；投资税津贴（ITA）可就合规资本支出享受税收抵扣（<a href="https://www.mida.gov.my/setting-up-content/incentives/" target="_blank">MIDA激励政策</a>）。2024年6月MAH联合SGS发布ESG认证体系，代表全国900+家酒店（<a href="https://www.hotels.org.my/press/35717-mah-and-partners-launched-new-esg-certification-for-hotels-and-resorts" target="_blank">MAH</a>）。本土集团数字化整体仍处早期阶段——Sunway借GHA平台实现会员数字化，但云顶集团酒店住宿环节的数字化（自助入住、机器人服务）与中国酒店集团相比仍有明显差距。
+ </p>
+ </div>
+
+ <!-- 3.5 东南亚品牌对比 -->
+ <div class="subsection">
+ <h3>3.5 东南亚本土品牌生态对比</h3>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>维度</th><th>🇹🇭 Centara</th><th>🇻🇳 Wink Hotels</th><th>🇮🇩 ARTOTEL Group</th><th>🇲🇾 马来西亚本土</th></tr></thead>
+ <tbody>
+ <tr><td><strong>酒店数量</strong></td><td>6大品牌/多国</td><td>6-7家</td><td>100+/10,000+间</td><td>YTL 30+;Berjaya 34;Sunway 12</td></tr>
+ <tr><td><strong>品牌矩阵</strong></td><td>豪华→中端全覆盖</td><td>生活方式品牌</td><td>十余品牌+国际特许</td><td>集中高端 · 中端空白</td></tr>
+ <tr><td><strong>数字化水平</strong></td><td>中央数据仓库+AI</td><td>数字化为核心卖点</td><td>Wanderlust会员体系</td><td>Sunway借GHA · 整体早期</td></tr>
+ <tr><td><strong>国际化</strong></td><td>马尔代夫/日本/越南</td><td>加入凯悦全球网络</td><td>聚焦印尼本土</td><td>有海外物业但以持有为主</td></tr>
+ <tr><td><strong>ESG</strong></td><td>全品牌GSTC认证</td><td>—</td><td>印尼首家GSTC认证</td><td>MAH 2024推出ESG认证 · 起步</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 泰国Centara 2025年系统收入约123亿泰铢（+10%），旗下6大品牌覆盖从豪华到中端的完整谱系（<a href="https://www.traveldailynews.asia/hotels-lodging/centara-hotels-resorts-delivers-strong-2025-performance-and-accelerates-global-expansion-in-2026/" target="_blank">Travel Daily News Asia</a>）。越南Wink Hotels 2026年1月加入凯悦"Unscripted by Hyatt"体系（<a href="https://newsroom.hyatt.com/060126-Unscripted-by-Hyatt-Brand-Debuts-Globally-with-Wink-Joining-World-of-Hyatt" target="_blank">Hyatt官方新闻</a>）。印尼ARTOTEL Group管理超过100家酒店和10,000间客房，旗下十余个自有品牌（<a href="https://artotelgroup.com/" target="_blank">ARTOTEL Group</a>）。相比之下，马来西亚本土中端品牌缺位最为明显。
+ </p>
+ </div>
+
+ <!-- 3.6 对中国品牌启示 -->
+ <div class="subsection">
+ <h3>3.6 对中国中端连锁品牌出海的启示</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">中端真空成因</div><div class="dc-value">4重因素</div><div class="dc-note">财团偏好重资产/缺中端Know-How/国际品牌夹击/经济型碎片化</div></div>
+ <div class="data-card"><div class="dc-label">穆斯林人口</div><div class="dc-value">>60%</div><div class="dc-note">标准化中端普遍缺乏穆斯林友好服务</div></div>
+ <div class="data-card"><div class="dc-label">人力短缺</div><div class="dc-value">63%企业</div><div class="dc-note">数字化运营降本优势突出</div></div>
+ <div class="data-card"><div class="dc-label">7天首店</div><div class="dc-value">已落地</div><div class="dc-note">增设穆斯林友好服务 · 差异化竞争</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ <strong>机遇：</strong>①标准化产品填补供给缺口——中国中端品牌经过国内充分竞争验证的产品标准可直接适配马来西亚消费升级需求；②数字化运营降本增效——人房比可压缩至0.15-0.25，远低于马来西亚行业平均；③穆斯林友好适配——7天酒店已率先增设清真餐饮、朝拜方向标识（<a href="https://ttgchina.com/2026/07/02/7%e5%a4%a9%e9%85%92%e5%ba%97%e8%90%bd%e5%ad%90%e5%90%89%e9%9a%86%e5%9d%a1-%e9%94%a6%e6%b1%9f%e5%87%ba%e6%b5%b7%e8%bf%88%e5%85%a5%e5%ae%9e%e4%bd%93%e9%98%b6%e6%ae%b5/" target="_blank">TTG China</a>）；④VM2026需求放量窗口——增量游客消费层级恰好落入3-4星级区间。
+ </p>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-top:12px;">
+ <strong>风险：</strong>①本土化适配挑战——需适配多元种族文化、劳工法规和清真认证要求；②地缘政治与监管风险——外资持有酒店物业有特定限制，锦江选择与本土RIYAZ合资规避此类风险；③国际品牌防守反击——万豪、希尔顿可能加速Fairfield、Hampton等中端品牌扩张；④加盟商教育与品牌认知——马来西亚业主对中国酒店品牌认知度有限。
+ </p>
+ </div>
+
+ <!-- 核心结论 -->
+ <div class="subsection">
+ <h3>3.7 第三章核心结论与投资启示</h3>
+ <div class="core-conclusion" style="margin-top:0">
+ <strong>马来西亚本土品牌生态="两极化"——高端有供给、中端极缺位。</strong>YTL/Berjaya/Sunway在豪华度假和高端商务领域拥有丰富资产，但采用"持有物业+国际品牌管理"模式，缺乏独立运营的标准化中端品牌。3-4星级标准化中端连锁领域缺乏类似泰国Centara或印尼ARTOTEL式的本土标杆企业。这一结构性真空叠加VM2026需求放量，为艺龙酒店科技等中国中端连锁品牌提供了清晰市场切入点——<strong>标准化产品、数字化运营体系和穆斯林友好适配，将是核心竞争力</strong>。
+ </div>
+ </div>
+
+ <!-- 来源 -->
+ <div>
+ <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（45条，精选展示）</div>
+ <div style="display:flex;flex-direction:column;gap:8px">
+ <a href="https://www.ytlhotels.com/" target="_blank">YTL Hotels官网</a>
+ <a href="https://www.ytlhospitalityreit.com/our-portfolio/" target="_blank">YTL Hospitality REIT投资组合</a>
+ <a href="https://www.berjaya.com/our-businesses/hospitality/" target="_blank">Berjaya集团官网-酒店业务</a>
+ <a href="https://www.sunwayhotels.com/" target="_blank">Sunway Hotels官网</a>
+ <a href="https://www.ttrweekly.com/site/2025/05/sunway-group-teams-up-with-gha/" target="_blank">TTR Weekly – Sunway加入GHA</a>
+ <a href="https://www.ghadiscovery.com/sunway-hotels-resorts" target="_blank">GHA DISCOVERY – Sunway</a>
+ <a href="https://www.tunehotels.com/" target="_blank">Tune Hotels官网</a>
+ <a href="https://www.rwgenting.com/" target="_blank">Resorts World Genting官网</a>
+ <a href="https://www.gentingmalaysia.com/wp-content/uploads/2025/04/GENTING_IAR2024_v2.pdf" target="_blank">Genting Malaysia 2024年报</a>
+ <a href="https://motac.gov.my/en/jabatan-dan-agensi/hotel-seri-malaysia-chain/" target="_blank">MOTAC – Hotel Seri Malaysia</a>
+ <a href="https://stories.hilton.com/apac/releases/hilton-expands-partnership-with-ytl-hotels-with-four-luxury-and-lifestyle-hotels" target="_blank">Hilton – Expands Partnership with YTL Hotels</a>
+ <a href="https://newsroom.hyatt.com/060126-Unscripted-by-Hyatt-Brand-Debuts-Globally-with-Wink-Joining-World-of-Hyatt" target="_blank">Hyatt – Unscripted by Hyatt with Wink</a>
+ <a href="https://www.mida.gov.my/reimagining-hospitality-a-digital-and-sustainable-pathway-for-visit-malaysia-year-2026/" target="_blank">MIDA – Reimagining Hospitality for VM2026</a>
+ <a href="https://www.mida.gov.my/setting-up-content/incentives/" target="_blank">MIDA – Incentives</a>
+ <a href="https://www.hasil.gov.my/en/company/incentives/pioneer-status/" target="_blank">LHDN – Pioneer Status</a>
+ <a href="https://afa-sea.com/tax-ed/guide-to-mida-tax-incentives-for-hospitality-sector/" target="_blank">AFA – MIDA酒店业激励指南</a>
+ <a href="https://www.hotels.org.my/press/35717-mah-and-partners-launched-new-esg-certification-for-hotels-and-resorts" target="_blank">MAH – ESG认证发布</a>
+ <a href="https://www.ttgasia.com/2024/06/19/malaysia-pushes-forward-for-sustainability-with-esg-certification-for-hotels-resorts/" target="_blank">TTG Asia – Malaysia ESG Certification</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence – Malaysia Hospitality</a>
+ <a href="https://baijiahao.baidu.com/s?id=1831913857012982640" target="_blank">百度百家号 – 马来西亚酒店投资价值重估</a>
+ <a href="https://www.centarahotelsresorts.com/hotels-resorts" target="_blank">Centara Hotels &amp; Resorts官网</a>
+ <a href="https://www.traveldailynews.asia/hotels-lodging/centara-hotels-resorts-delivers-strong-2025-performance-and-accelerates-global-expansion-in-2026/" target="_blank">Travel Daily News Asia – Centara 2025业绩</a>
+ <a href="https://artotelgroup.com/" target="_blank">ARTOTEL Group官网</a>
+ <a href="https://www.jiemian.com/article/14687187.html" target="_blank">界面新闻 – 7天酒店马来西亚首店启幕</a>
+ <a href="https://m.jiemian.com/article/13944553.html" target="_blank">界面新闻 – 中国酒店集体"淘金"东南亚</a>
+ <a href="https://m.thepaper.cn/newsDetail_forward_31419032" target="_blank">澎湃新闻 – 锦江酒店轻资产出海东南亚</a>
+ <a href="https://ttgchina.com/2026/07/02/7%e5%a4%a9%e9%85%92%e5%ba%97%e8%90%bd%e5%ad%90%e5%90%89%e9%9a%86%e5%9d%a1-%e9%94%a6%e6%b1%9f%e5%87%ba%e6%b5%b7%e8%bf%88%e5%85%a5%e5%ae%9e%e4%bd%93%e9%98%b6%e6%ae%b5/" target="_blank">TTG China – 7天酒店落子吉隆坡</a>
+ <a href="https://www.tourism.gov.my/media/view/malaysia-welcomes-the-world-tourism-malaysia-and-ytl-hotels-join-forces-for-visit-malaysia-2026" target="_blank">Tourism Malaysia – YTL Hotels VM2026合作</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- ==================== CHAPTER 4: Competition and Opportunities ==================== -->
+ <div class="chapter animate-in" id="mych4">
+ <div class="chapter-header">
+ <div class="chapter-number">第四章</div>
+ <h2>竞争与机会 — 中端蓝海与度假窗口：竞争格局与市场机会</h2>
+ <div class="date">2026年7月 · 25条来源</div>
+ </div>
+
+ <div class="core-conclusion">
+ 马来西亚酒店市场正处于竞争格局重塑的关键窗口期。国际联号锁定奢华赛道留下中端品质真空——万豪50家/20品牌密集布局，奢华CAGR 13.74%领跑，但中端与上中端虽占43.37%份额却面临"有量无质"困境。中国品牌出海浪潮从战略签约迈入实体落地阶段：锦江RJJ五年180+项目规划，华住JI Hotel吉隆坡2026年开业，越南汉庭RevPAR可达400元/间夜（对标国内武汉约130元）。度假目的地供给瓶颈与RTS Link跨境红利叠加，共同构筑了中端精品连锁的市场机会。艺龙酒店科技以"生态出海"模式和数智化能力为底座，定位约RM180-300/晚品质供给断层，具备差异化突破的潜力。
+ </div>
+
+ <!-- 4.1 国际联号 -->
+ <div class="subsection">
+ <h3>4.1 国际联号锁定奢华赛道，中端品质供给留白</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">万豪在马</div><div class="dc-value">50家/20品牌</div><div class="dc-note">2024-2029新增20家</div></div>
+ <div class="data-card"><div class="dc-label">奢华CAGR</div><div class="dc-value">13.74%</div><div class="dc-note">领跑所有住宿等级</div></div>
+ <div class="data-card"><div class="dc-label">独立酒店</div><div class="dc-value">63.32%</div><div class="dc-note">中端"有量无质"</div></div>
+ <div class="data-card"><div class="dc-label">品质真空价格带</div><div class="dc-value">RM180-300/晚</div><div class="dc-note">≈人民币280-470元 · 品质连锁严重不足</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 万豪国际集团目前在马来西亚运营50家酒店、覆盖20个品牌，并已规划新增20家酒店（2024-2029年），从槟城Autograph Collection到新山Sheraton密集锁定高端市场（<a href="https://ftnnews.com/travel-news/accommodation/marriott-to-open-20-hotels-in-malaysia/" target="_blank">ftnnews</a>）。希尔顿、洲际、凯悦等集团同样以奢华与生活方式品牌为核心扩张方向。市场呈现"奢华加速、经济型扩张、中端精品真空"的供给断层——约RM180-300/晚（约合人民币280-470元）区间的品质化连锁供给严重不足（<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence</a>）。
+ </p>
+ </div>
+
+ <!-- 4.2 中国品牌出海 -->
+ <div class="subsection">
+ <h3>4.2 中国品牌出海浪潮：从战略签约到实体落地</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">锦江RJJ</div><div class="dc-value">180+项目</div><div class="dc-note">五年目标 · 签约13个 · 5品牌</div></div>
+ <div class="data-card"><div class="dc-label">7天首店</div><div class="dc-value">2026.07开业</div><div class="dc-note">吉隆坡 · 智能自助+穆斯林友好</div></div>
+ <div class="data-card"><div class="dc-label">华住JI Hotel</div><div class="dc-value">3家签约</div><div class="dc-note">2026Q4开业 · 101间客房</div></div>
+ <div class="data-card"><div class="dc-label">越南汉庭RevPAR</div><div class="dc-value">400元/间夜</div><div class="dc-note">国内武汉约130元 · 约3倍差距</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 2025年8月锦江酒店（中国区）与马来西亚RIYAZ集团战略合作，成立RJJ Hotels，提出五年内在东南亚整体签约突破500家酒店、其中拓展超180个酒店项目（<a href="https://m.thepaper.cn/newsDetail_forward_31419032" target="_blank">澎湃新闻</a>）。2026年7月7天酒店吉隆坡独立广场店正式开业，成为锦江"民族品牌出海"首个落地项目（<a href="https://ttgchina.com/2026/07/02/7%e5%a4%a9%e9%85%92%e5%ba%97%e8%90%bd%e5%ad%90%e5%90%89%e9%9a%86%e5%9d%a1-%e9%94%a6%e6%b1%9f%e5%87%ba%e6%b5%b7%e8%bf%88%e5%85%a5%e5%ae%9e%e4%bd%93%e9%98%b6%e6%ae%b5/" target="_blank">TTG China</a>）。华住2025年9月在吉隆坡签约三家JI Hotel，其中JI Hotel Downtown KL（101间客房）预计2026年Q4开业（<a href="https://www.ttrweekly.com/site/2025/09/h-world-expands-hotels-in-southeast-asia/" target="_blank">TTR Weekly</a>）。行业分析师赵焕焱指出，国内酒店增量减少、供大于求，境外发展成为寻找新增量的核心方向（<a href="https://baijiahao.baidu.com/s?id=1855710831119857401" target="_blank">界面新闻（百家号转载）</a>）。
+ </p>
+ </div>
+
+ <!-- 4.3 度假酒店窗口 -->
+ <div class="subsection">
+ <h3>4.3 度假酒店窗口：海岛与东马供给瓶颈</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">兰卡威旅游收入</div><div class="dc-value">RM24亿</div><div class="dc-note">2022-2024 +35% · MOF口径</div></div>
+ <div class="data-card"><div class="dc-label">槟城客房不足</div><div class="dc-value">~1.2万间</div><div class="dc-note">州首席部长称不足 · 节庆供不应求</div></div>
+ <div class="data-card"><div class="dc-label">沙巴旅游产值</div><div class="dc-value">RM137亿</div><div class="dc-note">+4.2% · 占州GDP 12%</div></div>
+ <div class="data-card"><div class="dc-label">东马CAGR</div><div class="dc-value">11.87%</div><div class="dc-note">全国最快 · 100%先锋免税</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ <strong>兰卡威</strong>2022-2024年游客净增32.3万人次（+11%），旅游收入增至24亿令吉（+35%，MOF统计口径）（<a href="https://themalaysianreserve.com/2025/02/18/mof-langkawi-tourism-revenue-increased-35-to-rm2-4b-from-2022-2024/" target="_blank">The Malaysian Reserve</a>）。<strong>槟城</strong>巴都丁宜位列全国入住率前五目的地，州首席部长公开表示全州约1.2万间客房不足（<a href="https://www.sarawaktribune.com/penang-eyes-more-hotels-to-meet-booming-tourist-demand/" target="_blank">Sarawak Tribune</a>）。<strong>沙巴</strong>2024年旅游业产值137亿令吉（+4.2%），贡献州GDP的12%，但现有685家酒店仅2.68万间客房（<a href="https://www.sarawaktribune.com/hajiji-sabah-has-seven-new-hotels-to-cater-for-its-growing-tourist-arrivals/" target="_blank">Sarawak Tribune</a>）。东马区域以11.87%的CAGR成为全国增长最快区域市场（<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence</a>）。
+ </p>
+ </div>
+
+ <!-- 4.4 区域竞争格局 -->
+ <div class="subsection">
+ <h3>4.4 区域竞争格局：马来西亚的差异化优势</h3>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 马来西亚呈现"盘子大、连锁化低、中端蓝海深"的格局。泰国占据东南亚旅游市场19.06%份额，越南以13.22%的CAGR增速最快（<a href="https://www.mordorintelligence.com/industry-reports/opportunities-in-south-east-asia-travel-and-tourism-industry" target="_blank">Mordor Intelligence</a>）。印尼酒店市场呈"两头强中间空"——中端供给CAGR仅约0.3%，中端RevPAR增速高达35%，远超奢华板块的13%（<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-indonesia" target="_blank">Mordor Intelligence</a>）。马来西亚的独特优势在于：免签制度红利持续释放中国客源、英语通用降低运营壁垒、华人文化基础深厚、且RTS Link将打通新山-新加坡跨境走廊（<a href="https://www.straitstimes.com/business/economy/win-win-for-spore-and-malaysia-hope-and-caution-in-johor-as-rts-link-takes-shape" target="_blank">Straits Times</a>）。
+ </p>
+ </div>
+
+ <!-- 4.5 艺龙差异化定位 -->
+ <div class="subsection">
+ <h3>4.5 艺龙酒店科技的差异化定位机会</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">艺龙排名</div><div class="dc-value">Top 8</div><div class="dc-note">中国酒店集团 · 覆盖8个海外国家</div></div>
+ <div class="data-card"><div class="dc-label">雅加达PIK店</div><div class="dc-value">122间</div><div class="dc-note">2025年8月试营业 · 验证海外直投</div></div>
+ <div class="data-card"><div class="dc-label">五位一体</div><div class="dc-value">生态赋能</div><div class="dc-note">品牌+运营+数智+供应链+金融</div></div>
+ <div class="data-card"><div class="dc-label">定位</div><div class="dc-value">中高端精品</div><div class="dc-note">卡位奢华与经济型之间空白</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 2026年1月19日艺龙酒店科技在吉隆坡举办战略合作发布会，宣布与马来西亚本土伙伴达成合作，标志"生态出海"战略实质性落地（<a href="https://baijiahao.baidu.com/s?id=1854810932678428600" target="_blank">千龙网</a>）。截至2025年12月，艺龙已跻身中国酒店集团Top8，业务覆盖8个海外国家，雅加达PIK店（122间客房）已试营业（<a href="https://mp.weixin.qq.com/s?__biz=MjM5MTIyMDYyMw==&mid=2652095326&idx=3&sn=8a008c593d45115ab9114024a069a2cd" target="_blank">中国饭店协会</a>）。其核心差异化在于<strong>"五位一体"生态赋能</strong>——输出品牌标准、运营体系、数智工具、供应链支持和金融对接的完整解决方案，而非单一品牌授权。国际版PMS支持多币种、多语言、多税制，"数智赋能产品3.0"集成AI选址、自助入住机、送物机器人等。品牌矩阵涵盖雅致、美豪丽致、艺龙酒店、莫林等多个品牌，覆盖高端至轻中端各层级，与约RM180-300/晚的供给断层存在契合度。
+ </p>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-top:12px;">
+ <strong>风险与挑战：</strong>①本地化适配难度大——物业产权结构复杂、各州法规不一、清真合规要求约束；②供应链体系尚处建设初期，海外仓覆盖能力有限；③锦江、华住已先行布局，先发优势可能挤压市场空间；④中端消费价格敏感度较高，能否在RM180-300/晚实现品质溢价并维持盈利能力仍需市场验证。
+ </p>
+ </div>
+
+ <!-- 核心结论 -->
+ <div class="subsection">
+ <h3>4.6 第四章核心结论与投资启示</h3>
+ <div class="core-conclusion" style="margin-top:0">
+ <strong>马来西亚酒店市场正处于竞争格局重塑的关键窗口期。</strong>国际联号锁定奢华赛道留下中端品质真空，中国品牌出海浪潮从战略签约迈入实体落地阶段，度假目的地供给瓶颈与RTS Link跨境红利叠加，共同构筑了中端精品连锁的市场机会。艺龙以"生态出海"模式和数智化能力为底座，定位约RM180-300/晚品质供给断层，具备差异化突破的潜力。关键挑战在于本地化适配——唯有"深耕本地化、协同供应链、长期主义"方能将蓝海机遇转化为可持续竞争力。
+ </div>
+ </div>
+
+ <!-- 来源 -->
+ <div>
+ <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（25条）</div>
+ <div style="display:flex;flex-direction:column;gap:8px">
+ <a href="https://ftnnews.com/travel-news/accommodation/marriott-to-open-20-hotels-in-malaysia/" target="_blank">ftnnews – Marriott to Open 20 Hotels in Malaysia</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence – Malaysia Hospitality</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-indonesia" target="_blank">Mordor Intelligence – Indonesia Hospitality</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/opportunities-in-south-east-asia-travel-and-tourism-industry" target="_blank">Mordor Intelligence – SE Asia Travel and Tourism</a>
+ <a href="https://m.thepaper.cn/newsDetail_forward_31419032" target="_blank">澎湃新闻 – 锦江酒店轻资产出海东南亚</a>
+ <a href="https://ttgchina.com/2026/07/02/7%e5%a4%a9%e9%85%92%e5%ba%97%e8%90%bd%e5%ad%90%e5%90%89%e9%9a%86%e5%9d%a1-%e9%94%a6%e6%b1%9f%e5%87%ba%e6%b5%b7%e8%bf%88%e5%85%a5%e5%ae%9e%e4%bd%93%e9%98%b6%e6%ae%b5/" target="_blank">TTG China – 7天酒店落子吉隆坡</a>
+ <a href="https://www.ttrweekly.com/site/2025/09/h-world-expands-hotels-in-southeast-asia/" target="_blank">TTR Weekly – H World Expands in SE Asia</a>
+ <a href="https://global.chinadaily.com.cn/a/202601/21/WS69702cfaa310d6866eb34e1c.html" target="_blank">China Daily – H World Group SE Asia Expansion</a>
+ <a href="https://baijiahao.baidu.com/s?id=1855710831119857401" target="_blank">界面新闻（百家号转载） – 中国酒店出海东南亚</a>
+ <a href="https://baijiahao.baidu.com/s?id=1854810932678428600" target="_blank">千龙网 – 艺龙酒店科技吉隆坡发布会</a>
+ <a href="https://mp.weixin.qq.com/s?__biz=MjM5MTIyMDYyMw==&mid=2652095326&idx=3&sn=8a008c593d45115ab9114024a069a2cd" target="_blank">中国饭店协会 – 艺龙酒店科技Top8</a>
+ <a href="https://m.jiemian.com/article/12118590.html" target="_blank">界面新闻 – 尚美数智出海</a>
+ <a href="https://themalaysianreserve.com/2025/02/18/mof-langkawi-tourism-revenue-increased-35-to-rm2-4b-from-2022-2024/" target="_blank">The Malaysian Reserve – MOF Langkawi Tourism Revenue</a>
+ <a href="https://www.nst.com.my/property/2025/03/1184869/strong-tourism-growth-anticipated-langkawi" target="_blank">NST – Langkawi Tourism Growth</a>
+ <a href="https://www.sarawaktribune.com/penang-eyes-more-hotels-to-meet-booming-tourist-demand/" target="_blank">Sarawak Tribune – Penang Eyes More Hotels</a>
+ <a href="https://www.sarawaktribune.com/hajiji-sabah-has-seven-new-hotels-to-cater-for-its-growing-tourist-arrivals/" target="_blank">Sarawak Tribune – Sabah New Hotels</a>
+ <a href="https://www.dosm.gov.my/portal-main/release-content/regional-tourism-satellite-account-sabah2024" target="_blank">DOSM – Sabah Tourism Satellite Account 2024</a>
+ <a href="https://www.straitstimes.com/business/economy/win-win-for-spore-and-malaysia-hope-and-caution-in-johor-as-rts-link-takes-shape" target="_blank">Straits Times – RTS Link Takes Shape</a>
+ <a href="https://travel.cnr.cn/dsywzl/20250721/t20250721_527274453.shtml" target="_blank">央广网 – 中国游客赴马</a>
+ <a href="https://www.traveldailynews.asia/organizations/tourism-malaysia-launches-sustainable-tourism-csr-program-on-redang-island/" target="_blank">Travel Daily News Asia – Redang Island CSR</a>
+ <a href="https://www.expertmarketresearch.com/reports/vietnam-hospitality-market" target="_blank">Expert Market Research – Vietnam Hospitality</a>
+ <a href="https://the-outbox.com/sea-tourism-performance-2025-recap/" target="_blank">The Outbox – SEA Tourism 2025 Recap</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- ==================== CHAPTER 5: Investment Path ==================== -->
+ <div class="chapter animate-in" id="mych5">
+ <div class="chapter-header">
+ <div class="chapter-number">第五章</div>
+ <h2>出海投资路径 — 外资准入与收益模型：艺龙出海投资路径</h2>
+ <div class="date">2026年7月 · 30条来源</div>
+ </div>
+
+ <div class="core-conclusion">
+ 马来西亚4-5星酒店外资100%持股的政策窗口、中端连锁化率偏低的供给缺口、以及免签红利下的中国客源增长，构成了艺龙出海的投资逻辑基础。投资回报率介于泰国与越南之间（IRR 8-13%），虽低于越南上限，但政策风险更低、市场基础设施更成熟。关键成功要素：精准卡位RM180-300价格带、以管理合同控制前期投入、西马优先布局后审慎进入东马。建议三阶段路径：0-2年吉隆坡试点→2-4年新山槟城扩张→4-7年区域规模化。需密切关注锦江和华住竞争动态以差异化卡位，预留15-20%安全边际应对入住率波动。
+ </div>
+
+ <!-- 5.1 外资准入 -->
+ <div class="subsection">
+ <h3>5.1 外资准入框架：西马开放、东马受限</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">4-5星酒店</div><div class="dc-value">外资100%</div><div class="dc-note">无股权限制 · 艺龙定位精品中端可冲4星</div></div>
+ <div class="data-card"><div class="dc-label">3星酒店</div><div class="dc-value">≥30%马方股权</div><div class="dc-note">"Malaysian"含华裔/印裔等所有公民</div></div>
+ <div class="data-card"><div class="dc-label">1-2星酒店</div><div class="dc-value">100%本地</div><div class="dc-note">要求马来西亚本地股权</div></div>
+ <div class="data-card"><div class="dc-label">MM2H签证</div><div class="dc-value">分层制度</div><div class="dc-note">Platinum/Gold/Silver · 56,000+有效签证</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 马来西亚对外资投资酒店业的法规框架以《国家土地法典1965》为基石。酒店业外资准入按星级分层：1-2星要求100%本地股权，3星要求至少30%马来西亚股权（含华裔、印裔等所有公民），而<strong>4-5星酒店无股权限制，外资可100%持有</strong>（<a href="https://www.mida.gov.my/industries/services/hospitality-hotels-and-tourism/" target="_blank">MIDA Hospitality</a>）。对艺龙定位精品中端（可冲4星）的策略具有明显优势。西马与东马存在显著制度差异——沙巴受《土地法令第68章》管辖，砂拉越受《砂拉越土地法典》约束，外资在东马通常需通过本地公司合资或长期租赁方式进入（<a href="https://sagc.sabah.gov.my/?q=en/content/land-ordinance-cap-68" target="_blank">Sabah AGC</a>；<a href="https://lawnet.sarawak.gov.my/lawnet_file/Ordinance/ORD_2025%20LANDCODE%20LAWNET%20%20(1).pdf" target="_blank">Sarawak Land Code</a>）。MM2H（马来西亚我的第二家园）政策2025年更新后引入分层签证制度，中国籍申请人约占44%（<a href="https://sigsg.com/malaysia-my-second-home-mm2h-2025-new-rules-visa-requirements-property-guidelines-explained/" target="_blank">SIG Global</a>；<a href="https://www.mm2h.gov.my/apply/guidelines" target="_blank">MM2H Guidelines</a>）。
+ </p>
+ </div>
+
+ <!-- 5.2 税收与激励 -->
+ <div class="subsection">
+ <h3>5.2 税收与激励：SST扩张与MIDA优惠</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">企业所得税</div><div class="dc-value">24%</div><div class="dc-note">标准税率</div></div>
+ <div class="data-card"><div class="dc-label">住宿服务税</div><div class="dc-value">8%</div><div class="dc-note">SST · 餐饮6% · 2025年7月范围扩大</div></div>
+ <div class="data-card"><div class="dc-label">旅游税</div><div class="dc-value">RM10/晚</div><div class="dc-note">外国游客 · 槟城/马六甲另收文化遗产费</div></div>
+ <div class="data-card"><div class="dc-label">先锋地位(PS)</div><div class="dc-value">5年70%免税</div><div class="dc-note">1-3星新建酒店 · 4-5星仅翻新可享ITA</div></div>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ MIDA为1-3星新建酒店项目提供先锋地位（PS）——70%法定收入免税5年，或投资税减免（ITA）——60%合格资本支出可抵扣70%法定收入。4-5星新建酒店不在"推广性活动"清单内，仅翻新/扩建项目可享ITA优惠（<a href="https://www.mida.gov.my/industries/services/hospitality-hotels-and-tourism/" target="_blank">MIDA Hospitality</a>）。森林城市特别金融区提供15%知识型员工个人所得税优惠（<a href="https://www.douglasloh.com/post/malaysia-tax-incentives-for-foreign-investors-complete-2025-guide" target="_blank">Douglas Loh Tax Guide</a>）。2025年7月1日起SST范围扩大，酒店内设备租赁等新增收入纳入征税（<a href="https://www.yycadvisors.com/sst-expansion-2025-malaysia-guide.html" target="_blank">YYC Advisors SST Guide</a>）。
+ </p>
+ </div>
+
+ <!-- 5.3 投资模式对比 -->
+ <div class="subsection">
+ <h3>5.3 投资模式对比：四种路径的法律可行性</h3>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>模式</th><th>法律可行性</th><th>优势</th><th>挑战</th></tr></thead>
+ <tbody>
+ <tr><td><strong>管理合同</strong></td><td>完全可行 · 4星以上无股权限制</td><td>轻资产、快速扩张</td><td>业主承担经营风险 · 管理费5-8%收入</td></tr>
+ <tr><td><strong>租赁</strong></td><td>可行 · 须注意土地法限制</td><td>控制运营 · 固定成本</td><td>最低租金压力 · SST合规复杂</td></tr>
+ <tr><td><strong>特许经营</strong></td><td>受《特许经营法1998》约束</td><td>品牌输出 · 标准统一</td><td>须向特许经营注册处注册（KPDNHEP）</td></tr>
+ <tr><td><strong>收购/自建</strong></td><td>西马可行 · 东马受限</td><td>完全控制 · 资产增值</td><td>前期投入大 · 外资购地审批3-6个月</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 连锁酒店在马来西亚以10.75%的CAGR快速扩张，但独立酒店仍占63.32%市场份额，品牌化空间巨大（<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence</a>）。对艺龙而言，管理合同+特许经营的混合模式可兼顾扩张速度与品控。<strong>锦江</strong>选择与马来西亚本土RIYAZ集团深度合资、以马来西亚为区域总部的路径（<a href="https://www.prnewswire.com/apac/news-releases/jin-jiang-hotels-china-region-and-riyaz-international-sdn-bhd-form-rjj-hotels-sdn-bhd-to-drive-cross-border-hospitality-collaboration-302453335.html" target="_blank">PR Newswire</a>）。<strong>华住</strong>采用以新加坡为区域管理枢纽的轻资产模式，JI Hotel Downtown KL预计2026年Q4开业（<a href="https://www.ttrweekly.com/site/2025/09/h-world-expands-hotels-in-southeast-asia/" target="_blank">TTR Weekly</a>）。艺龙可借鉴锦江的本土合资策略降低准入风险，同时参考华住的轻资产模式控制前期投入。
+ </p>
+ </div>
+
+ <!-- 5.4 收益模型测算 -->
+ <div class="subsection">
+ <h3>5.4 收益模型测算：五城市投资回报对比</h3>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+ 以100间中端精品酒店（4星标准）为模型，年总收入 = RevPAR × 365天 × 100间 × 1.43倍加成系数（非客房收入加成）。GOP率采用30-35%区间（参考CBRE全球酒店运营成本上行趋势及马来西亚最低工资RM1,700/月背景）。项目周期15年，融资60%债务（利率6%）+40%股权，WACC约8.5%，终值按退出年份EBITDA 8倍计算（<a href="https://www.cbre.com/insights/reports/h2-2025-global-hotel-outlook" target="_blank">CBRE H2 2025</a>；<a href="https://www.cbre.com/insights/articles/all-eyes-on-operating-costs-in-2025-lessons-learned-in-2024" target="_blank">CBRE Operating Costs</a>）。
+ </p>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>城市</th><th>ADR(RM)</th><th>OCC</th><th>RevPAR(RM)</th><th>年总收入(RM万)</th><th>GOP率</th><th>总投资(RM万)</th><th>IRR</th><th>回本(年)</th></tr></thead>
+ <tbody>
+ <tr><td><strong>吉隆坡</strong></td><td>280</td><td>70%</td><td>196</td><td>1,020</td><td>33-35%</td><td>2,800</td><td style="color:#10b981">10-13%</td><td>8-9</td></tr>
+ <tr><td><strong>新山</strong></td><td>220</td><td>65%</td><td>143</td><td>746</td><td>32-34%</td><td>2,200</td><td style="color:#10b981">9-12%*</td><td>9-10</td></tr>
+ <tr><td><strong>槟城</strong></td><td>250</td><td>68%</td><td>170</td><td>886</td><td>33-35%</td><td>2,500</td><td style="color:#10b981">10-12%</td><td>8-9</td></tr>
+ <tr><td><strong>兰卡威</strong></td><td>300</td><td>60%</td><td>180</td><td>939</td><td>30-32%</td><td>3,200</td><td style="color:#f59e0b">8-10%</td><td>10-11</td></tr>
+ <tr><td><strong>亚庇</strong></td><td>260</td><td>62%</td><td>161</td><td>840</td><td>30-32%</td><td>2,800</td><td style="color:#f59e0b">7-10%</td><td>10-12</td></tr>
+ </tbody>
+ </table>
+ <p style="font-size:12px;color:var(--text-muted);margin-top:8px;">*新山IRR受RTS Link 2026通车催化，通车后有望提升2-3个百分点。吉隆坡RevPAR参考<a href="https://research.jllapsites.com/appd-market-report/q1-2026-hotels-kuala-lumpur/" target="_blank">JLL KL Hotels Q1 2026</a>及<a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence</a>。</p>
+ </div>
+ <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-top:12px;">
+ <strong>敏感性分析</strong>：以吉隆坡基准模型为例，入住率下降10pp（OCC降至60%）则IRR降至6-8%；房价下降15%（ADR降至RM238）则IRR降至7-9%；双重冲击下IRR仅3-5%。入住率下降对IRR的冲击大于房价下降，建议预留15-20%安全边际。
+ </p>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>维度</th><th>🇲🇾 马来西亚</th><th>🇻🇳 越南</th><th>🇹🇭 泰国</th><th>🇮🇩 印尼</th></tr></thead>
+ <tbody>
+ <tr><td><strong>中端酒店IRR</strong></td><td style="color:#10b981">9-13%</td><td>12-18%†</td><td>8-12%†</td><td>12-15%</td></tr>
+ <tr><td><strong>外资准入</strong></td><td>4-5星100%</td><td>有条件100%</td><td>BOI路径100%</td><td>有条件100%</td></tr>
+ <tr><td><strong>投资评级</strong></td><td><strong>B+</strong></td><td>A-</td><td>B+</td><td>B+</td></tr>
+ <tr><td><strong>政策稳定性</strong></td><td>较高</td><td>中等</td><td>较高</td><td>中等</td></tr>
+ </tbody>
+ </table>
+ <p style="font-size:12px;color:var(--text-muted);margin-top:8px;">†越南/泰国IRR为综合估算值。越南依据STR（<a href="https://dlr.skift.com/2025/02/10/asia-pacific-hotel-market-ended-2024-strong/" target="_blank">STR via Skift</a>；<a href="https://www.ttgasia.com/2025/08/29/vietnams-hotel-sector-growth-surges-ahead-of-regional-peers/" target="_blank">TTG Asia</a>）；泰国依据<a href="https://www.knightfrank.co.th/blog/2025/03/21/bangkok-phuket-hotel-market-2h-2024" target="_blank">Knight Frank</a>及<a href="https://www.colliers.com/en-th/research/bangkok-hospitality-market-2025" target="_blank">Colliers Bangkok</a>。印尼数据来自已完成印尼章节。</p>
+ </div>
+ </div>
+
+ <!-- 5.5 城市梯队 -->
+ <div class="subsection">
+ <h3>5.5 城市梯队与选址策略</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">第一梯队（核心布局）</div><div class="dc-value">吉隆坡 + 新山</div><div class="dc-note">商业中心/MICE/RTS Link催化 · 管理合同快速卡位</div></div>
+ <div class="data-card"><div class="dc-label">第二梯队（度假突破）</div><div class="dc-value">槟城 + 兰卡威</div><div class="dc-note">文化遗产/免税岛 · 特许经营+改造模式</div></div>
+ <div class="data-card"><div class="dc-label">第三梯队（机会型）</div><div class="dc-value">亚庇 + 马六甲</div><div class="dc-note">中国客源增长/文化遗产 · 合资进入/小型精品</div></div>
+ </div>
+ </div>
+
+ <!-- 5.6 风险与挑战 -->
+ <div class="subsection">
+ <h3>5.6 风险与挑战</h3>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>风险</th><th>影响</th><th>应对建议</th></tr></thead>
+ <tbody>
+ <tr><td><strong>汇率风险</strong></td><td>令吉兑人民币波动影响汇回利润</td><td>远期外汇合约对冲 · 多币种账户自然对冲</td></tr>
+ <tr><td><strong>劳动力短缺</strong></td><td>最低工资RM1,700/月 · 外劳配额收紧</td><td>数字化运营工具降低人力依赖 · 本地学院人才管道</td></tr>
+ <tr><td><strong>SST扩张</strong></td><td>2025年7月范围扩大 · 需分税率开票</td><td>财务系统预设多税率模块 · 本地税务顾问合规审计</td></tr>
+ <tr><td><strong>宗教文化约束</strong></td><td>清真认证(Halal)几乎必需 · 供应链劳动力问题</td><td>设计阶段规划清真厨房动线 · JAKIM认证供应商合作</td></tr>
+ <tr><td><strong>政策不确定性</strong></td><td>各州土地审批标准不一 · 东马裁量空间大</td><td>东马优先选择有资质合资伙伴 · 长期租赁替代直接购地</td></tr>
+ <tr><td><strong>竞争加剧</strong></td><td>锦江180+项目/华住JI Hotel 2026开业</td><td>差异化定位（科技赋能中端）· 先发优势卡位核心城市</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+ <!-- 5.7 三阶段路径 -->
+ <div class="subsection">
+ <h3>5.7 三阶段路径建议</h3>
+ <div class="data-cards">
+ <div class="data-card"><div class="dc-label">0-2年 试点期</div><div class="dc-value">吉隆坡 1-2家</div><div class="dc-note">~200间客房 · 管理合同 · 验证产品-市场契合度</div></div>
+ <div class="data-card"><div class="dc-label">2-4年 扩张期</div><div class="dc-value">新山+槟城 5-8家</div><div class="dc-note">~800间客房 · 特许经营+轻资产租赁 · 借RTS Link红利</div></div>
+ <div class="data-card"><div class="dc-label">4-7年 规模化</div><div class="dc-value">10-15家</div><div class="dc-note">~1,500间客房 · 建立CRS和会员体系 · 向兰卡威/亚庇延伸</div></div>
+ </div>
+ </div>
+
+ <!-- 核心结论 -->
+ <div class="subsection">
+ <h3>5.8 第五章核心结论与投资建议</h3>
+ <div class="core-conclusion" style="margin-top:0">
+ <strong>马来西亚4-5星酒店外资100%持股的政策窗口、中端连锁化率偏低的供给缺口、以及免签红利下的中国客源增长，构成了艺龙出海的投资逻辑基础。</strong>投资回报率介于泰国与越南之间（IRR 8-13%），虽低于越南上限，但政策风险更低、市场基础设施更成熟。关键成功要素：精准卡位RM180-300价格带、以管理合同控制前期投入、在西马优先布局后审慎进入东马、数字化运营降本增效、穆斯林友好适配。建议三阶段路径：0-2年吉隆坡试点→2-4年新山槟城扩张→4-7年区域规模化，最终实现东南亚品牌化运营。主要风险：入住率下降对IRR冲击显著（建议预留15-20%安全边际）、锦江华住竞争加剧、汇率波动及SST扩张合规成本上升。
+ </div>
+ </div>
+
+ <!-- 来源 -->
+ <div>
+ <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（30条）</div>
+ <div style="display:flex;flex-direction:column;gap:8px">
+ <a href="https://www.mida.gov.my/industries/services/hospitality-hotels-and-tourism/" target="_blank">MIDA – Hospitality, Hotels and Tourism</a>
+ <a href="https://www.mida.gov.my/setting-up-content/incentives/" target="_blank">MIDA – Incentives</a>
+ <a href="https://www.hasil.gov.my/en/company/incentives/pioneer-status/" target="_blank">LHDN – Pioneer Status</a>
+ <a href="https://afa-sea.com/tax-ed/guide-to-mida-tax-incentives-for-hospitality-sector/" target="_blank">AFA – MIDA酒店业激励指南</a>
+ <a href="https://www.yycadvisors.com/sst-expansion-2025-malaysia-guide.html" target="_blank">YYC Advisors – SST Expansion 2025 Guide</a>
+ <a href="https://www.douglasloh.com/post/malaysia-tax-incentives-for-foreign-investors-complete-2025-guide" target="_blank">Douglas Loh – Malaysia Tax Incentives Guide 2025</a>
+ <a href="https://page.mysoftinn.com/en/malaysia-hotel-tax-2025" target="_blank">MySoftinn – Malaysia Hotel Tax 2025</a>
+ <a href="https://sagc.sabah.gov.my/?q=en/content/land-ordinance-cap-68" target="_blank">Sabah AGC – Land Ordinance Cap. 68</a>
+ <a href="https://lawnet.sarawak.gov.my/lawnet_file/Ordinance/ORD_2025%20LANDCODE%20LAWNET%20%20(1).pdf" target="_blank">Sarawak Land Code</a>
+ <a href="https://bambooroutes.com/blogs/news/malaysia-foreigner-rights" target="_blank">Bambooroutes – Malaysia Foreigner Rights</a>
+ <a href="https://sigsg.com/malaysia-my-second-home-mm2h-2025-new-rules-visa-requirements-property-guidelines-explained/" target="_blank">SIG Global – MM2H 2025 New Rules</a>
+ <a href="https://www.mm2h.gov.my/apply/guidelines" target="_blank">MM2H Guidelines</a>
+ <a href="https://mm2h.com/special-finance-zone-mm2h-visa/" target="_blank">Special Finance Zone MM2H Visa</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-malaysia" target="_blank">Mordor Intelligence – Malaysia Hospitality</a>
+ <a href="https://research.jllapsites.com/appd-market-report/q1-2026-hotels-kuala-lumpur/" target="_blank">JLL – KL Hotels Q1 2026</a>
+ <a href="https://www.cbre.com/insights/reports/h2-2025-global-hotel-outlook" target="_blank">CBRE – H2 2025 Global Hotel Outlook</a>
+ <a href="https://www.cbre.com/insights/articles/all-eyes-on-operating-costs-in-2025-lessons-learned-in-2024" target="_blank">CBRE – Operating Costs in 2025</a>
+ <a href="https://www.prnewswire.com/apac/news-releases/jin-jiang-hotels-china-region-and-riyaz-international-sdn-bhd-form-rjj-hotels-sdn-bhd-to-drive-cross-border-hospitality-collaboration-302453335.html" target="_blank">PR Newswire – Jin Jiang &amp; RIYAZ Form RJJ Hotels</a>
+ <a href="https://www.ttrweekly.com/site/2025/09/h-world-expands-hotels-in-southeast-asia/" target="_blank">TTR Weekly – H World Expands in SE Asia</a>
+ <a href="https://global.chinadaily.com.cn/a/202601/21/WS69702cfaa310d6866eb34e1c.html" target="_blank">China Daily – H World SE Asia Expansion</a>
+ <a href="https://econpapers.repec.org/RePEc:bcp:journl:v:9:y:2025:issue-3:p:3686-3706" target="_blank">EconPapers – Halal Supply Chain</a>
+ <a href="https://dlr.skift.com/2025/02/10/asia-pacific-hotel-market-ended-2024-strong/" target="_blank">STR via Skift – APAC Hotel Market 2024</a>
+ <a href="https://www.ttgasia.com/2025/08/29/vietnams-hotel-sector-growth-surges-ahead-of-regional-peers/" target="_blank">TTG Asia – Vietnam Hotel Sector Growth</a>
+ <a href="https://www.cbrevietnam.com/insights/reports/vietnam-hotels-hospitality-update" target="_blank">CBRE Vietnam – Hotels Hospitality Update</a>
+ <a href="https://www.knightfrank.co.th/blog/2025/03/21/bangkok-phuket-hotel-market-2h-2024" target="_blank">Knight Frank – Bangkok Phuket Hotel Market</a>
+ <a href="https://www.colliers.com/en-th/research/bangkok-hospitality-market-2025" target="_blank">Colliers – Bangkok Hospitality Market 2025</a>
+ <a href="https://c9hotelworks.com/wp-content/uploads/2025/04/Bali-Hotel-Branded-Residences-Report-March-2025.pdf" target="_blank">C9 Hotelworks – Bali Hotel Branded Residences</a>
+ <a href="https://horwathhtl.com/publication/bali-hotel-branded-residences/" target="_blank">Horwath HTL – Bali Hotel Branded Residences</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-vietnam" target="_blank">Mordor Intelligence – Vietnam Hospitality</a>
+ <a href="https://www.mordorintelligence.com/industry-reports/hospitality-industry-in-indonesia" target="_blank">Mordor Intelligence – Indonesia Hospitality</a>
+ </div>
+ </div>
+ </div>
+ </div>
 
     <div class="section" id="section-philippines">
       <div class="research-header">
@@ -4738,6 +5472,23 @@ function showIdChapter(n) {
   ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
   // Update nav buttons
   const nav = document.getElementById('id-chapter-nav');
+  if (nav) {
+    nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx + 1 === n);
+    });
+  }
+}
+
+function showMyChapter(n) {
+  playClick();
+  const ch = document.getElementById('mych' + n);
+  if (!ch) return;
+  // Expand the target chapter
+  ch.classList.add('open');
+  // Scroll to it
+  ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Update nav buttons
+  const nav = document.getElementById('my-chapter-nav');
   if (nav) {
     nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
       btn.classList.toggle('active', idx + 1 === n);
