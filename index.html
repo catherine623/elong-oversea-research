@@ -1185,7 +1185,7 @@ tbody tr:last-child td {
         <span class="nav-flag">🇲🇾</span>马来西亚<span class="nav-badge done">完成</span>
       </div>
       <div class="nav-country" onclick="showCountry('philippines'); closeSidebar();" data-country="philippines">
-        <span class="nav-flag">🇵🇭</span>菲律宾<span class="nav-badge pending">待研究</span>
+        <span class="nav-flag">🇵🇭</span>菲律宾<span class="nav-badge done">完成</span>
       </div>
       <div class="nav-country" onclick="showCountry('singapore'); closeSidebar();" data-country="singapore">
         <span class="nav-flag">🇸🇬</span>新加坡<span class="nav-badge pending">待研究</span>
@@ -1245,7 +1245,7 @@ tbody tr:last-child td {
         <div class="country-card" onclick="showCountry('philippines')">
           <span class="flag">🇵🇭</span>
           <div class="name">菲律宾</div>
-          <span class="status pending">○ 待研究</span>
+          <span class="status done">● 完成</span>
         </div>
         <div class="country-card" onclick="showCountry('singapore')">
           <span class="flag">🇸🇬</span>
@@ -5257,14 +5257,472 @@ tbody tr:last-child td {
     <div class="section" id="section-philippines">
       <div class="research-header">
         <button class="back-btn" onclick="showOverview()">← 返回总览</button>
-        <h1>🇵🇭 菲律宾酒店投资市场</h1>
-        <div class="meta"><span style="color:var(--text-muted)">○ 待研究</span></div>
+        <h1>🇵🇭 菲律宾酒店投资市场深度研究</h1>
+        <div class="meta">
+          <span class="status-dot" style="color:#10b981">完成</span>
+          <span>研究周期：2026年7月 · 150条来源</span>
+        </div>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px;max-width:800px;">
+          菲律宾正站在全球酒店投资版图的关键转折点上。1.15亿人口、中位年龄仅25.7岁的年轻化人口结构，为酒店住宿需求提供了坚实的人口学基础。然而，品牌渗透率仅<strong>4%</strong>（东南亚垫底），独立酒店占63.52%，$60-120/晚品质中端在商务和度假两端均近乎空白。五大上市地产集团主导下的"哑铃型"品牌生态——经济型Go Hotels直接跳至奢华Fili/Seda——为中国精品中端连锁品牌留下了东南亚规模最大的结构性空白。叠加CREATE MORE法案（企业所得税20%、激励最长27年）和2026年对华免签政策，菲律宾正处于"政策拐点+供给缺口+需求复苏"的三重叠加窗口。综合投资评级：<strong>B（本研究评估）——高风险高回报的利基市场</strong>。
+        </p>
       </div>
-      <div class="placeholder-card">
-        <div class="p-flag">🇵🇭</div>
-        <h2>菲律宾</h2>
-        <div class="p-status">○ 待研究</div>
-        <p>马尼拉BPO商务市场与长滩岛/宿务度假市场分析，重点关注英语人才红利与成本优势。</p>
+
+      <!-- Quick Stats -->
+      <div class="quick-stats">
+        <div class="stat-card accent-blue">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value">1.15亿</div>
+          <div class="stat-label">人口规模</div>
+          <div class="stat-note">中位年龄25.7岁 · 全球第三大英语国</div>
+        </div>
+        <div class="stat-card accent-cyan">
+          <div class="stat-icon">📈</div>
+          <div class="stat-value">$4,370亿</div>
+          <div class="stat-label">GDP（2024）· 增速5.6%</div>
+          <div class="stat-note">服务业占63.2% · 东盟第二增速</div>
+        </div>
+        <div class="stat-card accent-purple">
+          <div class="stat-icon">✈️</div>
+          <div class="stat-value">648万</div>
+          <div class="stat-label">入境游客（2025）</div>
+          <div class="stat-note">恢复至2019年77% · 免签2026年启动</div>
+        </div>
+        <div class="stat-card accent-amber">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-value">B</div>
+          <div class="stat-label">投资评级</div>
+          <div class="stat-note">高风险高回报 · 中端缺口冠绝东盟</div>
+        </div>
+      </div>
+
+      <!-- Chapter Navigation -->
+      <div class="chapter-nav" id="ph-chapter-nav">
+        <button class="ch-btn active" onclick="showPhChapter(1)">一、市场基本面</button>
+        <button class="ch-btn" onclick="showPhChapter(2)">二、酒店市场格局</button>
+        <button class="ch-btn" onclick="showPhChapter(3)">三、本地品牌生态</button>
+        <button class="ch-btn" onclick="showPhChapter(4)">四、竞争与机会</button>
+        <button class="ch-btn" onclick="showPhChapter(5)">五、出海投资路径</button>
+      </div>
+
+      <!-- CHAPTER 1 -->
+      <div class="chapter open animate-in" id="phch1">
+        <div class="chapter-header">
+          <div class="chapter-number">第一章</div>
+          <h2>市场基本面 — 年轻人口红利与旅游复苏：菲律宾宏观经济</h2>
+          <div class="date">2026年7月 · 22条来源</div>
+        </div>
+        <div class="core-conclusion">
+          菲律宾酒店投资市场基本面呈现<strong>"高增长、年轻化、服务驱动"</strong>的宏观特征。2024年GDP增速5.6%位列东盟第二，服务业占GDP的63.2%，1.15亿人口中位年龄仅25.7岁。旅游业贡献GDP的21%（WTTC口径），支撑1,170万就业岗位。入境旅游2025年恢复至648万人次（2019年77%），但中国游客仅恢复18%（东盟最弱）——差距即机会。基础设施方面，NAIA机场$30亿PPP翻修（容量3,200万→6,200万）、布拉干新机场（2029年运营/1亿容量）和99年土地租赁法正从硬件和政策两端重构投资基本面。2026年1月对华免签政策启动，为"中国品牌+中国客源"联动打开窗口。
+        </div>
+
+        <div class="subsection">
+          <h3>1.1 宏观经济：消费驱动的增长型经济体 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">GDP增速（2024）</div><div class="dc-value">5.6%</div><div class="dc-note">东盟第二 · 全球第八</div></div>
+            <div class="data-card"><div class="dc-label">服务业占GDP</div><div class="dc-value">63.2%</div><div class="dc-note">批发零售/金融/商业服务为主力</div></div>
+            <div class="data-card"><div class="dc-label">人均GNI（2024）</div><div class="dc-value">$4,470</div><div class="dc-note">中低收入→中高收入临界点</div></div>
+            <div class="data-card"><div class="dc-label">通胀率（2024）</div><div class="dc-value">3.2%</div><div class="dc-note">较2023年6%显著回落 · 回到目标区间</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            菲律宾是东亚太平洋地区最具活力的经济体之一，具备"高增长、年轻化、服务驱动"的经济特征（<a href="https://www.dof.gov.ph/ph-economy-maintained-steady-growth-in-2024-despite-challenges-outlook-for-2025-remains-bullish-driven-by-lower-inflation-higher-consumption-and-investments/" target="_blank">菲律宾财政部DOF</a>）。1.15亿人口中中位年龄仅25.7岁（<a href="https://data.worldbank.org?locations=ph-cn/" target="_blank">世界银行数据库</a>），为劳动密集型服务业提供持续充沛的年轻劳动力。需注意2025年GDP增速放缓至4.4%，低于政府5.5%-6.5%目标区间（<a href="https://m.chinanews.com/wap/detail/cht/zw/10561278.shtml" target="_blank">中新社</a>），面临贸易保护主义和地缘政治下行风险。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>1.2 旅游业经济贡献：纪录持续刷新 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">旅游业GDP贡献（2025E）</div><div class="dc-value">5.9万亿比索</div><div class="dc-note">占GDP 21% · 较2019年+13.5%</div></div>
+            <div class="data-card"><div class="dc-label">旅游就业（2025E）</div><div class="dc-value">1,170万</div><div class="dc-note">占全国就业23.8%</div></div>
+            <div class="data-card"><div class="dc-label">2035年展望</div><div class="dc-value">9.2万亿比索</div><div class="dc-note">GDP 19.8% · 新增250万就业</div></div>
+            <div class="data-card"><div class="dc-label">国内游客消费</div><div class="dc-value">4.1万亿比索</div><div class="dc-note">+9.3% · 超国际增速</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            WTTC预测菲律宾旅游业2025年贡献5.9万亿比索经济产值，支撑1,170万就业岗位（<a href="https://wttc.org/news/philippines-travel-tourism-sector-set-to-inject-a-record-php-5-point-9tn-to-the-economy-2025" target="_blank">WTTC 2025</a>）。关键判断：<strong>国内旅游增速显著高于入境旅游</strong>——酒店投资的需求安全垫由国内消费者提供，而非单纯依赖国际游客。PSA口径下旅游业占GDP约13.2%（<a href="https://cpbrd.congress.gov.ph/ff2025-52-2024-performance-of-the-ph-tourism-industry/" target="_blank">CPBRD</a>），直接就业675万人。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>1.3 中国游客专题：差距即机会 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">中国游客（2019）</div><div class="dc-value">174万</div><div class="dc-note">第二大客源国 · 占总外来游客21%</div></div>
+            <div class="data-card"><div class="dc-label">中国游客（2024）</div><div class="dc-value">31.2万</div><div class="dc-note">仅恢复18% · 东盟最弱</div></div>
+            <div class="data-card"><div class="dc-label">2026免签政策</div><div class="dc-value">14天免签</div><div class="dc-note">1月16日生效 · 马尼拉+宿务入境</div></div>
+            <div class="data-card"><div class="dc-label">电子签证</div><div class="dc-value">2025.11恢复</div><div class="dc-note">2023.11-2025.11曾暂停</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            中国游客市场是菲律宾旅游业最大的"结构性缺口"——2019年174万人次，2024年仅31.2万人次，恢复率18%在东盟垫底（<a href="https://world-economist.com/philippines-struggles-to-win-back-chinese-tourists-as-regional-rivals-surge/" target="_blank">World Economist/AMRO</a>）。同期越南接待约370万、马来西亚约330万、新加坡超300万（<a href="https://m.traveldaily.cn/article/188984" target="_blank">环球旅讯</a>）。转折信号：2025年11月恢复中国公民电子签证（<a href="https://travel.china.com.cn/txt/2025-11/04/content_118158396.shtml" target="_blank">中国网旅游</a>），2026年1月16日起14天免签（<a href="https://www.china.com.cn/opinion2020/2026-01/19/content_118286768.shtml" target="_blank">中国网评论</a>）。菲律宾旅游局北京办事处提出"一至两年内中国游客数量翻倍"目标。对中国品牌而言：低基数+政策拐点=高弹性期权。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>1.4 基础设施：最大瓶颈与最大变数 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">NAIA机场翻修</div><div class="dc-value">$30亿PPP</div><div class="dc-note">容量3,200万→6,200万 · 东盟最大之一</div></div>
+            <div class="data-card"><div class="dc-label">布拉干新机场</div><div class="dc-value">$127亿</div><div class="dc-note">目标2029年运营 · 1亿容量</div></div>
+            <div class="data-card"><div class="dc-label">省级机场升级</div><div class="dc-value">20个</div><div class="dc-note">复制NAIA模式 · 锡亚高/公主港/卡利博</div></div>
+            <div class="data-card"><div class="dc-label">长滩岛机场</div><div class="dc-value">$1.4亿</div><div class="dc-note">生力集团投资升级</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            AMRO明确指出基础设施是菲律宾旅游业最大瓶颈——60%以上国际过夜游客集中在马尼拉和宿务（<a href="https://amro-asia.org/unlocking-the-next-phase-of-philippines-tourism-growth" target="_blank">AMRO 2025</a>）。2024年9月生力集团以1,706亿比索PPP合同接手NAIA运营（<a href="https://www.sohu.com/a/809111012_206880" target="_blank">菲龙网/搜狐</a>），布拉干新机场投资7,350亿比索（<a href="https://pids.gov.ph/details/news/in-the-news/privatizing-our-pride" target="_blank">PIDS</a>）。机场扩容是酒店投资的先行指标——2-3年内客运能力翻倍将对酒店需求产生结构性推动。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>1.5 政策与客源结构 <span class="weight-badge">权重 7/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            NTDP 2023-2028提出2028年1,150万国际游客目标（<a href="https://pco.gov.ph/press-briefing/press-briefing-of-ms-daphne-osena-paez-with-department-of-tourism-secretary-christina-garcia-frasco-and-dict-secretary-ivan-john-uy/" target="_blank">菲律宾旅游部</a>），但营销预算从12亿比索骤降至1亿比索（<a href="https://www.pna.gov.ph/articles/1241886" target="_blank">PNA</a>）。2025年客源呈现"亚洲回调、北美补位"格局：韩国125万人次（-20.5%）、美国+15.75%、澳大利亚+36.9%（<a href="https://www.esquiremag.ph/life/travel/philippine-tourism-below-pre-pandemic-peaks-a7940-20260128-bsc" target="_blank">Esquire Philippines</a>）。WTA 2025斩获六项亚洲大奖+三项全球大奖，品牌曝光持续提升（<a href="https://www.worldtravelawards.com/news-3828" target="_blank">World Travel Awards</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>1.6 第一章核心结论</h3>
+          <div class="core-conclusion" style="margin-top:0">
+            <strong>菲律宾处于"中速恢复+长线增长"交汇期。</strong>宏观面：5.6%增速+1.15亿年轻人口+服务业驱动。旅游面：648万人次恢复中，WTTC预测长期增长确定性较强。中国游客缺口约140万人次（对比2019），免签政策拐点已至，低基数下弹性极高。基础设施：NAIA+布拉干双机场扩容将在2-3年内结构性提升客群基数。<br><br><strong>投资研判：</strong>当前进入的逻辑不在于追逐短期入境反弹，而在于以国内旅游为基本盘、以中国出境游恢复为期权、以机场扩容为催化剂，提前锁定2-3年后的需求增长窗口。
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（选列）</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a href="https://www.dof.gov.ph/ph-economy-maintained-steady-growth-in-2024-despite-challenges-outlook-for-2025-remains-bullish-driven-by-lower-inflation-higher-consumption-and-investments/" target="_blank">DOF — 菲律宾2024年经济增长5.6%</a>
+            <a href="https://wttc.org/news/philippines-travel-tourism-sector-set-to-inject-a-record-php-5-point-9tn-to-the-economy-2025" target="_blank">WTTC — 2025年旅游业贡献5.9万亿比索</a>
+            <a href="https://cpbrd.congress.gov.ph/ff2025-52-2024-performance-of-the-ph-tourism-industry/" target="_blank">CPBRD — 2024年菲律宾旅游业表现</a>
+            <a href="https://world-economist.com/philippines-struggles-to-win-back-chinese-tourists-as-regional-rivals-surge/" target="_blank">World Economist — 中国游客仅恢复18%</a>
+            <a href="https://www.china.com.cn/opinion2020/2026-01/19/content_118286768.shtml" target="_blank">中国网 — 菲律宾2026年对华免签</a>
+            <a href="https://amro-asia.org/unlocking-the-next-phase-of-philippines-tourism-growth" target="_blank">AMRO — 菲律宾旅游业下一阶段增长</a>
+            <a href="https://www.sohu.com/a/809111012_206880" target="_blank">菲龙网/搜狐 — NAIA机场PPP翻修</a>
+            <a href="https://www.esquiremag.ph/life/travel/philippine-tourism-below-pre-pandemic-peaks-a7940-20260128-bsc" target="_blank">Esquire PH — 2025年入境数据</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 2 -->
+      <div class="chapter animate-in" id="phch2">
+        <div class="chapter-header">
+          <div class="chapter-number">第二章</div>
+          <h2>酒店市场格局 — 独立主导与连锁缺口：供给格局分析</h2>
+          <div class="date">2026年7月 · 28条来源</div>
+        </div>
+        <div class="core-conclusion">
+          菲律宾酒店市场呈现<strong>"一个主导、一个缺口、一个加速"</strong>的供给格局。独立酒店以63.52%份额主导市场，品牌渗透率仅4%在东南亚垫底（vs 马来西亚18.23%、印尼/越南<15%、泰国8%、新加坡45%）。新增供给加速向奢华和度假岛屿集中，$60-120/晚品质中端存在显著供给缺口。管道供给40,084间客房、总投资PHP 2,500亿（约$44亿），但集中于中高档/高档级别（合计占管道42.32%）。马尼拉H1 2025 OCC 64%（Q4旺季83.2%），ADR同比+5.1%；宿务/薄荷岛管道客房4,786间+4,401间领跑全国。核心投资逻辑：<strong>"低连锁、大缺口、中端空白"</strong>——品牌渗透率4%意味着连锁化空间冠绝东盟。
+        </div>
+
+        <div class="subsection">
+          <h3>2.1 市场规模与独立主导格局 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">市场规模（2025）</div><div class="dc-value">$35.2亿</div><div class="dc-note">CAGR 7.21% →2031年$53.3亿</div></div>
+            <div class="data-card"><div class="dc-label">独立酒店份额</div><div class="dc-value">63.52%</div><div class="dc-note">连锁酒店36.48% · 品牌渗透率仅4%</div></div>
+            <div class="data-card"><div class="dc-label">连锁增速CAGR</div><div class="dc-value">10.12%</div><div class="dc-note">显著高于市场整体7.21%</div></div>
+            <div class="data-card"><div class="dc-label">管道总客房</div><div class="dc-value">40,084间</div><div class="dc-note">158个项目 · PHP 2,500亿投资</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            独立酒店以63.52%主导市场（<a href="https://www.mordorintelligence.com/industry-reports/market-entry-tourism-and-hotel-industry-in-philippines" target="_blank">Mordor Intelligence</a>），品牌渗透率仅4%（<a href="https://propertynewsasia.com/why-philippine-developers-are-shifting-to-luxury-hospitality/" target="_blank">Colliers/Property News Asia</a>）。马来西亚18.23%、印尼和越南均不足15%（<a href="https://www.hstong.com/news/hk/detail/25072222251323279" target="_blank">HSTONG</a>）——菲律宾处于区域绝对末位，连锁化空间冠绝东盟。低连锁化率的成因：家族经营传统、7,000+岛屿地理碎片化、业主自主管理偏好（<a href="https://tfa.ph/property_news/luxury-hospitality-seen-as-growth-niche-for-philippine-developers/" target="_blank">C9 Hotelworks/TFA PH</a>；<a href="https://www.ttgasia.com/2016/02/05/philippine-hotel-owners-moving-towards-self-management/" target="_blank">TTG Asia 2016</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>2.2 区域市场格局 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">马尼拉OCC（H1 2025）</div><div class="dc-value">64%</div><div class="dc-note">Q4旺季83.2% · ADR $145-147</div></div>
+            <div class="data-card"><div class="dc-label">宿务管道客房</div><div class="dc-value">4,786间</div><div class="dc-note">10个项目 · 全国第一</div></div>
+            <div class="data-card"><div class="dc-label">薄荷岛管道客房</div><div class="dc-value">4,401间</div><div class="dc-note">16个项目 · 投资者首选(41%)</div></div>
+            <div class="data-card"><div class="dc-label">达沃OCC</div><div class="dc-value">68-72%</div><div class="dc-note">超疫情前 · 9,000间客房</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            马尼拉H1 2025 OCC 64%同比+1pp，ADR +5.1%其中五星级+9%（<a href="https://context.ph/2025/08/12/metro-manila-hotels-hold-ground-amid-slump/" target="_blank">Context PH/Colliers</a>）。Q4 2024旺季OCC 83.2%（<a href="https://www.jll.com.ph/en/trends-and-insights/research/metro-manilas-hospitality-sector-set-for-further-growth" target="_blank">JLL Philippines</a>）。Colliers预测2028年恢复至74%疫情前水平（<a href="https://marketmonitor.com.ph/metro-manila-hotels-bound-to-recover-by-2028/" target="_blank">Market Monitor PH</a>）。薄荷岛41%投资者首选超越马尼拉（<a href="https://plus.inquirer.net/business/for-investors-boracay-no-longer-the-top-beach-destination" target="_blank">Inquirer/Leechiu</a>）。达沃OCC 68-72%超疫情前（<a href="https://weavergroup.ph/davao-infrastructure-upgrades-driving-tourism-and-hospitality-real-estate-growth" target="_blank">Weaver Group</a>），锡亚高/巴拉望为新兴增长极。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>2.3 中端空白与运营指标 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">全国ADR（2024）</div><div class="dc-value">$92/晚</div><div class="dc-note">Horwath HTL年度调查</div></div>
+            <div class="data-card"><div class="dc-label">全国OCC（2024）</div><div class="dc-value">67%</div><div class="dc-note">RevPAR $62</div></div>
+            <div class="data-card"><div class="dc-label">中端ADR增幅（Q4 2024）</div><div class="dc-value">+5.6% QoQ</div><div class="dc-note">各细分市场最高 · 供不应求</div></div>
+            <div class="data-card"><div class="dc-label">客房缺口至2028年</div><div class="dc-value">120,463间</div><div class="dc-note">全国335,592间总量</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            菲律宾ADR $92/晚、OCC 67%（<a href="http://asiapac.horwathhtl.com/products/philippines-annual-study-2024" target="_blank">Horwath HTL 2024</a>），SM Hotels OCC 67%交叉验证（<a href="https://www.smprime.com/company_releases/sm-hotels-and-convention-centers-post-occupancy-and-foot-traffic-growth-in-2024/" target="_blank">SM Prime</a>）。管道供给40,084间集中于高档/超高档（合计42.32%），中端ADR录得最高季环比增幅5.6%，印证"供不应求→价格补涨"逻辑。即使管道全部交付，2028年仍有约80,000间缺口（<a href="https://www.chromahospitality.com/post/phishap-2023-2028-launched" target="_blank">Chroma Hospitality/PHISAP</a>）。2026-2029年马尼拉新增客房中国际品牌约占50%（<a href="https://www.colliers.com/en-ph/research/colliers-property-market-report-hotel-h2-2025-philippines" target="_blank">Colliers H2 2025</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>2.4 第二章核心结论</h3>
+          <div class="core-conclusion" style="margin-top:0">
+            <strong>品牌渗透率4%=连锁化空间冠绝东盟。</strong>独立酒店63.52%主导、连锁化低源于家族经营+群岛地理+自主管理三因素。$60-120品质中端缺口显著——经济型与奢华型供给相对充分，中端品牌化供给严重不足。管道供给4万间偏重高端，中端增量有限。<br><br><strong>投资启示：</strong>中端缺口+连锁化率低=品牌化渗透的最大增量市场。菲律宾品牌渗透率每提升1个百分点，即意味着约3,400间客房从独立转向品牌运营，按$90K/间投资计算，对应约$3亿的投资机会。
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（选列）</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a href="https://www.mordorintelligence.com/industry-reports/market-entry-tourism-and-hotel-industry-in-philippines" target="_blank">Mordor Intelligence — 独立酒店63.52%·连锁CAGR 10.12%</a>
+            <a href="https://propertynewsasia.com/why-philippine-developers-are-shifting-to-luxury-hospitality/" target="_blank">Colliers/Property News Asia — 品牌渗透率仅4%</a>
+            <a href="https://www.jll.com.ph/en/trends-and-insights/research/metro-manilas-hospitality-sector-set-for-further-growth" target="_blank">JLL — 马尼拉Q4 OCC 83.2%·中端ADR +5.6%</a>
+            <a href="https://context.ph/2025/08/12/metro-manila-hotels-hold-ground-amid-slump/" target="_blank">Context PH — 马尼拉H1 2025 OCC 64%</a>
+            <a href="https://www.chromahospitality.com/post/phishap-2023-2028-launched" target="_blank">Chroma/PHISAP — 335,592间总量·120,463间缺口</a>
+            <a href="https://plus.inquirer.net/business/for-investors-boracay-no-longer-the-top-beach-destination" target="_blank">Inquirer/Leechiu — 薄荷岛41%投资者首选</a>
+            <a href="http://asiapac.horwathhtl.com/products/philippines-annual-study-2024" target="_blank">Horwath HTL — ADR $92·OCC 67%·RevPAR $62</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 3 -->
+      <div class="chapter animate-in" id="phch3">
+        <div class="chapter-header">
+          <div class="chapter-number">第三章</div>
+          <h2>本地品牌生态 — 五大集团主导下的"哑铃型"结构与中端空白</h2>
+          <div class="date">2026年7月 · 29条来源</div>
+        </div>
+        <div class="core-conclusion">
+          菲律宾本土品牌生态呈现<strong>"寡头集中+哑铃型"</strong>特征。五大上市地产集团（SM Prime、Megaworld、Robinsons Land、Ayala Land、DoubleDragon）+ Hann + Chroma主导市场，前十大开发商贡献管道供给的54%。品牌光谱呈显著"哑铃型"——经济端Go Hotels（$20-35/晚）、Summit Hotels（$50-80/晚），奢华端Seda（$100-150/晚）、Fili（首家本土五星级）、Crimson（$150-300/晚），而<strong>$60-120品质中端连锁品牌在五大集团的产品矩阵中系统性缺失</strong>。这一空白部分源于财阀经济下酒店品牌是综合地产开发的延伸而非独立管理公司产物，部分源于五大集团均以地产开发为基因、中端品牌运营能力系统性缺失。
+
+        <div class="subsection">
+          <h3>3.1 五大集团品牌矩阵 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">SM Prime (SMHCC)</div><div class="dc-value">运营930+间</div><div class="dc-note">Park Inn/Radisson双品牌 · P15B扩张</div></div>
+            <div class="data-card"><div class="dc-label">Megaworld Hotels</div><div class="dc-value">8,500间足迹</div><div class="dc-note">管道3,889间 · 与Accor合作</div></div>
+            <div class="data-card"><div class="dc-label">Ayala Land (Seda)</div><div class="dc-value">11家运营</div><div class="dc-note">中高端$100-150/晚 · 双倍至22家</div></div>
+            <div class="data-card"><div class="dc-label">DoubleDragon</div><div class="dc-value">4,324间管道</div><div class="dc-note">Hotel 101·jinjiang Inn·全国第一管道</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            五大集团品牌光谱从经济型Go Hotels（$20-35/晚）直接跳到高端Seda/Fili（$120+/晚），$60-120区间品质化连锁供给近乎为零（基于各集团官网和公开数据综合）。SM Prime酒店+会展2024年OCC 67%（<a href="https://www.smprime.com/company_releases/sm-hotels-and-convention-centers-post-occupancy-and-foot-traffic-growth-in-2024/" target="_blank">SM Prime</a>），计划投资P150亿扩张。Megaworld管道3,889间并与Accor合作引入Mercure Mactan（<a href="https://insiderph.com/megaworld-partners-with-accor-to-boost-local-hotel-portfolio-expand-reach" target="_blank">InsiderPH</a>）。Ayala Seda计划双倍扩张至22家（<a href="https://www.sunstar.com.ph/cebu/ayalas-hospitality-unit-to-double-hotel-portfolio" target="_blank">SunStar Cebu</a>）。DoubleDragon以Hotel 101（$60/晚标准化中端）领跑管道，OCC 88.55%验证需求（<a href="https://www.greenlodgingnews.com/hotel-101-resort-boracay-poised-to-become-largest-green-hotel-in-ph" target="_blank">Green Lodging News</a>）。Robinsons Hotels旗下Fili为首个本土五星级品牌、NUSTAR Cebu超奢华（<a href="https://www.sunstar.com.ph/cebu/robinsons-hotel-group-to-invest-p10b" target="_blank">SunStar Cebu</a>）。Hann Philippines以克拉克赌场度假村著称，管道2,850间（<a href="https://www.ggrasia.com/hann-flags-expansion-to-existing-property-new-park-in-clark/" target="_blank">GGRAsia</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>3.2 中端空白的结构性成因 <span class="weight-badge">权重 8/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            五大集团中端缺位非偶然：①财阀基因——酒店品牌是地产开发延伸，高端品牌提升项目溢价（Seda为Ayala Mall配套），经济型消化非核心区位物业（Go Hotels为Robinsons Mall配套），中端缺乏地产逻辑支撑；②规模不经济——菲律宾7,000+岛屿使中端连锁的标准化管理成本远高于大陆国家；③品质能力瓶颈——中端品牌需要系统化的运营标准、培训体系和供应链管理能力，而本土集团在这些维度积累薄弱。对中国品牌出海而言，这一"能力空白"恰恰是最大的差异化切入点和合作谈判筹码。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>3.3 第三章核心结论</h3>
+          <div class="core-conclusion" style="margin-top:0">
+            <strong>五大集团不构成直接竞争，"哑铃型"品牌生态=中端系统性空白。</strong>本土集团经济型→奢华直跳，缺乏中端品牌运营能力——这不是"不愿做"中端，而是"不会做"品质中端连锁。Hotel 101（标准化中端、OCC 88.55%）的成功证明了中端产品的强需求。<br><br><strong>投资启示：</strong>中国品牌在菲律宾面临的竞争格局与泰国（本土中端品牌成熟）、越南（国际品牌充分竞争）截然不同——这里是真正意义上的"蓝海"市场，先发者可以定义品类标准。
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（选列）</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a href="https://www.smprime.com/company_releases/sm-hotels-and-convention-centers-post-occupancy-and-foot-traffic-growth-in-2024/" target="_blank">SM Prime — OCC 67%·P15B扩张计划</a>
+            <a href="https://insiderph.com/megaworld-partners-with-accor-to-boost-local-hotel-portfolio-expand-reach" target="_blank">InsiderPH — Megaworld×Accor合作</a>
+            <a href="https://www.sunstar.com.ph/cebu/ayalas-hospitality-unit-to-double-hotel-portfolio" target="_blank">SunStar Cebu — Ayala Seda双倍扩张</a>
+            <a href="https://www.greenlodgingnews.com/hotel-101-resort-boracay-poised-to-become-largest-green-hotel-in-ph" target="_blank">Green Lodging News — Hotel 101 OCC 88.55%</a>
+            <a href="https://www.sunstar.com.ph/cebu/robinsons-hotel-group-to-invest-p10b" target="_blank">SunStar Cebu — Robinsons Fili首家本土五星</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 4 -->
+      <div class="chapter animate-in" id="phch4">
+        <div class="chapter-header">
+          <div class="chapter-number">第四章</div>
+          <h2>竞争与机会 — 中国品牌入局与度假窗口：竞争格局扫描</h2>
+          <div class="date">2026年7月 · 31条来源</div>
+        </div>
+        <div class="core-conclusion">
+          中国酒店品牌在菲律宾的实际落地<strong>严重滞后于战略签约</strong>——目前仅艺龙海雅1个项目（马尼拉，140间，在建）。锦江RJJ虽将菲律宾列入六国计划但尚无具体项目。国际中端品牌（Accor Mercure/Ibis Styles、Radisson Park Inn）已抢先布局城市中端。但关键发现：<strong>度假目的地中端供给几乎完全空白</strong>——薄荷岛（41%投资者首选）、锡亚高、巴拉望等地，奢华度假村与背包客旅馆之间的"中间地带"无人占领。中国品牌的机会在于"中端+度假"融合——在城市以管理合同模式验证品牌，在度假目的地卡位中端空白建立差异化。
+        </div>
+
+        <div class="subsection">
+          <h3>4.1 中国品牌落地现状 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">中国品牌在菲项目</div><div class="dc-value">1个</div><div class="dc-note">艺龙海雅马尼拉 · 140间 · 在建</div></div>
+            <div class="data-card"><div class="dc-label">锦江RJJ菲律宾</div><div class="dc-value">列入六国计划</div><div class="dc-note">但尚无具体签约项目</div></div>
+            <div class="data-card"><div class="dc-label">华住/首旅</div><div class="dc-value">未进入</div><div class="dc-note">聚焦马来西亚/印尼/越南</div></div>
+            <div class="data-card"><div class="dc-label">东南亚对标</div><div class="dc-value">显著滞后</div><div class="dc-note">vs 马来RJJ 11签·印尼德胧已开业</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            中国品牌在东南亚呈现明显梯度差异——菲律宾处于最早期。艺龙海雅马尼拉项目（与菲律宾981酒店投资管理有限公司合作，管理合同模式）（<a href="https://www.toutiao.com/article/7405795478744482358" target="_blank">今日头条</a>）。锦江RJJ六国覆盖含菲律宾但无具体项目（<a href="https://www.163.com/dy/article/K8037U510514R9P4.html" target="_blank">澎湃新闻</a>）。"在中国错过的所有风口，在东南亚都有一次重来的机会"——一位中国酒店投资人的判断恰如其分（<a href="https://t.cj.sina.cn/articles/view/6192937794/17120bb4202002njoc" target="_blank">界面新闻</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>4.2 国际中端品牌动态与度假机会 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">Accor菲律宾</div><div class="dc-value">4新签(2025)</div><div class="dc-note">Mercure Mactan·Ibis Styles Clark·Subic</div></div>
+            <div class="data-card"><div class="dc-label">Radisson PH</div><div class="dc-value">运营6/管道15</div><div class="dc-note">Park Inn 5家·SM MOA双品牌2031</div></div>
+            <div class="data-card"><div class="dc-label">薄荷岛投资意愿</div><div class="dc-value">41%</div><div class="dc-note">超越马尼拉39% · 全国第一</div></div>
+            <div class="data-card"><div class="dc-label">中端度假空白</div><div class="dc-value">近乎完全</div><div class="dc-note">奢华$300-1000 vs 民宿$15-40</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            Accor签约Mercure Mactan Cebu（550间）、Ibis Styles Clark等4项目（<a href="https://hotelierbuzz.com/accor-expands-presence-across-asia-with-over-230-hotels" target="_blank">HotelierBuzz</a>）。Radisson Park Inn运营5家、管道15家共3,090间（<a href="https://en.jinjiangtower.cn/newsdetail-825914.html" target="_blank">Radisson/Jin Jiang Tower</a>），并签约LIME Resort Bohol卡位薄荷岛（<a href="https://context.ph/2025/10/22/radisson-signs-lime-resort-bohol-as-part-of-brand-expansion/" target="_blank">Context PH</a>）。Red Planet运营14家（P20亿/5年计划）（<a href="https://businessweekmindanao.com/red-planet-hotel-exec-announces-expansion-with-p2-billion-investment" target="_blank">BusinessWeek Mindanao</a>）。度假市场方面，薄荷岛16项目/4,401间管道（<a href="https://plus.inquirer.net/business/hotels-still-sprouting-in-boracay-but-its-no-longer-developers-fave" target="_blank">Inquirer</a>），长滩岛仅29%投资者偏好（跌至第六）。中端度假产品（$60-120品质连锁）在所有热门目的地近乎空白（<a href="https://www.morganreedinsights.com/philippines-tourism-and-hotel-market" target="_blank">Morgan Reed Insights</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>4.3 SWOT分析 <span class="weight-badge">权重 7/10</span></h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>优势(S)</th><th>劣势(W)</th><th>机会(O)</th><th>威胁(T)</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>英语环境·年轻劳动力·中端运营经验</td>
+                  <td>品牌认知度为零·本地团队待建</td>
+                  <td>$60-120中端空白·免签窗口·CREATE法案</td>
+                  <td>地缘政治·财阀壁垒·中国品牌内卷</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>4.4 第四章核心结论</h3>
+          <div class="core-conclusion" style="margin-top:0">
+            <strong>菲律宾="城市中端验证+度假中端蓝海"的双重机会。</strong>中国品牌实际落地严重滞后，但竞争对手（国际中端品牌）高度集中在城市商务场景，度假目的地中端供给完全空白。薄荷岛（41%投资者首选、UNESCO地质公园）是当前最具战略价值的度假中端首发市场。<br><br><strong>优先路径：</strong>①马尼拉城市中端切入（1-2年，管理合同）→②薄荷岛/宿务度假中端卡位（2-4年）→③品牌矩阵规模化（4-7年，6+目的地）。
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（选列）</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a href="https://www.toutiao.com/article/7405795478744482358" target="_blank">今日头条 — 艺龙海雅马尼拉项目</a>
+            <a href="https://hotelierbuzz.com/accor-expands-presence-across-asia-with-over-230-hotels" target="_blank">HotelierBuzz — Accor菲律宾4新签</a>
+            <a href="https://en.jinjiangtower.cn/newsdetail-825914.html" target="_blank">Radisson/Jin Jiang — Park Inn 5家运营·管道15家</a>
+            <a href="https://plus.inquirer.net/business/for-investors-boracay-no-longer-the-top-beach-destination" target="_blank">Inquirer — 薄荷岛41%投资者首选</a>
+            <a href="https://www.morganreedinsights.com/philippines-tourism-and-hotel-market" target="_blank">Morgan Reed — 中端$60-120度假空白</a>
+            <a href="https://www.visahq.news/zh/2026-01-22/cn/philippines-launches-one-year-visa-free-entry-for-chinese-citizens" target="_blank">VisaHQ — 2026年对华免签政策</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAPTER 5 -->
+      <div class="chapter animate-in" id="phch5">
+        <div class="chapter-header">
+          <div class="chapter-number">第五章</div>
+          <h2>出海投资路径 — CREATE法案与投资模型：实操分析</h2>
+          <div class="date">2026年7月 · 29条来源</div>
+        </div>
+        <div class="core-conclusion">
+          CREATE MORE法案（2024年11月签署）将企业所得税从25%降至20%，激励最长延至27年，新增100%电力费用扣除和50%旅游再投资加计扣除——直接惠及酒店投资。99年土地租赁法（RA 12252）和酒店业100%外资持股为轻资产管理合同模式提供法律基础。<strong>管理合同为首选进入模式</strong>（规避土地限制+低风险），租赁经营为城市旗舰店可选路径。100间客房马尼拉中端酒店基准IRR约10-18%（基准~14%），回本4-8年（基准5-6年）。薄荷岛度假模型ADR $90-120、GOP率38-42%、IRR ~13-16%。三阶段路线：马尼拉试点(0-2年)→度假扩张(2-4年)→品牌矩阵(4-7年)。
+        </div>
+
+        <div class="subsection">
+          <h3>5.1 CREATE MORE法案：政策拐点 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">企业所得税</div><div class="dc-value">25%→20%</div><div class="dc-note">与泰国/越南对齐 · EDR制度下</div></div>
+            <div class="data-card"><div class="dc-label">激励最长年限</div><div class="dc-value">27年</div><div class="dc-note">原17年 · ITH分层(NCR 4年/其他6-7年)</div></div>
+            <div class="data-card"><div class="dc-label">电力扣除</div><div class="dc-value">50%→100%</div><div class="dc-note">电价东盟第二高 · 运营成本核心项</div></div>
+            <div class="data-card"><div class="dc-label">旅游再投资扣除</div><div class="dc-value">新增50%</div><div class="dc-note">加计扣除 · 直接惠及酒店业</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            CREATE MORE（RA 12066）将菲律宾企业所得税降至20%，与东盟主要经济体对齐（<a href="https://www.bcda.gov.ph/news/bcda-welcomes-create-more-expects-attract-more-investments-clark" target="_blank">BCDA</a>）。旅游业专项红利：100%电力费用扣除+50%旅游再投资加计扣除（<a href="https://philippines.incorp.asia/advisories/maximizing-opportunities-through-the-create-more-act/" target="_blank">InCorp Philippines</a>）。菲律宾电价东盟第二高（工业US¢13/kWh，商业PHP 9.618/kWh）（<a href="https://documents1.worldbank.org/curated/en/099102724233599901/pdf/P1813891fc101a0f180f51f6ec48391dd8.pdf" target="_blank">World Bank</a>；<a href="https://www.globalpetrolprices.com/Philippines/electricity_prices/" target="_blank">Global Petrol Prices</a>），100%电力扣除是对酒店运营成本的结构性对冲。99年土地租赁法（RA 12252，旅游项目$5M门槛）为外资轻资产模式提供法律基础（<a href="https://wealthinsights.metrobank.com.ph/bworldonline/new-law-allows-foreign-investors-to-lease-land-in-the-philippines-for-up-to-99-years/" target="_blank">Metrobank</a>）。BOI vs PEZA：PEZA税率优势更显著（5% SCIT），但需位于经济特区内；BOI更灵活适合城市酒店（<a href="https://philippines.acclime.com/guides/tax-incentives/" target="_blank">Acclime</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>5.2 投资回报估算模型（100间客房马尼拉中端） <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">投资成本</div><div class="dc-value">$9-11M</div><div class="dc-note">$90-110K/间（不含土地）</div></div>
+            <div class="data-card"><div class="dc-label">ADR</div><div class="dc-value">$75-95/晚</div><div class="dc-note">$60-120品质中端定位</div></div>
+            <div class="data-card"><div class="dc-label">OCC稳态</div><div class="dc-value">68-72%</div><div class="dc-note">GOP率35-38%</div></div>
+            <div class="data-card"><div class="dc-label">GOP率（2024全国）</div><div class="dc-value">38%</div><div class="dc-note">Profit Matters基准数据</div></div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>指标</th><th>保守</th><th>基准</th><th>乐观</th></tr></thead>
+              <tbody>
+                <tr><td>ADR</td><td>$75</td><td>$85</td><td>$95</td></tr>
+                <tr><td>OCC</td><td>65%</td><td>70%</td><td>75%</td></tr>
+                <tr><td>RevPAR</td><td>$48.75</td><td>$59.50</td><td>$71.25</td></tr>
+                <tr><td>年总收入</td><td>$2.05M</td><td>$2.50M</td><td>$3.00M</td></tr>
+                <tr><td>GOP</td><td>$0.72M</td><td>$0.93M</td><td>$1.14M</td></tr>
+                <tr><td><strong>IRR（10年）</strong></td><td><strong>~10%</strong></td><td><strong>~14%</strong></td><td><strong>~18%</strong></td></tr>
+                <tr><td><strong>回本周期</strong></td><td><strong>7-8年</strong></td><td><strong>5-6年</strong></td><td><strong>4-5年</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            投资成本基于Rider Levett Bucknall数据：硬建安成本PHP 67,700-86,500/sqm（<a href="https://www.whitebridgehospitality.com/media/zpdphtop/whitebridge-apac-hotels-monitor-issue-12.pdf" target="_blank">Whitebridge APAC Monitor</a>），含FF&E和开业前费用后约$90-110K/间。GOP率38%基于Profit Matters 2024菲律宾数据（<a href="https://www.akerman.com/a/web/b4Lzcfw4YgwcQLiXUiuzUv/profit_matters-2024-final.pdf" target="_blank">Profit Matters 2024</a>）。ADR是最敏感的IRR驱动变量——±10%对IRR影响大于OCC±5%。极端情景下（ADR -20%+OCC -10%），IRR可能跌破5%，但概率极低。525bps收益率溢价反映了菲律宾相对于新加坡/曼谷等成熟市场的机构资本配置低效（<a href="https://www.baystreethospitality.com/post/philippine-tourism-board-s-usd315m-hotel-pipeline-525bps-yield-premium-vs-asean-gateway-markets" target="_blank">Bay Street Hospitality</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>5.3 重点城市投资评分与薄荷岛模型 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>城市/区域</th><th>综合评分</th><th>战略定位</th><th>IRR预估</th></tr></thead>
+              <tbody>
+                <tr><td><strong>马尼拉都会区</strong></td><td><strong>8.8/10</strong></td><td>核心试点 · 城市中端验证</td><td>10-18%</td></tr>
+                <tr><td><strong>薄荷岛/邦劳</strong></td><td><strong>8.5/10</strong></td><td>度假首发 · 中端蓝海卡位</td><td>13-16%</td></tr>
+                <tr><td><strong>宿务/麦克坦</strong></td><td><strong>8.2/10</strong></td><td>第二梯队 · Bleisure枢纽</td><td>12-15%</td></tr>
+                <tr><td>克拉克/邦板牙</td><td>7.8/10</td><td>新兴走廊 · MICE枢纽</td><td>10-14%</td></tr>
+                <tr><td>长滩岛</td><td>6.5/10</td><td>翻牌机会 · 存量改造</td><td>8-12%</td></tr>
+                <tr><td>达沃</td><td>6.0/10</td><td>长期储备 · 棉兰老门户</td><td>7-10%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h3>5.4 风险矩阵与东南亚五国对比 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>风险维度</th><th>影响</th><th>概率</th><th>等级</th><th>缓解策略</th></tr></thead>
+              <tbody>
+                <tr><td>签证/地缘政治</td><td>高</td><td>中</td><td style="color:#ef4444"><strong>红色</strong></td><td>多元化客源+轻资产</td></tr>
+                <tr><td>汇率波动</td><td>中</td><td>高</td><td style="color:#f59e0b"><strong>橙色</strong></td><td>货币对冲+利润再投资</td></tr>
+                <tr><td>人才短缺</td><td>中</td><td>高</td><td style="color:#f59e0b"><strong>橙色</strong></td><td>中国管理团队+本地化培训</td></tr>
+                <tr><td>电力成本</td><td>中</td><td>高</td><td style="color:#eab308"><strong>黄色</strong></td><td>CREATE MORE 100%扣除</td></tr>
+                <tr><td>竞争加剧</td><td>中</td><td>中</td><td style="color:#eab308"><strong>黄色</strong></td><td>差异化度假定位</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            菲律宾在东南亚五国中的定位：品牌渗透率最低（4%）、中端缺口最大，是"高风险高回报的利基市场"。核心差异化优势：英语环境（全球第三大英语国）、年轻人口红利（中位年龄25.7岁）、7,600+岛屿度假资源。核心劣势：中国游客恢复率18%（东盟最弱）、财阀经济壁垒、地缘政治不确定性（<a href="https://hotel.report/development/phl-a-niche-hospitality-growth-market" target="_blank">Hotel Report</a>；<a href="https://www.10100.com/article/27762686" target="_blank">盈科律师事务所</a>）。
+          </p>
+        </div>
+
+        <div class="subsection">
+          <h3>5.5 第五章核心结论与三阶段路径</h3>
+          <div class="core-conclusion" style="margin-top:0">
+            <strong>管理合同+三阶段递进=菲律宾进入策略的最优解。</strong><br>
+            <strong>阶段一（0-2年）</strong>：马尼拉1-3家管理合同试点，$70-90/晚城市中端，目标首店12个月内OCC 65%+/ADR $80+。<br>
+            <strong>阶段二（2-4年）</strong>：薄荷岛/邦劳度假中端首发+宿务Bleisure补充，5-10家规模，$90-120/晚度假中端。<br>
+            <strong>阶段三（4-7年）</strong>：品牌矩阵20-30家覆盖6+目的地，经济型+中端+中高端梯度布局。<br><br>
+            <strong>关键成功因素：</strong>①保持轻资产结构控制地缘风险；②深耕度假中端蓝海而非与Accor/Radisson正面竞争城市商务；③借力CREATE MORE税收激励降低有效税率。
+          </div>
+        </div>
+
+        <div>
+          <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 本章参考来源（选列）</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <a href="https://www.bcda.gov.ph/news/bcda-welcomes-create-more-expects-attract-more-investments-clark" target="_blank">BCDA — CREATE MORE法案签署</a>
+            <a href="https://philippines.incorp.asia/advisories/maximizing-opportunities-through-the-create-more-act/" target="_blank">InCorp — CREATE MORE十一条亮点清单</a>
+            <a href="https://www.whitebridgehospitality.com/media/zpdphtop/whitebridge-apac-hotels-monitor-issue-12.pdf" target="_blank">Whitebridge APAC — RLB建造成本数据</a>
+            <a href="https://www.akerman.com/a/web/b4Lzcfw4YgwcQLiXUiuzUv/profit_matters-2024-final.pdf" target="_blank">Profit Matters 2024 — GOP率38%</a>
+            <a href="https://www.colliers.com/en-ph/research/colliers-property-market-report-hotel-h2-2025-philippines" target="_blank">Colliers H2 2025 — 马尼拉OCC 65%</a>
+            <a href="https://www.baystreethospitality.com/post/philippine-tourism-board-s-usd315m-hotel-pipeline-525bps-yield-premium-vs-asean-gateway-markets" target="_blank">Bay Street — 525bps收益率溢价</a>
+            <a href="https://www.10100.com/article/27762686" target="_blank">盈科律师事务所 — 中企赴菲风险全景分析</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conclusion Section -->
+      <div style="margin-top:40px;padding:24px;background:var(--surface);border-radius:12px;border-left:4px solid #10b981">
+        <h2 style="margin:0 0 16px 0;font-size:18px">📊 结论：菲律宾——东南亚酒店投资的"最后一块中端拼图"</h2>
+        <p style="font-size:14px;color:var(--text-secondary);line-height:1.85;margin:0">
+          菲律宾值得中国精品中端连锁品牌进入，但须以<strong>"管理合同+三阶段递进"模式审慎布局</strong>，优先卡位度假中端蓝海而非在城市商务市场与国际品牌正面竞争。<br><br>
+          <strong>五项核心发现：</strong><br>
+          ①结构性缺口确凿——品牌渗透率仅4%（东南亚垫底），$60-120品质中端在商务和度假两端近乎空白；<br>
+          ②本土生态不构成直接竞争——五大集团品牌光谱呈"哑铃型"；<br>
+          ③窗口期有限但真实——国际中端品牌已卡位城市但度假空白，薄荷岛是战略价值最高的目标市场；<br>
+          ④投资回报具备吸引力——基准IRR ~14%，回本5-6年，管理合同模式有效规避风险；<br>
+          ⑤政策拐点已至——CREATE MORE法案（CIT 20%·最长27年）+2026年对华免签打开政策窗口。<br><br>
+          <strong>投资评级建议：</strong>度假中端★★★★★（强烈推荐）· 城市中端★★★★（推荐）· 经济型★★★（中性）。菲律宾在东南亚五国中品牌渗透率最低、中端缺口最大，是"高风险高回报的利基市场"——对于具备出海经验且风险承受能力较强的中国酒店品牌，这是不可绕过但需审慎布局的东南亚版图"最后一块拼图"。
+        </p>
+      </div>
+
+      <!-- Full Reference List -->
+      <div style="margin-top:24px">
+        <div style="font-size:14px;font-weight:600;color:var(--text-secondary);margin-bottom:12px">📚 完整参考来源（150条，选列核心来源）</div>
+        <div style="display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--text-secondary)">
+          <a href="https://www.dof.gov.ph/ph-economy-maintained-steady-growth-in-2024-despite-challenges-outlook-for-2025-remains-bullish-driven-by-lower-inflation-higher-consumption-and-investments/" target="_blank">DOF — 菲律宾2024年经济增长5.6%</a>
+        </div>
       </div>
     </div>
 
@@ -5506,6 +5964,23 @@ function showThChapter(n) {
   ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
   // Update nav buttons
   const nav = document.getElementById('th-chapter-nav');
+  if (nav) {
+    nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx + 1 === n);
+    });
+  }
+}
+
+function showPhChapter(n) {
+  playClick();
+  const ch = document.getElementById('phch' + n);
+  if (!ch) return;
+  // Expand the target chapter
+  ch.classList.add('open');
+  // Scroll to it
+  ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Update nav buttons
+  const nav = document.getElementById('ph-chapter-nav');
   if (nav) {
     nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
       btn.classList.toggle('active', idx + 1 === n);
