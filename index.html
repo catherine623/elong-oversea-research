@@ -5731,54 +5731,95 @@ tbody tr:last-child td {
     <div class="section" id="section-singapore">
       <div class="research-header">
         <button class="back-btn" onclick="showOverview()">← 返回总览</button>
-        <h1>🇸🇬 新加坡酒店投资市场</h1>
+        <h1>🇸🇬 新加坡酒店投资市场深度研究</h1>
         <div class="meta">
-          <span class="badge-rating">投资评级 B</span>
-          <span>战略优先级 P2</span>
-          <span>品牌标杆市场</span>
+          <span class="status-dot" style="color:#10b981">完成</span>
+          <span>研究周期：2026年7月 · 46条来源</span>
+        </div>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px;max-width:800px;">
+          新加坡是东南亚唯一的发达经济体，酒店投资市场呈现<strong>"高成本、高安全、高品牌价值"</strong>的独特特征。74,427间客房存量受土地稀缺性刚性约束（2025-2029供给CAGR仅1.2%），中端OCC 83.1%为全市场最高但S$200-300/晚品质中端品牌近乎真空。100%外资开放、无资本利得税的制度环境全球最优，Cap Rate 4-5%提供避险属性。华住全季乌节路店（81间/OCC ~90%/RGI #1）验证了中国中端品牌可行性，锦江/亚朵缺席留下"第二名红利"窗口。综合投资评级：<strong>B（本研究评估）——品牌标杆市场，赚品牌溢价而非规模效应</strong>。
+        </p>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="quick-stats">
+        <div class="stat-card accent-blue">
+          <div class="stat-icon">🏨</div>
+          <div class="stat-value">74,427间</div>
+          <div class="stat-label">酒店总存量</div>
+          <div class="stat-note">467家持牌机构 (2025.10)</div>
+        </div>
+        <div class="stat-card accent-cyan">
+          <div class="stat-icon">📊</div>
+          <div class="stat-value">83.1%</div>
+          <div class="stat-label">中端OCC · 全市场最高</div>
+          <div class="stat-note">结构性供给不足</div>
+        </div>
+        <div class="stat-card accent-purple">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value">310万</div>
+          <div class="stat-label">中国游客 · #1客源国</div>
+          <div class="stat-note">贡献S$36.8亿 · 新中互免30天</div>
+        </div>
+        <div class="stat-card accent-amber">
+          <div class="stat-icon">⭐</div>
+          <div class="stat-value">B</div>
+          <div class="stat-label">投资评级</div>
+          <div class="stat-note">品牌标杆市场 · P2战略优先级</div>
         </div>
       </div>
 
-      <!-- 关键指标卡片 -->
-      <div class="data-cards">
-        <div class="data-card"><div class="dc-label">🏨 酒店总存量</div><div class="dc-value">74,427间</div><div class="dc-note">467家持牌机构 (2025.10)</div></div>
-        <div class="data-card"><div class="dc-label">📊 中端OCC</div><div class="dc-value">83.1%</div><div class="dc-note">全市场最高，结构性供给不足</div></div>
-        <div class="data-card"><div class="dc-label">👥 中国游客</div><div class="dc-value">310万</div><div class="dc-note">#1客源国，贡献S$36.8亿</div></div>
-        <div class="data-card"><div class="dc-label">💰 旅游收入</div><div class="dc-value">S$328亿</div><div class="dc-note">创纪录 (2025年)</div></div>
-        <div class="data-card"><div class="dc-label">🏢 外资政策</div><div class="dc-value">100%开放</div><div class="dc-note">零股权限制/零资本利得税</div></div>
-        <div class="data-card"><div class="dc-label">📈 供给增速</div><div class="dc-value">1.2%</div><div class="dc-note">2025-2029 CAGR (极低)</div></div>
+      <!-- Chapter Navigation -->
+      <div class="chapter-nav" id="sg-chapter-nav">
+        <button class="ch-btn active" onclick="showSgChapter(1)">一、市场基本面</button>
+        <button class="ch-btn" onclick="showSgChapter(2)">二、酒店市场格局</button>
+        <button class="ch-btn" onclick="showSgChapter(3)">三、本地品牌生态</button>
+        <button class="ch-btn" onclick="showSgChapter(4)">四、竞争与机会</button>
+        <button class="ch-btn" onclick="showSgChapter(5)">五、出海投资路径</button>
       </div>
 
-      <!-- 第一章 -->
-      <div class="chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)"><span class="ch-arrow">▸</span> 一、宏观经济、旅游业驱动力与酒店投资政策环境</div>
-        <div class="chapter-body">
+      <!-- CHAPTER 1 -->
+      <div class="chapter open animate-in" id="sgch1">
+        <div class="chapter-header">
+          <div class="chapter-number">第一章</div>
+          <h2>市场基本面 — 宏观经济、旅游业驱动力与酒店投资政策环境</h2>
+          <div class="date">2026年7月 · 20条来源</div>
+        </div>
+        <div class="core-conclusion">
           <p><strong>新加坡是东南亚唯一的发达经济体</strong>，2024年和2025年分别实现GDP增速4.4%和4.8%。人均GDP约99,960美元，服务业占GDP比重约70.3%。通胀仅0.78%，贷款利率约1.8%——"中高增速+低通胀+低利率+强货币"的罕见组合在亚太酒店投资市场中独一无二。</p>
           <p><strong>旅游业从"量"到"质"转型</strong>：2025年接待国际游客1,690万人次（+2.3%），旅游收入创纪录328亿新元。STB公布"Tourism 2040"战略，目标2040年收入470-500亿新元，聚焦MICE、健康养生、可持续发展。MICE旅客消费为休闲的2倍，2025年MICE收益S$23亿（+35%）。</p>
-          <p><strong>土地稀缺性是根本约束</strong>：GLS 2H2025仅推出2宗酒店用地合计<1,000间。至2030年计划新增仅6,768间客房，年增速1.2-1.5%。新建路径门槛极高，存量改造是唯一规模化路径。</p>
+          <p><strong>土地稀缺性是根本约束</strong>：GLS 2H2025仅推出2宗酒店用地合计&lt;1,000间。至2030年计划新增仅6,768间客房，年增速1.2-1.5%。新建路径门槛极高，存量改造是唯一规模化路径。</p>
           <p><strong>制度环境全球最优</strong>：100%外资持有权、无资本利得税、无外汇管制、CIT 17%、中新互免签证（30天）。Cap Rate 4-5%，相对SORA（~1%）仍有约300bp正利差。2025年H1吸引USD5.46亿酒店投资，亚太第四。</p>
           <p><strong>中国游客是核心客源基础</strong>：2025年310万人次（#1），贡献S$36.8亿（20%旅游收入）。中新航线恢复率114.7%，远超中泰的59.3%。80后/90后/00后为主力，消费从购物转向体验。</p>
-          <div class="key-finding">🔑 三重稀缺性叠加：土地稀缺（供给刚性）× 制度稀缺（唯一完全开放外资的东南亚成熟市场）× 品牌稀缺（高壁垒使成功布局者享有长期护城河）</div>
         </div>
+        <div class="key-finding">🔑 三重稀缺性叠加：土地稀缺（供给刚性）× 制度稀缺（唯一完全开放外资的东南亚成熟市场）× 品牌稀缺（高壁垒使成功布局者享有长期护城河）</div>
       </div>
 
-      <!-- 第二章 -->
-      <div class="chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)"><span class="ch-arrow">▸</span> 二、酒店市场供给与需求：存量结构、业绩表现与转化机会</div>
-        <div class="chapter-body">
-          <p><strong>"哑铃结构"：奢华/高端和经济型两端重，中端轻。</strong>截至2025年10月，74,427间客房、467家机构。各细分OCC：中端83.1%（最高）> 经济型81.2% > 高端80.2% > 奢华79.5%。供给端反向变化：中端+3%、经济型+6%，高端-4%，市场正在被动填补中端缺口。</p>
+      <!-- CHAPTER 2 -->
+      <div class="chapter animate-in" id="sgch2">
+        <div class="chapter-header">
+          <div class="chapter-number">第二章</div>
+          <h2>酒店市场格局 — 供给与需求：存量结构、业绩表现与转化机会</h2>
+          <div class="date">2026年7月 · 18条来源</div>
+        </div>
+        <div class="core-conclusion">
+          <p><strong>"哑铃结构"：奢华/高端和经济型两端重，中端轻。</strong>截至2025年10月，74,427间客房、467家机构。各细分OCC：中端83.1%（最高）&gt; 经济型81.2% &gt; 高端80.2% &gt; 奢华79.5%。供给端反向变化：中端+3%、经济型+6%，高端-4%，市场正在被动填补中端缺口。</p>
           <p><strong>业绩分歧：两种叙事并存。</strong>DBS认为"周期尾声"——1Q25 RevPAR -4.3%，叠加供给+2.4%；HVS视之为"温和修正"——OCC不降反升（+0.5pp），消费降级将需求推至中端。本报告判断：这不是全面下行，而是品类轮动——中端RevPAR仅-3%（vs经济型-6.2%/高端-4.7%），定价权最强。</p>
-          <p><strong>供给管道极紧</strong>：2025-2029年供给CAGR仅1.2%（vs 2015-2019年4.6%）。2026年预计新增~1,933间，2027年Moxy 475+Avani 200间。GLS 2H2025仅2宗酒店用地<1,000间。</p>
+          <p><strong>供给管道极紧</strong>：2025-2029年供给CAGR仅1.2%（vs 2015-2019年4.6%）。2026年预计新增~1,933间，2027年Moxy 475+Avani 200间。GLS 2H2025仅2宗酒店用地&lt;1,000间。</p>
           <p><strong>翻牌浪潮是范式转换</strong>：QT Singapore（Hotel Telegraph翻牌）、METT Singapore（Hotel Fort Canning翻牌）、Trademark Collection（Hotel Traveltine，300间）、Days Inn Novena（Value Hotel Thomson，362间，Wyndham×Worldwide Hotels）密集出现。翻牌+特许经营成为进入新加坡的最短路径。</p>
           <p><strong>中端缺口五维量化</strong>：①OCC 83.1%全市场最高 → 有效供给不足；②需求体量56.77万间夜/月 → 为奢华的2.5倍；③DBS确认S$200-300/晚为甜蜜点 → 约2/3中国出境游客选择中端；④新增供给集中奢华/经济型 → 中端供给增速低于需求；⑤中端RevPAR -3%远优于经济型-6.2% → 定价权最强。</p>
-          <div class="key-finding">🔑 中端正面临"需求旺、供给缺、定价强"的三重红利窗口——是艺龙酒店最应优先切入的细分赛道</div>
         </div>
+        <div class="key-finding">🔑 中端正面临"需求旺、供给缺、定价强"的三重红利窗口——是艺龙酒店最应优先切入的细分赛道</div>
       </div>
 
-      <!-- 第三章 -->
-      <div class="chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)"><span class="ch-arrow">▸</span> 三、本地酒店集团与品牌生态</div>
-        <div class="chapter-body">
+      <!-- CHAPTER 3 -->
+      <div class="chapter animate-in" id="sgch3">
+        <div class="chapter-header">
+          <div class="chapter-number">第三章</div>
+          <h2>本地酒店集团与品牌生态</h2>
+          <div class="date">2026年7月 · 23条来源</div>
+        </div>
+        <div class="core-conclusion">
           <p><strong>四大本地集团各有所长，但中端品牌系统性缺位</strong>：</p>
           <ul>
             <li><strong>Far East Hospitality</strong>（远东）：100+酒店/17,500间（全球），新加坡16家超4,000间。10个品牌，Village/Vibe处于中高端，但缺乏标准中端品牌。</li>
@@ -5789,14 +5830,18 @@ tbody tr:last-child td {
           <p><strong>Worldwide Hotels</strong>：新加坡最大本土集团（41家/8,600间，占10%+供给）。从Hotel 81经济型到Icon Hotel高端全覆盖。CEO明确提出"精奢（lean luxury）"定位，聚焦中端。989间Mercure ICON为全球最大美居（Accor特许经营），证明中端规模化可行。</p>
           <p><strong>品牌生态结构验证</strong>：奢华/高端供给充足、经济型覆盖扎实，但标准化3-4星中端品牌近乎空白。JLL确认"upcoming supply concentrated in midscale and upscale"——市场正在自我修正这一缺口。本土集团在国际联号面前，中端品牌管理输出能力相对弱势。</p>
           <p><strong>中国品牌参照</strong>：全季JI Hotel Orchard（81间，S$130-150/晚）是唯一在新加坡运营的中国中端品牌。华住加速东南亚（6家开业，吉隆坡Downtown 2026年底）。锦江RJJ六国版图不含新加坡，亚朵2,088家均在中国大陆。</p>
-          <div class="key-finding">🔑 中端标准化品牌运营——中国酒店集团的最强基因——在新加坡市场几乎没有直接的本土对标竞争者</div>
         </div>
+        <div class="key-finding">🔑 中端标准化品牌运营——中国酒店集团的最强基因——在新加坡市场几乎没有直接的本土对标竞争者</div>
       </div>
 
-      <!-- 第四章 -->
-      <div class="chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)"><span class="ch-arrow">▸</span> 四、竞争格局与市场机会：中国品牌入局与国际品牌的存量博弈</div>
-        <div class="chapter-body">
+      <!-- CHAPTER 4 -->
+      <div class="chapter animate-in" id="sgch4">
+        <div class="chapter-header">
+          <div class="chapter-number">第四章</div>
+          <h2>竞争与机会 — 中国品牌入局与国际品牌的存量博弈</h2>
+          <div class="date">2026年7月 · 20条来源</div>
+        </div>
+        <div class="core-conclusion">
           <p><strong>华住全季：唯一有运营的中国中端品牌。</strong>JI Hotel Orchard Singapore（81间，2019年开业），Trip.com评分9.1/10。2025年10月创三项纪录：最高单日ADR S$607、月度营收S$572,370、OCC ~90%，RGI #1。验证了品牌可迁移性、会员跨境价值和中端定位的市场匹配。</p>
           <p><strong>华住在东南亚已开业6家酒店</strong>，轻资产占比89%。策略：品牌矩阵化（汉庭→全季→美仑美奂）+ 体系化运营（GOP系统/AI定价/华住会3亿会员）。但新加坡目前仅1家——对华住而言，新加坡也是"验证市场"。</p>
           <p><strong>锦江RJJ和亚朵均未进入新加坡</strong>：RJJ六国（马来西亚/印尼/越南/老挝/柬埔寨/菲律宾）不含新加坡；亚朵2,088家全部在中国。艺龙入局将成"第二名"——品牌教育已完成但先发窗口仍开放。</p>
@@ -5814,14 +5859,18 @@ tbody tr:last-child td {
           <p><strong>三方博弈：合作优于竞争。</strong>本土集团（Far East/Worldwide）物业端优势、国际联号品牌端优势、中国品牌中端运营+中国客源+数字化效率优势。最优策略：与本土业主合作——中国品牌提供品牌/运营/客源，业主提供物业/合规/劳工管理。</p>
           <p><strong>机会量化</strong>：①时间窗口：2025-2029供给CAGR 1.2%；②价格窗口：S$200-300/晚竞争最薄弱；③客源窗口：中国游客310万（#1），免签30天；④模式窗口：翻牌/特许经营已验证。</p>
           <p><strong>优先进入路径</strong>：第一优先翻牌合作→第二优先管理合同→第三优先华住生态协同。核心风险：人工成本东南亚最高（S$1,516-8,836/月）、物业获取得S$100-210万/间、体量天花板74,427间。</p>
-          <div class="key-finding">🔑 "第二名红利"：华住全季已完成品牌教育，锦江/亚朵缺席，艺龙入局将是第二家中国中端品牌——市场已暖、竞争尚冷</div>
         </div>
+        <div class="key-finding">🔑 "第二名红利"：华住全季已完成品牌教育，锦江/亚朵缺席，艺龙入局将是第二家中国中端品牌——市场已暖、竞争尚冷</div>
       </div>
 
-      <!-- 第五章 -->
-      <div class="chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)"><span class="ch-arrow">▸</span> 五、出海投资视角：进入路径、财务模型与风险评估</div>
-        <div class="chapter-body">
+      <!-- CHAPTER 5 -->
+      <div class="chapter animate-in" id="sgch5">
+        <div class="chapter-header">
+          <div class="chapter-number">第五章</div>
+          <h2>出海投资视角 — 进入路径、财务模型与风险评估</h2>
+          <div class="date">2026年7月 · 11条来源</div>
+        </div>
+        <div class="core-conclusion">
           <p><strong>外资政策：100%开放但门槛不低。</strong>酒店属非限制类物业，外资可100%持有产权和运营公司。CIT 17%（东盟最低之一）、GST 9%、无酒店住宿税、无资本利得税、无股息预扣税、中新税收协定。酒店执照须向HLB申请（3-6周）。</p>
           <p><strong>劳工政策是最大挑战</strong>：基层月薪S$1,516-2,234，管理岗S$3,242-8,836。PWM每年推高基层工资4.5%。EP门槛S$6,000（2027年1月），S Pass S$3,600。服务业外劳上限35%。人工成本约为越南5-6倍、印尼/泰国3-4倍。</p>
 
@@ -5836,42 +5885,44 @@ tbody tr:last-child td {
           <p><strong>敏感性分析</strong>（租赁模式）：基准ADR S$220/OCC 82%/EBITDA S$100万。乐观S$250/OCC 85%→S$155万(+55%)。悲观S$180/OCC 75%→S$35万(-65%)。压力S$160/OCC 65%→<strong>亏损S$10万</strong>。ADR每变S$10，EBITDA变化S$10-15万。管理合同（无租金刚性）是更稳健的首选。</p>
           <p><strong>风险矩阵</strong>：人工成本🔴高（数字化降人房比缓解）→物业获取🔴高（翻牌路径规避）→汇率🟡中（S$匹配S$成本）→市场竞争🟡中（S$200-300差异化）→体量天花板🟡中（定位品牌标杆非规模化）。</p>
           <p><strong>三阶段进入路径</strong>：<strong>第一阶段（0-2年）</strong>—1家管理合同酒店，核心商圈60-120间，目标OCC 78%+；<strong>第二阶段（2-4年）</strong>—3-5家品牌矩阵，启动特许经营，年管理费S$50-100万；<strong>第三阶段（4-7年）</strong>—品牌标杆，租赁运营1家旗舰店，生态协同（华住/同程），经验输出至马来西亚/泰国。</p>
-          <div class="key-finding">🔑 新加坡不是"量"的市场而是"质"的市场——品牌制高点价值 > 单店EBITDA，安全资产配置 + 东南亚运营标准输出基地</div>
         </div>
+        <div class="key-finding">🔑 新加坡不是"量"的市场而是"质"的市场——品牌制高点价值 &gt; 单店EBITDA，安全资产配置 + 东南亚运营标准输出基地</div>
       </div>
 
       <!-- 六国对比总结 -->
-      <div class="chapter">
-        <div class="chapter-header" onclick="toggleChapter(this)"><span class="ch-arrow">▸</span> 📊 东南亚六国投资对比总结</div>
-        <div class="chapter-body">
+      <div class="chapter animate-in" id="sgch6">
+        <div class="chapter-header">
+          <div class="chapter-number">对比</div>
+          <h2>📊 东南亚六国投资对比总结</h2>
+        </div>
+        <div class="core-conclusion">
           <table class="data-table"><tr><th>维度</th><th>🇸🇬新加坡</th><th>🇻🇳越南</th><th>🇹🇭泰国</th><th>🇮🇩印尼</th><th>🇲🇾马来西亚</th><th>🇵🇭菲律宾</th></tr>
           <tr><td><strong>投资评级</strong></td><td><strong>B</strong></td><td>A-</td><td>B+</td><td>A-</td><td>B+</td><td>B</td></tr>
           <tr><td>市场定位</td><td>品牌标杆</td><td>规模化主战场</td><td>度假中端</td><td>双引擎</td><td>中端蓝海</td><td>长线布局</td></tr>
           <tr><td>中端缺口</td><td>S$200-300品质真空</td><td>中端缺口显著</td><td>300-800元精品缺位</td><td>两头强中间空</td><td>S$180-300空白</td><td>US$60-120空白</td></tr>
           <tr><td>外资友好度</td><td>极高(100%)</td><td>中高</td><td>中(BOI)</td><td>中低</td><td>中(4-5星100%)</td><td>中(4-5星100%)</td></tr>
           <tr><td>进入模式</td><td>管理合同/特许经营</td><td>管理合同/租赁</td><td>管理合同/特许经营</td><td>管理合同</td><td>管理合同/特许经营</td><td>管理合同</td></tr>
-          <tr><td>首荐城市</td><td>乌节路/武吉士</td><td>胡志明/河内</td><td>曼谷/普吉</td><td>雅加达/巴厘岛</td><td>吉隆坡/新山</td><td>马尼拉</td></tr>
+          <tr><td>首荐城市</td><td>乌节路/武吉士</td><td>胡志明/河内</td><td>曼谷/普吉</td></td><td>吉隆坡/新山</td><td>马尼拉</td></tr>
           <tr><td>中端IRR</td><td>8-12%</td><td>12-18%</td><td>8-12%</td><td>12-15%</td><td>9-13%</td><td>10-18%</td></tr>
           <tr><td>回本周期</td><td>6-9年</td><td>5-7年</td><td>6-8年</td><td>6-7年</td><td>5-8年</td><td>4-8年</td></tr>
           <tr><td>战略优先级</td><td><strong>P2</strong></td><td>P1</td><td>P1</td><td>P1</td><td>P2</td><td>P3</td></tr>
           </table>
           <p><strong>优先级逻辑</strong>：越南/印尼/泰国为P1（市场规模+中端缺口+IRR最优），马来西亚/新加坡为P2（品牌战略价值+安全边际），菲律宾为P3（窗口观望）。</p>
-          <p><strong>新加坡的战略角色</strong>：在六国矩阵中是<strong>"高成本、高安全、高品牌价值"</strong>的异类。不应被当作规模化市场评估ROI，而应定位为艺龙酒店科技出海的品牌制高点——在新加坡站稳脚跟的品牌，在任何东南亚城市都具备说服力。</p>
+          <p><strong>新加坡的战略角色</strong>：在六国矩阵中是<strong>“高成本、高安全、高品牌价值”</strong>的异类。不应被当作规模化市场评估ROI，而应定位为艺龙酒店科技出海的品牌制高点——在新加坡站稳脚跟的品牌，在任何东南亚城市都具备说服力。</p>
         </div>
       </div>
 
       <!-- 核心结论 -->
-      <div class="core-conclusion" style="margin:30px 0">
+      <div class="core-conclusion">
         <strong>📌 新加坡投资核心结论</strong><br><br>
         <strong>1. 最安全，不是最高回报。</strong>低Cap Rate（4-5%）、供给刚性（1.2%）、制度稳定性构成避风港组合。IRR 8-12%低于越南/印尼，但风险调整后回报最稳健。<br><br>
         <strong>2. 中端是唯一供不应求的细分。</strong>OCC 83.1%（最高）、RevPAR韧性最强（-3%）、S$200-300/晚品牌真空——三重信号指向品类轮动的中端赛道。<br><br>
-        <strong>3. "翻牌+特许经营"是最短路径。</strong>2025年翻牌浪潮验证了存量改造的可行性，资产收购成本为国内25-50倍。<br><br>
-        <strong>4. 华住已先行验证，"第二名红利"窗口开放。</strong>JI Hotel Orchard（81间/OCC ~90%/RGI #1）证明中端中国品牌可行。锦江/亚朵缺席，竞争压力极小。<br><br>
+        <strong>3. “翻牌+特许经营”是最短路径。</strong>2025年翻牌浪潮验证了存量改造的可行性，资产收购成本为国内25-50倍。<br><br>
+        <strong>4. 华住已先行验证，“第二名红利”窗口开放。</strong>JI Hotel Orchard（81间/OCC ~90%/RGI #1）证明中端中国品牌可行。锦江/亚朵缺席，竞争压力极小。<br><br>
         <strong>5. 人工成本是最大单一风险。</strong>基层S$1,516起，PWM每年+4.5%，GOP率预计42%。数字化降人房比是必选项。<br><br>
-        <strong>6. 战略定位"品牌制高点"——新加坡做品牌，马来西亚做规模。</strong>3-5家酒店即达市场覆盖上限，真实价值在于品牌标杆效应+安全资产+运营标准输出基地。
+        <strong>6. 战略定位“品牌制高点”——新加坡做品牌，马来西亚做规模。</strong>3-5家酒店即达市场覆盖上限，真实价值在于品牌标杆效应+安全资产+运营标准输出基地。
       </div>
     </div>
-
     <div class="section" id="section-myanmar">
       <div class="research-header">
         <button class="back-btn" onclick="showOverview()">← 返回总览</button>
@@ -6119,6 +6170,23 @@ function showPhChapter(n) {
     });
   }
 }
+function showSgChapter(n) {
+  playClick();
+  const ch = document.getElementById('sgch' + n);
+  if (!ch) return;
+  // Expand the target chapter
+  ch.classList.add('open');
+  // Scroll to it
+  ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Update nav buttons
+  const nav = document.getElementById('sg-chapter-nav');
+  if (nav) {
+    nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx + 1 === n);
+    });
+  }
+}
+
 
 function toggleSidebar() {
   playClick();
