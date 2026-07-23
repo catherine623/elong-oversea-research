@@ -1192,7 +1192,7 @@ tbody tr:last-child td {
         <span class="nav-flag">🇸🇬</span>新加坡<span class="nav-badge done">完成</span>
       </div>
       <div class="nav-country" onclick="showCountry('myanmar'); closeSidebar();" data-country="myanmar">
-        <span class="nav-flag">🇲🇲</span>缅甸<span class="nav-badge pending">待研究</span>
+        <span class="nav-flag">🇲🇲</span>缅甸<span class="nav-badge done">完成</span>
       </div>
       <div class="nav-country" onclick="showCountry('cambodia'); closeSidebar();" data-country="cambodia">
         <span class="nav-flag">🇰🇭</span>柬埔寨<span class="nav-badge pending">待研究</span>
@@ -1256,7 +1256,7 @@ tbody tr:last-child td {
         <div class="country-card" onclick="showCountry('myanmar')">
           <span class="flag">🇲🇲</span>
           <div class="name">缅甸</div>
-          <span class="status pending">○ 待研究</span>
+          <span class="status done">● 完成</span>
         </div>
         <div class="country-card" onclick="showCountry('cambodia')">
           <span class="flag">🇰🇭</span>
@@ -5926,14 +5926,479 @@ tbody tr:last-child td {
     <div class="section" id="section-myanmar">
       <div class="research-header">
         <button class="back-btn" onclick="showOverview()">← 返回总览</button>
-        <h1>🇲🇲 缅甸酒店投资市场</h1>
-        <div class="meta"><span style="color:var(--text-muted)">○ 待研究</span></div>
+        <h1>🇲🇲 缅甸酒店投资市场深度研究</h1>
+        <div class="meta">
+          <span class="status-dot" style="color:#10b981">完成</span>
+          <span>研究周期：2026年7月 · 162条来源</span>
+        </div>
+        <p style="margin-top:12px;color:var(--text-secondary);font-size:14px;max-width:800px;">
+          缅甸是东南亚最具"深度价值"争议的酒店投资目的地——5,450万人口、年龄中位数仅29.8岁的年轻劳动力结构与Coface D级国家风险、E级营商环境的最差评级形成尖锐反差。入境游客从2019年436万断崖式跌至2025年1-5月仅11.8万，2025年3月曼德勒7.7级地震进一步摧毁中部旅游基础设施。然而，市场呈<strong>"哑铃型"</strong>分布——奢华度假村与经济型民宿占据两端，$50-70/晚品质中端连锁几乎完全缺席，品牌渗透率仅4-10%（东南亚最低）。中国酒店品牌（锦江/华住/德胧）东南亚布局均不含缅甸，东呈怡程是唯一在缅开业的中国品牌。27+酒店低价挂牌构成罕见困境收购窗口。综合投资评级：<strong>C+（七国最低）——当前不进入实体投资，建立"准入门"机制待触发条件达成后以HMA模式切入</strong>。
+        </p>
       </div>
-      <div class="placeholder-card">
-        <div class="p-flag">🇲🇲</div>
-        <h2>缅甸</h2>
-        <div class="p-status">○ 待研究</div>
-        <p>仰光商务市场与文化旅游资源评估，重点关注政治稳定性和外资政策走向。</p>
+      <div class="quick-stats">
+        <div class="stat-card accent-blue">
+          <div class="stat-icon">👥</div>
+          <div class="stat-value">5,450万</div>
+          <div class="stat-label">人口规模</div>
+          <div class="stat-note">年龄中位数29.8岁 · 城镇化仅32.5%</div>
+        </div>
+        <div class="stat-card accent-cyan">
+          <div class="stat-icon">📉</div>
+          <div class="stat-value">$1,225</div>
+          <div class="stat-label">人均GDP（2024）· 增速-1~2%</div>
+          <div class="stat-note">GDP连续负增长 · 通胀24-34%</div>
+        </div>
+        <div class="stat-card accent-purple">
+          <div class="stat-icon">✈️</div>
+          <div class="stat-value">11.8万</div>
+          <div class="stat-label">入境游客（2025年1-5月）</div>
+          <div class="stat-note">仅为2019年436万的~3% · 商务客为主</div>
+        </div>
+        <div class="stat-card accent-amber">
+          <div class="stat-icon">⚠️</div>
+          <div class="stat-value">C+</div>
+          <div class="stat-label">投资评级</div>
+          <div class="stat-note">七国最低 · Coface D/E · FATF黑名单</div>
+        </div>
+      </div>
+      <div class="chapter-nav" id="mm-chapter-nav">
+        <button class="ch-btn active" onclick="showMMChapter(1)">一、市场基本面</button>
+        <button class="ch-btn" onclick="showMMChapter(2)">二、酒店市场格局</button>
+        <button class="ch-btn" onclick="showMMChapter(3)">三、本土品牌深研</button>
+        <button class="ch-btn" onclick="showMMChapter(4)">四、竞争与机会</button>
+        <button class="ch-btn" onclick="showMMChapter(5)">五、出海投资视角</button>
+      </div>
+      <!-- CHAPTER 1 -->
+      <div class="chapter open animate-in" id="mmch1">
+        <div class="chapter-header">
+          <div class="chapter-number">第一章</div>
+          <h2>市场基本面 — 深度危机中的"深度折价"</h2>
+          <div class="date">2026年7月 · 35+条来源</div>
+        </div>
+        <div class="core-conclusion">
+          缅甸市场基本面呈现<strong>"深度收缩+结构性空白"</strong>的双重特征。5,450万人口年龄中位数仅29.8岁，但贫困率高达31%、城镇化仅32.5%，有效消费市场远小于总量暗示水平。GDP连续负增长（2024年-1.1%）、通胀24-34%、缅币市场汇率不足政变前1/3。2025年3月曼德勒7.7级地震造成$110亿物理损失。入境游客近乎"归零"——2025年1-5月仅11.8万（2019年436万的~3%）。电力覆盖率仅50-55%（东南亚最低），是酒店运营最致命硬约束。Coface国家风险D级/营商环境E级（七国最差）、FATF黑名单构成系统性壁垒。但仰光等核心城市安全状况优于全国性叙事，2011-2019年增长先例表明关键约束改善后存在显著后发弹性空间。
+        </div>
+        <div class="subsection">
+          <h3>1.1 人口与城镇化：规模红利仍存，结构性挑战加剧 <span class="weight-badge">权重 6/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">总人口(2024)</div><div class="dc-value">5,131.7万</div><div class="dc-note">普查+遥感估算 · 世行口径5,450万</div></div>
+            <div class="data-card"><div class="dc-label">年龄中位数</div><div class="dc-value">29.8岁</div><div class="dc-note">0-14岁24.3% · 65+岁7.3%</div></div>
+            <div class="data-card"><div class="dc-label">城镇化率</div><div class="dc-value">32.5%</div><div class="dc-note">东南亚最低 · 69%居住农村</div></div>
+            <div class="data-card"><div class="dc-label">贫困率</div><div class="dc-value">31%</div><div class="dc-note">持续恶化 · 有效消费市场受限</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            缅甸拥有可观的劳动年龄人口基数（15-64岁占68.4%），对劳动力密集型酒店业构成潜在支撑。但城镇化严重滞后、青年加速外流（净移民-3.8万/年）及贫困率攀升至31%，意味着国内消费市场有效规模远小于人口总量暗示水平（<a href="https://www.huaon.com/channel/globaldata/1112841.html" target="_blank">华经产业研究院</a>；<a href="https://www.worldbank.org/en/where-we-work/myanmar" target="_blank">World Bank</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>1.2 宏观经济：深度收缩中的微弱企稳信号 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">GDP(2024)</div><div class="dc-value">$740.7亿</div><div class="dc-note">人均$1,225-$1,359</div></div>
+            <div class="data-card"><div class="dc-label">GDP增速</div><div class="dc-value">-1~-3%</div><div class="dc-note">2011-2021年均6%→连续负增长</div></div>
+            <div class="data-card"><div class="dc-label">通胀率</div><div class="dc-value">24-34%</div><div class="dc-note">2025年4月34.1%</div></div>
+            <div class="data-card"><div class="dc-label">缅币汇率</div><div class="dc-value">4,500 MMK/USD</div><div class="dc-note">官方2,100 · 不足政变前1/3</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            2024年GDP约740.7亿美元，人均仅$1,225-$1,359（<a href="https://data.worldbank.org/?locations=MM-XN" target="_blank">World Bank</a>；<a href="https://www.gov.uk/government/publications/overseas-business-risk-myanmar-burma/overseas-business-risk-myanmar-burma" target="_blank">UK FCDO</a>）。2011-2021年均增速约6%，2021年暴跌-12%，2024年再转负约-1.12%（<a href="https://fr.statista.com/statistics/525748/gross-domestic-product-gdp-growth-rate-in-myanmar/" target="_blank">Statista</a>）。2026年6月世行报告显示财年末段微弱企稳，但燃油冲击将增长预测从3%下调至2%（<a href="https://www.worldbank.org/en/news/press-release/2026/06/16/myanmar-s-economy-shows-tentative-stabilization-but-fuel-shock-intensifies-pressures" target="_blank">World Bank MEM June 2026</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>1.3 2025年大地震：系统性冲击与重建进展 <span class="weight-badge">权重 7/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">物理损失</div><div class="dc-value">$110亿</div><div class="dc-note">GDP的14% · 产出损失$26亿(4%)</div></div>
+            <div class="data-card"><div class="dc-label">死亡人数</div><div class="dc-value">3,818人</div><div class="dc-note">5,100+受伤 · 42.4万人受灾</div></div>
+            <div class="data-card"><div class="dc-label">恢复进度</div><div class="dc-value">84%</div><div class="dc-note">道路94% · 电力99% · 铁路96%</div></div>
+            <div class="data-card"><div class="dc-label">抗震新标准</div><div class="dc-value">8.0级</div><div class="dc-note">Build Back Better · 风险指数第6</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            2025年3月28日曼德勒7.7级强震，波及10个地区和邦。曼德勒60%城区建筑倒塌，实皆省90%房屋损毁（<a href="https://ybj.fuxin.gov.cn/mob/newsdetail.thtml?id=980410" target="_blank">中国风险洞察</a>）。截至2026年3月约84%恢复完成，"Build Back Better"战略（<a href="https://www.presoffministry.gov.mm/en/news/29689" target="_blank">Myanmar Government</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>1.4 旅游市场基线：从巅峰坠落 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">2019巅峰</div><div class="dc-value">436万</div><div class="dc-note">中国客超100万 · 历史峰值</div></div>
+            <div class="data-card"><div class="dc-label">2024全年</div><div class="dc-value">106万</div><div class="dc-note">仅为2019年24%</div></div>
+            <div class="data-card"><div class="dc-label">2025年1-5月</div><div class="dc-value">11.8万</div><div class="dc-note">线推全年约30万 · ~2019年3%</div></div>
+            <div class="data-card"><div class="dc-label">蒲甘房价跌幅</div><div class="dc-value">-62%</div><div class="dc-note">$130→$50 · 降价60%仍难维持</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            2019年全年436万外国游客为历史峰值。2024年约106万，2025年仅约97.3万——2019年22.3%（<a href="https://www.news.cn/english/20260122/56af582081ff4431af12e9a9949c85a4/c.html" target="_blank">新华社2026</a>）。商务签证入境者占主流，纯休闲度假客群近乎归零。蒲甘酒店房价$130→$50（<a href="https://news.qq.com/rain/a/20250612A07CRM00" target="_blank">腾讯新闻</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>1.5 基础设施：电力瓶颈是最致命硬约束 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">总装机/有效</div><div class="dc-value">7,266/3,064MW</div><div class="dc-note">日发电仅2,800MW</div></div>
+            <div class="data-card"><div class="dc-label">电力覆盖率</div><div class="dc-value">50-55%</div><div class="dc-note">东南亚最低 · 80%农村无电网</div></div>
+            <div class="data-card"><div class="dc-label">电网/发电机</div><div class="dc-value">$0.144/$0.45+/kWh</div><div class="dc-note">发电机成本3倍+</div></div>
+            <div class="data-card"><div class="dc-label">PMS覆盖率</div><div class="dc-value">38%</div><div class="dc-note">数字化最落后 · 80%酒店无在线预订</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            覆盖率50-55%（<a href="http://www.cidca.gov.cn/20250930/bfa550d28b8b43b098d45a449918d1bc/c.html" target="_blank">CIDCA</a>）。"缅甸是东南亚电气化率最低的国家"（<a href="https://ydyl.china.com.cn/2025-03/03/content_117741605.shtml" target="_blank">光明日报</a>）。蒲甘每日停电10-12小时（<a href="https://cnimyanmar.com/index.php/english-edition/8835-the-lack-of-full-time-electricity-is-making-it-difficult-to-open-bagan-hotels" target="_blank">CNI Myanmar</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>1.6 政治与安全风险：投资决策的否决项 <span class="weight-badge">权重 10/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="dc-label">Coface风险</div><div class="dc-value">D级</div><div class="dc-note">东南亚最差 · 营商环境E级</div></div>
+            <div class="data-card"><div class="dc-label">FATF状态</div><div class="dc-value">黑名单</div><div class="dc-note">仅与伊朗/朝鲜并列 · SWIFT受限</div></div>
+            <div class="data-card"><div class="dc-label">军政府控制</div><div class="dc-value">~30%</div><div class="dc-note">抵抗组织控制40%+ · 6,000+平民死亡</div></div>
+            <div class="data-card"><div class="dc-label">流离失所</div><div class="dc-value">350万+</div><div class="dc-note">强制征兵 · 370万入泰国</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            2022年10月FATF将缅甸列入黑名单（<a href="https://www.gov.uk/government/publications/overseas-business-risk-myanmar-burma/overseas-business-risk-myanmar-burma" target="_blank">UK FCDO</a>）。2025年9月OFAC再次更新制裁名单（<a href="https://cambodiainvestmentreview.com/2025/09/09/u-s-treasury-departments-office-of-foreign-assets-control-updates-list-for-cambodian-and-burmese-entities-september-2025/" target="_blank">Cambodia Investment Review</a>）。仰光等核心城市属"高风险中的相对低风险区"（<a href="https://www.gomyanmartours.com/myanmar-travel-advisory-safety-updated-2025-2026/" target="_blank">Myanmar Travel Advisory</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>1.7 区域对比：全面落后但有反弹先例 <span class="weight-badge">权重 7/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            缅甸在区域竞争中处于最差位置——不是"追赶型"而是"脱轨型"。越南2025年入境预计突破2,000万、GDP增速7.4%；柬埔寨2024年670万游客创历史新高（<a href="https://statisticsoftheworld.com/asean-economy" target="_blank">ASEAN Economy 2026</a>）。但2011-2019年短暂开放期年均6%增长和旅游业快速爬升的先例表明，关键约束条件改善后存在显著后发弹性空间（<a href="https://weibo.com/1952262350/PbVDHx2qK" target="_blank">UNDP</a>）。
+          </p>
+        </div>
+      </div>
+      <!-- 第2章 酒店市场格局 -->
+      <div class="chapter" id="mmch2">
+        <div class="chapter-header" onclick="toggleChapter(this)">
+          <span class="chapter-number">二</span>
+          <h2>酒店市场格局</h2>
+          <span class="chapter-date">三重冲击下的极端重构</span>
+          <span class="ch-arrow">▼</span>
+        </div>
+        <div class="core-conclusion">
+          <strong>核心结论：</strong>缅甸酒店市场呈现供给过剩与需求枯竭并存的极端格局——全国约2,400家持牌酒店/11万间客房对应不足100万年入境游客，RevPAR和ADR较政变前腰斩。市场呈"哑铃型"结构，$50-70/晚中端品牌连锁存在明显缺口。国际品牌集中于Accor等少数集团，中国品牌完全缺席。政变（需求端摧毁）与地震（供给端摧毁）的双重冲击形成了"双向坍塌"的极端情境。
+        </div>
+        <div class="subsection">
+          <h3>2.1 供给总量与结构演变 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">全国持牌酒店（2024）</div><div class="value accent-red">2,421家</div><div class="source"><a href="https://meral.edu.mm/record/11455/files/May%20Neyin%20Chan%20San,%20EMDevS-26,%2019th%20Batch.pdf" target="_blank">MERAL学术论文</a></div></div>
+            <div class="data-card"><div class="label">全国客房数（2024）</div><div class="value accent-red">111,218间</div><div class="source">同上</div></div>
+            <div class="data-card"><div class="label">2015年基数</div><div class="value accent-red">1,037家/46,326间</div><div class="source">9年增长133%</div></div>
+            <div class="data-card"><div class="label">挂牌出售酒店数</div><div class="value accent-red">27+家</div><div class="source"><a href="https://www.irrawaddy.com/news/burma/myanmar-sees-a-post-coup-fire-sale-of-hotels.html" target="_blank">Irrawaddy</a></div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            2015-2024年间酒店数量增长133%，但这种"增长"极具误导性——大量酒店建成于政变前投资高峰期（2014-2020年），政变后新建项目几乎停滞，相当比例处于停业或半停业状态（<a href="https://meral.edu.mm/record/11455/files/May%20Neyin%20Chan%20San,%20EMDevS-26,%2019th%20Batch.pdf" target="_blank">MERAL</a>）。缅甸旅游业联合会另一口径显示全国约1,900+家酒店/80,000间客房，"数百家酒店正在挂牌出售"（<a href="http://bytelife.altervista.org/pophotels.htm" target="_blank">bytelife</a>）。连锁化率极低，约90%为单体家族式经营（<a href="https://zcqtz.com/news7073482" target="_blank">zcqtz</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>2.2 核心经营指标趋势 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">仰光Upper-Scale ADR</div><div class="value accent-red">$59/晚</div><div class="source"><a href="https://cambodiainvestmentreview.com/2025/09/11/cim-mid-year-2025-yangon-property-report-highlights-domestic-demand-as-key-driver" target="_blank">CIM 2025</a></div></div>
+            <div class="data-card"><div class="label">蒲甘房价跌幅</div><div class="value accent-red">$130→$50</div><div class="source">跌62%（<a href="https://news.qq.com/rain/a/20250612A07CRM00" target="_blank">腾讯新闻</a>）</div></div>
+            <div class="data-card"><div class="label">仰光入住率（2019）</div><div class="value accent-red">30%</div><div class="source"><a href="https://www.chinaqw.com/hqly/2019/03-05/216909.shtml" target="_blank">中国侨网</a></div></div>
+            <div class="data-card"><div class="label">2025年入境游客</div><div class="value accent-red">~30万（全年线推）</div><div class="source">仅为2019年436万的~7%</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            政变后酒店价格全面崩盘——仰光高端酒店ADR从$100+/晚降至$59/晚（<a href="https://cambodiainvestmentreview.com/2025/09/11/cim-mid-year-2025-yangon-property-report-highlights-domestic-demand-as-key-driver" target="_blank">CIM 2025</a>），Booking.com实时价格验证：泛太平洋$84-95、诺富特$55、乐天$56、温德姆$87（<a href="https://www.booking.com/country/mm.html" target="_blank">Booking.com</a>）。2024年12月STR数据显示缅甸出现"双位数入住率增长"（相比极低基数），但RevPAR恢复仅由入住率驱动而非房价（<a href="https://www.hospitalitynet.org/news/4125730.html" target="_blank">STR</a>）。2025年上半年入境游客同比下降17%，微弱复苏主要由国内游客支撑（<a href="https://cambodiainvestmentreview.com/2025/09/11/cim-mid-year-2025-yangon-property-report-highlights-domestic-demand-as-key-driver" target="_blank">CIM</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>2.3 地理分布特征 <span class="weight-badge">权重 7/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">仰光省</div><div class="value accent-red">491家/~25,000间</div><div class="source">90%运营中</div></div>
+            <div class="data-card"><div class="label">曼德勒省</div><div class="value accent-red">603家（震前）</div><div class="source">463酒店+140招待所</div></div>
+            <div class="data-card"><div class="label">内比都</div><div class="value accent-red">102家/6,434间</div><div class="source">震后仅63家恢复</div></div>
+            <div class="data-card"><div class="label">蒲甘地区</div><div class="value accent-red">~90家运营中</div><div class="source">70%酒店停业中</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            供给高度集中于核心城市和目的地：仰光为商务枢纽（约半数五星酒店已关门（<a href="https://www.irrawaddy.com/news/burma/myanmar-sees-a-post-coup-fire-sale-of-hotels.html" target="_blank">Irrawaddy</a>））；曼德勒震后仅约45%住宿恢复运营（<a href="https://onenewstvchannel.com/en/travel-en/accommodation-en/nearly-half-of-hotels-and-guesthouses-in-mandalay-reopen" target="_blank">OneNews TV</a>）；内比都震后63/102家恢复（42.5%）（<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_71668a84d1872152" target="_blank">缅甸金凤凰</a>）；蒲甘约90家运营中，约70%酒店和餐馆停业（<a href="https://www.thestar.com.my/aseanplus/aseanplus-news/2024/07/17/myanmar-temple-city-pines-for-tourists-as-conflict-rages" target="_blank">AFP/The Star</a>）。额布里海滩因若开邦安全局势恶化已无法作为正常旅游目的地运营。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>2.4 市场细分与品牌生态 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">奢华/高端 $120+</div><div class="value accent-red">~10家五星酒店</div><div class="source">约半数已关闭</div></div>
+            <div class="data-card"><div class="label">中高端 $70-120</div><div class="value accent-red">Accor品牌为主</div><div class="source">ADR实际$55-59</div></div>
+            <div class="data-card"><div class="label">中端 $50-70</div><div class="value accent-gold">最大供给缺口</div><div class="source">仅Ibis Styles 120间</div></div>
+            <div class="data-card"><div class="label">经济型 $30-50</div><div class="value accent-green">供给丰富</div><div class="source">蒲甘/茵莱湖民宿</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            缅甸市场按价格层级呈四梯级——奢华/高端完全依赖国际商务客，政变后客源断崖式下跌；中高端实际ADR已跌入中端区间；<strong>$50-70/晚中端品牌连锁是最大供给缺口</strong>，Ibis Styles仰光（120间）是唯一在缅国际经济型品牌酒店，开业后入住率超70%已验证中端需求（<a href="https://santhaya.com/projects/detail/22" target="_blank">Santhaya</a>）。国际品牌方面：Accor运营3家（Novotel/Pullman/Mercure/Ibis Styles/Novotel Inle）+1家筹开（Ibis Styles曼德勒279间）（<a href="https://all.accor.com/a/en/destination/country/hotels-myanmar-pmm.html" target="_blank">Accor Myanmar</a>）；Pan Pacific/PARKROYAL、Meliá、Wyndham、Lotte等留守；Dusit 2025年重返签约The Strand（<a href="https://www.dusit-international.com/en/newsroom/news-releases/689/dusit-recalls-all-time-high-hotel-signings-in-2025-positions-for-a-strong-year-of-openings-in-2026" target="_blank">Dusit</a>）。<strong>中国品牌完全缺席</strong>——锦江六国计划不含缅甸（<a href="https://m.jiemian.com/article/13463725.html" target="_blank">界面新闻</a>），华住东南亚6家同样跳过缅甸。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>2.5 政变与地震的双重冲击 <span class="weight-badge">权重 8/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            2021年政变造成需求端崩溃（国际客源归零，酒店被迫转向国内市场），2025年3月7.9级地震造成供给端摧毁：曼德勒14家酒店完全摧毁+91家轻微损坏（<a href="https://onenewstvchannel.com/en/travel-en/accommodation-en/nearly-half-of-hotels-and-guesthouses-in-mandalay-reopen" target="_blank">OneNews TV</a>），内比都3家坍塌+99家受损（<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_71668a84d1872152" target="_blank">缅甸金凤凰</a>），仰光半岛酒店$1.3亿项目搁置全额注销（<a href="https://www.irrawaddy.com/business/peninsula-hotels-writes-off-hopeless-yangon-project.html" target="_blank">Irrawaddy</a>）。幸存酒店采取"业态多元化"策略：增设KTV娱乐、24小时电力保障（电力覆盖率仅50-55%的关键卖点）、全WiFi覆盖（<a href="https://m.10100.com/article/25449994" target="_blank">缅甸金凤凰</a>）。Sedona Hotel以$57.4M出售后重新运营（<a href="https://hotel.report/development/five-star-myanmar-hotel-to-reopen-under-new-owner-yangon-landmark-returns-after-pandemic-military-takeover-halted-operations" target="_blank">Hotel.report</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>2.6 近期市场动态（2024-2026） <span class="weight-badge">权重 6/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            仰光省2025-2026财年审批175亿缅元酒店业投资（3份酒店执照/2份建设/1份旅馆/58个岗位）（<a href="https://www.gnlm.com.mm/yangon-hotels-draw-k17-5b-in-current-fy/" target="_blank">GNLM</a>），同年11月追加98.78亿缅元（223岗位）（<a href="https://www.mmgpmedia.com/static/content/YW/2025-12-01/1445093035960467456.html" target="_blank">缅甸金凤凰</a>）。The Strand 2025年5月重新开业结束5年闭门（<a href="https://www.tripadvisor.com.sg/ShowUserReviews-g294191-d301639-r1017653898-The_Strand-Yangon_Rangoon_Yangon_Region.html" target="_blank">TripAdvisor</a>）。Grand Andaman赌场度假村2024年2月无限期停业（<a href="https://www.ttrweekly.com/site/2024/02/grand-andaman-hotel-suspends-operations" target="_blank">TTR Weekly</a>）。中国品牌系统性"绕过"缅甸——这一"绕行"本身是市场风险信号，但也意味着政治稳定信号出现后缅甸将成为中国品牌尚未抢占的空白地带。
+          </p>
+        </div>
+      </div>
+      <!-- 第3章 本土品牌深研 -->
+      <div class="chapter" id="mmch3">
+        <div class="chapter-header" onclick="toggleChapter(this)">
+          <span class="chapter-number">三</span>
+          <h2>本土品牌深研</h2>
+          <span class="chapter-date">碎片化高原：无中端品牌</span>
+          <span class="ch-arrow">▼</span>
+        </div>
+        <div class="core-conclusion">
+          <strong>核心结论：</strong>缅甸本土品牌格局呈"碎片化高原"——市场参与者众多但规模普遍偏小，缺乏类似泰国Minor Group、印尼Archipelago的大型酒店集团。连锁化率不足10%的缅甸酒店业中约90%为单体家族式经营。五大本土品牌（HTOO/Memories/Amata/Clover/Pristine）无一系统覆盖$50-70中端精品连锁区间。HTOO因OFAC制裁不可合作；Amata/Memories财务困境极深；Clover是最接近艺龙产品线但规模仅3-4家。
+        </div>
+        <div class="subsection">
+          <h3>3.1 五大本土集团全景扫描 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">HTOO Hospitality</div><div class="value accent-red">16家/9品牌</div><div class="source">⚠️ OFAC制裁不可合作</div></div>
+            <div class="data-card"><div class="label">Memories Group</div><div class="value accent-red">SGX上市/净利率-329%</div><div class="source"><a href="https://simplywall.st/stock/catalist/1h4" target="_blank">SimplyWall.st</a></div></div>
+            <div class="data-card"><div class="label">Amata Holding</div><div class="value accent-red">YSX上市/负债率7.81</div><div class="source"><a href="https://ysx-mm.com/main-board/listing/financial-information/amata-00007" target="_blank">YSX</a></div></div>
+            <div class="data-card"><div class="label">Clover Hotels</div><div class="value accent-gold">206间/3家仰光</div><div class="source">最接近艺龙产品线</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>HTOO Hospitality</strong>：缅甸最大本土集团，16家酒店/9品牌/4系列（Luxury→Premier→Unique→Affordable），旗舰Aureum Palace在蒲甘/茵莱湖/额布里/内比都运营11家。创始人U Tay Za与军方前领导人丹瑞将军关系密切，<strong>2022年1月31日OFAC重新列入SDN名单（含其二子），HTOO Group一并被指定</strong>（<a href="https://home.treasury.gov/news/press-releases/jy0679" target="_blank">美国财政部</a>）。英国亦于2021年9月对Tay Za及HTOO Group实施制裁（<a href="https://wikipedia.nlaha.com/content/wikipedia_en_all_maxi_2024-01/A/Htoo_Group_of_Companies" target="_blank">Wikipedia: Htoo Group</a>）。Banyan Tree曾与HTOO签署合资协议管理17家酒店，但鉴于制裁风险实质已终止（<a href="https://www.traveldailynews.asia/asia-pacific/banyan-tree-holdings-and-htoo-hospitality-announce-formation-of-joint-venture-in-myanmar/" target="_blank">TravelDailyNews</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>Memories Group</strong>：SGX Catalist上市（MEMO），潘继泽家族控股。年收入约$3.22M，净利率-329.74%，负债率189.3%，持续亏损（<a href="https://simplywall.st/stock/catalist/1h4" target="_blank">SimplyWall.st</a>）。旗下Governor's Residence/Awei/Keinnara/Hotel Suggati等品牌及热气球/游艇体验业务。FMI 2025财年披露Memories项目转为22亿缅币亏损（<a href="https://fmi.com.mm/investors/annual-reports" target="_blank">FMI年报</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>Amata Holding</strong>：YSX上市唯一本土酒店公司（代码00007），旗下5家度假村+Oriental Ballooning热气球业务。FY2024-25税后亏损MMK 68.06亿，ROE -128%，负债/权益比7.81，流动性比率仅0.003——实质资不抵债边缘（<a href="https://ysx-mm.com/main-board/listing/financial-information/amata-00007" target="_blank">YSX</a>；<a href="https://cbsecurities.com.mm/amata-holding-public-co-ltd" target="_blank">CBS Securities</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>Clover Hotels Group</strong>：仰光中端商务连锁，3家物业共206间客房。2015年毛收入约$3.5M，旺季入住率90-99%。创始人Nay Zaw Aung<strong>明确寻求"特许经营和管理模型"合作</strong>（<a href="https://www.nationthailand.com/life/30274468" target="_blank">The Nation</a>），但政变后扩展计划未见实质推进。Pristine Lotus Hotels（茵莱湖度假）为家族自营模式，无外部资本（<a href="http://pristinehotelgroup.com" target="_blank">Pristine官网</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>3.2 品牌定位与产品矩阵 <span class="weight-badge">权重 7/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            缅甸本土品牌在星级/价位分布上高度偏向两端——Aureum Palace（$130-300+）、Governor's Residence（$200+）、Awei Pila（$400+）集中高端；Clover Hotels（$25-50）、Keinnara生态民宿（$40-80）偏低端。<strong>$50-70/晚中端精品连锁区间无人系统覆盖</strong>。Amata Garden和Clover最接近但前者仅3-5家度假物业非城市商务区，后者房价偏低且限于仰光。HTOO采用4系列9品牌多品牌矩阵是唯一具备多品牌运营架构的本土集团，但各分店服务质量差异明显（<a href="https://zcqtz.com/news7073482" target="_blank">zcqtz</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>3.3 运营管理能力 <span class="weight-badge">权重 7/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">PMS云端迁移率</div><div class="value accent-red">38%</div><div class="source"><a href="https://zcqtz.com/news7073482" target="_blank">zcqtz</a></div></div>
+            <div class="data-card"><div class="label">酒店有网站但无预订功能</div><div class="value accent-red">~80%</div><div class="source"><a href="https://lib.sookmyung.ac.kr/eds/detail/edsemr_edsemr.10.1108.BIJ.07.2017.0200" target="_blank">Emerald学术</a></div></div>
+            <div class="data-card"><div class="label">基层员工流动率</div><div class="value accent-red">45%</div><div class="source">东南亚最高</div></div>
+            <div class="data-card"><div class="label">酒店员工年均薪资</div><div class="value accent-red">$280-$750</div><div class="source"><a href="https://worldsalaries.com/average-hotel-staff-salary-in-myanmar/" target="_blank">WorldSalaries</a></div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            本土酒店严重依赖OTA分销——约80%有网站但多数缺乏在线预订功能，Agoda/Booking.com为主要分销渠道（<a href="https://lib.sookmyung.ac.kr/eds/detail/edsemr_edsemr.10.1108.BIJ.07.2017.0200" target="_blank">Emerald学术</a>）。本土品牌无有效会员体系——HTOO曾有iReward但制裁后运作存疑。专业院校每年仅培养约800名毕业生远低于行业需求，基层流动率高达45%（<a href="https://zcqtz.com/news7073482" target="_blank">zcqtz</a>）。仅2个CTD培训学校（仰光/景栋），澜湄合作基金2023年在景栋首次酒店培训62人（<a href="https://www.lmcchina.org/eng/lmhzdt/202512/t20251224_11782306.html" target="_blank">LMC</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>3.4 财务困境与出售潮 <span class="weight-badge">权重 8/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            政变后破产/出售案例汇总：仰光一地产商挂牌出售27家酒店50间+规模（<a href="https://www.irrawaddy.com/news/burma/myanmar-sees-a-post-coup-fire-sale-of-hotels.html" target="_blank">Irrawaddy</a>）；Keppel以$57.4M出售Sedona（<a href="https://www.taitra.org.tw/News_Content.aspx?n=104&s=59790" target="_blank">Taitra</a>）；半岛$1.3亿全额注销；Grand Andaman停业；仰光12家五星酒店半数关闭。出售潮原因主要为两类："用银行贷款建设的酒店"和"用外国投资建设的酒店"——持续亏损无法覆盖利息和运营成本。SWIFT通道受限+FATF黑名单加剧融资困难（<a href="https://news.un.org/en/story/2025/01/1159561" target="_blank">UNDP</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>3.5 中国品牌进入参照 <span class="weight-badge">权重 8/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>潜在合作对象评估：</strong>①Clover Hotels——最接近艺龙产品线（三星商务/206间/仰光核心/曾寻求特许经营合作），但规模太小；②Amata Holding——困境资产（YSX平台/5度假村/freehold土地），负债率极高但低价收购+管理注入存在"翻盘"逻辑；③Memories Group——SGX平台+高端品牌+热气球业务，Experiences板块比Hotels板块更具合作价值；④HTOO——<strong>OFAC制裁绝对不可触碰</strong>。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            中国酒店品牌在缅现状：东呈怡程2017年3月内比都开业96间为唯一在缅中国品牌（<a href="http://www.worldwidehotel.cn/html/info/2017/04/6911.html" target="_blank">环球酒店网</a>），政变后无扩展动态；雅斯特2017年9月签约仰光但未见开业（<a href="https://info.meadin.com/BrandDynamics/146639_1.shtml" target="_blank">迈点</a>）；锦江/华住/德胧东南亚布局均不含缅甸。缅甸对中国品牌仍是"系统性空白市场"——先发者将无直接中国竞争对手，但需独自承担市场开拓成本和风险。
+          </p>
+        </div>
+      </div>
+      <!-- 第4章 竞争与机会 -->
+      <div class="chapter" id="mmch4">
+        <div class="chapter-header" onclick="toggleChapter(this)">
+          <span class="chapter-number">四</span>
+          <h2>竞争与机会</h2>
+          <span class="chapter-date">退出与留守并存 · 中端空白最彻底</span>
+          <span class="ch-arrow">▼</span>
+        </div>
+        <div class="core-conclusion">
+          <strong>核心结论：</strong>国际品牌呈"退出与留守并存"格局——半岛/Keppel退出但Accor（3+1家）和Dusit（2025年重返）留守释放信心信号。缅甸品牌渗透率4-10%为东南亚最低（越南34%），$50-70中端空白被多位行业高管确认。中国头部品牌（锦江/华住/德胧）东南亚布局均不含缅甸。27+酒店低价挂牌+Amata困境资产+Clover翻牌合作构成三层收购机会。七国对比缅甸排名末位（Coface D/E），差异化定位在于品牌渗透率最低、中端空白最显著、资产价格最低、先发优势空间最大。
+        </div>
+        <div class="subsection">
+          <h3>4.1 国际品牌退出与留守格局 <span class="weight-badge">权重 9/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            标志性退出案例：半岛酒店集团$1.3亿仰光项目全额注销（<a href="https://www.irrawaddy.com/business/peninsula-hotels-writes-off-hopeless-yangon-project.html" target="_blank">Irrawaddy</a>）；Keppel Land以$5,740万出售Sedona退出（<a href="https://www.taitra.org.tw/News_Content.aspx?n=104&s=59790" target="_blank">Taitra</a>）；Grand Andaman 2024年2月停业（<a href="https://www.ttrweekly.com/site/2024/02/grand-andaman-hotel-suspends-operations" target="_blank">TTR Weekly</a>）；Banyan Tree与HTOO合资实质终止（<a href="https://www.traveldailynews.asia/asia-pacific/banyan-tree-holdings-and-htoo-hospitality-announce-formation-of-joint-venture-in-myanmar/" target="_blank">TravelDailyNews</a>）。
+          </p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            留守品牌：Accor运营3家（Novotel Yangon Max/Ibis Styles Yangon/Novotel Inle Lake）+1家筹开（Ibis Styles Mandalay Centre 279间，2025夏季）（<a href="https://all.accor.com/a/en/destination/country/hotels-myanmar-pmm.html" target="_blank">Accor Myanmar</a>；<a href="https://www.northstarmeetingsgroup.com/Meeting-Event-Venues/Mandalay-Myanmar/Convention-Hotel/Ibis-Styles-Mandalay-Centre-p55417871" target="_blank">Northstar</a>）。Pan Pacific运营2家。Dusit 2025年签约The Strand Yangon+ASAI Yangon，明确表示"重返缅甸"（<a href="https://www.dusit-international.com/en/newsroom/news-releases/689/dusit-recalls-all-time-high-hotel-signings-in-2025-positions-for-a-strong-year-of-openings-in-2026" target="_blank">Dusit International</a>）。Meliá/Wyndham/Chatrium等仍保持运营。Dusit留守是市场信心的重要信号。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>4.2 中端竞争空白深度分析 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">缅甸品牌渗透率</div><div class="value accent-red">4-10%</div><div class="source">东南亚最低</div></div>
+            <div class="data-card"><div class="label">越南品牌渗透率</div><div class="value accent-green">34%</div><div class="source"><a href="https://www.gacapital.ai/insights/vietnam/hotels" target="_blank">GA Capital</a></div></div>
+            <div class="data-card"><div class="label">越南中端贡献收入占比</div><div class="value accent-green">48.79%</div><div class="source"><a href="https://www.expertmarketresearch.com/reports/vietnam-hospitality-market/market-share" target="_blank">Expert Market</a></div></div>
+            <div class="data-card"><div class="label">缅甸入境游客</div><div class="value accent-red">~30万（vs越南21.2M）</div><div class="source">差距70倍</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            Exo Travel缅甸总经理明确表示："我们确实需要更多优质中端酒店，价位在$50-70/晚，尤其在海滩目的地几乎没有"（<a href="https://www.ttgasia.com/page/1465?WID=7139&m=wp" target="_blank">TTG Asia</a>）。泛太平洋ASEAN运营副总裁亦认同（<a href="https://www.ttgasia.com/2018/08/10/room-surge-a-competitive-boon" target="_blank">TTG Asia 2018</a>）。东南亚六国中端品牌渗透已相当成熟：越南中端及中高端贡献48.79%行业收入、入住率68.4%/ADR $124（<a href="https://thehotelblueprint.com/hotel-market-intel/hotel-performance/vietnam-full-year-2025" target="_blank">The Hotel Blueprint</a>）；泰国曼谷入住率75.1%/普吉岛79.5%（<a href="https://zuzuhospitality.com/blog/thailand-hotel-market-intelligence-2026" target="_blank">Zuzu</a>）。空白中的"隐性竞争者"（民宿升级/服务式公寓/单体翻牌）在品牌力、数字化运营、跨区域复制方面与正规中端连锁存在代际差距。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>4.3 中国品牌态势与对标 <span class="weight-badge">权重 8/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            东呈国际集团（Dossen）是唯一在缅实际开业的中国品牌——2017年3月怡程·新伊亚酒店内比都开业96间+设立东呈大学缅甸培训基地（<a href="http://www.worldwidehotel.cn/html/info/2017/04/6911.html" target="_blank">环球酒店网</a>）。东呈曾将缅甸列为五大海外市场之一计划5年海外300家（<a href="https://traveldaily.cn/article/118034" target="_blank">TravelDaily</a>），但政变后无任何缅甸扩展动态。雅斯特2017年9月签约仰光（<a href="https://info.meadin.com/BrandDynamics/146639_1.shtml" target="_blank">迈点</a>），此后无开业报道。锦江RJJ六国不含缅甸（<a href="https://www.nfnews.com/content/KyllZ4kgyD.html" target="_blank">南方都市报</a>）；华住东南亚6家跳过缅甸（<a href="https://new.qq.com/rain/a/20260516A05GUC00" target="_blank">腾讯新闻</a>）。缅甸成为中国酒店品牌出海的"系统性空白市场"——先发者可获独占性定位但需独自承担市场教育成本。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>4.4 翻牌与收购机会窗口 <span class="weight-badge">权重 8/10</span></h3>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            政变后出现显著低价收购窗口：27+酒店挂牌出售（<a href="https://www.irrawaddy.com/news/burma/myanmar-sees-a-post-coup-fire-sale-of-hotels.html" target="_blank">Irrawaddy</a>），12家五星酒店半数关闭，半岛$1.3亿全额注销，蒲甘房价从$130降至$50。<strong>三层收购机会：</strong>①Amata困境资产——YSX上市/5度假村/freehold土地但负债率7.81（<a href="https://ysx-mm.com/main-board/listing/financial-information/amata-00007" target="_blank">YSX</a>）；②Clover翻牌合作——206间/曾寻求特许经营/仰光市中心$40-104/晚（<a href="https://www.nationthailand.com/life/30274468" target="_blank">The Nation</a>；<a href="https://www.go-myanmar.com/accommodation/clover-hotel-city-center" target="_blank">Go-Myanmar</a>）；③政府招标物业——2025年1月酒店与旅游部开放内比都及10邦/省酒店招标租赁，租期5年（<a href="https://rvnewsmm.com/2025/01/15/hotel-ministry-invites-open-tenders-for-properties-in-npt-10-regions-states" target="_blank">RV News</a>）。制裁环境下合规收购路径：通过新加坡/泰国中间架构持有+缅币计价降低汇率风险+政治风险保险（<a href="https://www.aeri.asia/zh/investment-myanmar.html" target="_blank">AERI</a>）。当地银行贷款利率12-18%，建议以中国政策性银行或内保外贷方式融资。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>4.5 七国竞争对比 <span class="weight-badge">权重 8/10</span></h3>
+          <table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;">
+            <thead><tr style="border-bottom:2px solid var(--border-subtle);text-align:left;">
+              <th style="padding:8px 6px;">国家</th>
+              <th style="padding:8px 6px;">Coface</th>
+              <th style="padding:8px 6px;">OCC</th>
+              <th style="padding:8px 6px;">ADR</th>
+              <th style="padding:8px 6px;">连锁渗透率</th>
+              <th style="padding:8px 6px;">国际游客</th>
+              <th style="padding:8px 6px;">评级</th>
+            </tr></thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:6px;">新加坡</td><td>A3</td><td>~85%</td><td>$250</td><td>&gt;80%</td><td>~15.6M</td><td style="font-weight:600;">B</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:6px;">越南</td><td>B</td><td>68.4%</td><td>$124</td><td>34%</td><td>21.2M</td><td style="font-weight:600;">A-</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:6px;">泰国</td><td>B</td><td>75%</td><td>$165</td><td>~40%</td><td>~35.5M</td><td style="font-weight:600;">B+</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:6px;">印尼</td><td>B</td><td>55%</td><td>$90</td><td>~25%</td><td>~14M</td><td style="font-weight:600;">A-</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:6px;">马来西亚</td><td>B</td><td>~65%</td><td>$80</td><td>~30%</td><td>~27M</td><td style="font-weight:600;">B+</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td style="padding:6px;">菲律宾</td><td>B</td><td>~60%</td><td>$85</td><td>~20%</td><td>~8M</td><td style="font-weight:600;">B</td></tr>
+              <tr style="background:rgba(239,68,68,0.08);font-weight:600;"><td style="padding:6px;">🇲🇲 缅甸</td><td style="color:#ef4444;">D</td><td>数据有限</td><td>$59</td><td>4-10%</td><td>~0.3M</td><td style="color:#f59e0b;">C+</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:12px;color:var(--text-muted);">数据来源：<a href="https://coface.com/news-economy-and-insights/business-risk-dashboard/country-risk-map" target="_blank">Coface</a> / <a href="https://thehotelblueprint.com/hotel-market-intel/hotel-performance/vietnam-full-year-2025" target="_blank">The Hotel Blueprint</a> / <a href="https://cambodiainvestmentreview.com/2025/09/11/cim-mid-year-2025-yangon-property-report-highlights-domestic-demand-as-key-driver" target="_blank">CIM 2025</a>。注：缅甸~0.3M为全年线性推算值</p>
+        </div>
+        <div class="subsection">
+          <h3>4.6 SWOT与竞争定位 <span class="weight-badge">权重 8/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">优势 (S)</div><div class="value accent-green">中端空白最彻底</div><div class="source">27+酒店低价挂牌+中国品牌合规优势</div></div>
+            <div class="data-card"><div class="label">劣势 (W)</div><div class="value accent-red">D/E级最差评级</div><div class="source">FATF黑名单+电力50%+数字化38%</div></div>
+            <div class="data-card"><div class="label">机会 (O)</div><div class="value accent-gold">Dusit重返信号</div><div class="source">国内需求驱动+停业五星翻牌+东呈物业</div></div>
+            <div class="data-card"><div class="label">威胁 (T)</div><div class="value accent-red">内战40%+领土失控</div><div class="source">地震+电诈+汇率双轨+征兵外流</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>投资评级：C+</strong>（七国最低）。Coface D/E远低于菲律宾B/B。"+"号反映三个独特机会：①$50-70中端连锁品牌空白为东南亚最彻底；②27+酒店低价挂牌提供罕见困境收购窗口；③中国品牌在制裁环境下的相对合规优势。建议艺龙采取"战略性观望+选择性布局"策略：短期以轻资产翻牌东呈怡程内比都物业或Clover Hotels合作试水，待FATF从黑名单降级及局势趋稳后再考虑规模化投入。
+          </p>
+        </div>
+      </div>
+      <!-- 第5章 出海投资视角 -->
+      <div class="chapter" id="mmch5">
+        <div class="chapter-header" onclick="toggleChapter(this)">
+          <span class="chapter-number">五</span>
+          <h2>出海投资视角</h2>
+          <span class="chapter-date">战略性观望 · P4优先级 · 预算≤5%</span>
+          <span class="ch-arrow">▼</span>
+        </div>
+        <div class="core-conclusion">
+          <strong>核心结论：艺龙当前不应进入缅甸进行实体投资，但应建立"准入门"机制和信息监测系统，待五项触发条件满足至少三项后以管理合同（HMA）模式轻资产切入。缅甸当前应分配不超过东南亚总投资预算的5%。管理合同是唯一推荐模式（不承担物业CAPEX）——特许经营风险过高、收购面临制裁筛查成本、合资绝对不可行（因任何缅方合作伙伴需穿透至最终受益人进行OFAC筛查）。100间中端酒店名义IRR 6-9%，但经FATF/内战/制裁三重风险调整后期望IRR仅1-4%。
+        </div>
+        <div class="subsection">
+          <h3>5.1 投资模式选择与对比 <span class="weight-badge">权重 9/10</span></h3>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">✅ 管理合同 HMA</div><div class="value accent-green">唯一推荐</div><div class="source">基本管理费营收2-5%+奖励GOP 5-10%</div></div>
+            <div class="data-card"><div class="label">⚠️ 特许经营</div><div class="value accent-gold">中期可选</div><div class="source">品牌控制力弱</div></div>
+            <div class="data-card"><div class="label">⚠️ 收购翻牌</div><div class="value accent-gold">远期期权</div><div class="source">制裁筛查合规成本极高</div></div>
+            <div class="data-card"><div class="label">❌ 租赁/合资</div><div class="value accent-red">当前不可行</div><div class="source">重资产风险+合资OFAC风险</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>管理合同（HMA）是当前唯一推荐模式。</strong>此模式下艺龙仅输出品牌标准、PMS系统和运营管理，不承担物业CAPEX。基本管理费（营收2-5%）+奖励管理费（GOP 5-10%）。锦江与RIYAZ 2025年8月"轻资产进入+扎根当地"模式为范例，计划五年180+项目——但明确未将缅甸列入目标国（<a href="https://finance.ifeng.com/c/8mBYKVo0vyU" target="_blank">锦江东南亚布局</a>）。<strong>特许经营</strong>可降低管理深度但品牌控制力弱，适合中期。<strong>收购翻牌</strong>最具吸引力但需面对制裁筛查极高合规成本（<a href="https://www.irrawaddy.com/news/burma/myanmar-sees-a-post-coup-fire-sale-of-hotels.html" target="_blank">27+酒店出售</a>）。<strong>合资</strong>风险最高——任何缅方合作伙伴均需穿透至最终受益人OFAC SDN筛查（HTOO绝对不可触碰（<a href="https://home.treasury.gov/news/press-releases/jy0679" target="_blank">OFAC</a>））。缅甸与酒店旅游部2025年1月开放内比都及10邦/省酒店招标租赁（<a href="https://rvnewsmm.com/2025/01/15/hotel-ministry-invites-open-tenders-for-properties-in-npt-10-regions-states" target="_blank">Hotel Ministry Tenders</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>5.2 三阶段市场进入策略 <span class="weight-badge">权重 9/10</span></h3>
+          <table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;">
+            <thead><tr style="border-bottom:2px solid var(--border-subtle);text-align:left;">
+              <th style="padding:8px 6px;">阶段</th><th style="padding:8px 6px;">时间</th><th style="padding:8px 6px;">策略</th><th style="padding:8px 6px;">城市优先级</th>
+            </tr></thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-subtle);background:rgba(239,68,68,0.06);"><td style="padding:6px;font-weight:600;">短期</td><td style="padding:6px;">0-2年</td><td style="padding:6px;">战略观望，建立信息网络</td><td style="padding:6px;">仅观察仰光</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);background:rgba(245,158,11,0.06);"><td style="padding:6px;font-weight:600;">中期</td><td style="padding:6px;">2-4年</td><td style="padding:6px;">轻资产试水，1-2家管理合同</td><td style="padding:6px;">仰光→蒲甘</td></tr>
+              <tr style="background:rgba(16,185,129,0.06);"><td style="padding:6px;font-weight:600;">长期</td><td style="padding:6px;">4-7年</td><td style="padding:6px;">选择性布局，3-5家规模</td><td style="padding:6px;">仰光→蒲甘→茵莱湖→曼德勒</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            城市优先级依据：仰光被英国FCDO列为"绿色区域"最安全（<a href="https://www.gomyanmartours.com/myanmar-travel-advisory-safety-updated-2025-2026/" target="_blank">Myanmar Travel Advisory</a>），商务需求支撑性最强；蒲甘"橙色区域"虽有停电影响（<a href="https://cnimyanmar.com/index.php/english-edition/8835-the-lack-of-full-time-electricity-is-making-it-difficult-to-open-bagan-hotels" target="_blank">CNI</a>），但度假属性不可替代；曼德勒震后重建存在中长期机遇，缅甸央行已推出3-7%低息重建贷款（<a href="https://www.moi.gov.mm/moi%3aeng/news/19245" target="_blank">央行重建公告</a>）。额布里/威双海滩因位于冲突区域（若开邦/德林达依），当前完全不可投。物业获取：短期不建议获取任何物业；中期优先政府招标租赁（低CAPEX），或与Clover Hotels探讨管理合同（<a href="https://www.nationthailand.com/life/30274468" target="_blank">The Nation</a>）。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>5.3 财务测算与投资模型 <span class="weight-badge">权重 8/10</span></h3>
+          <p style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:8px;">测算假设：100间中端精品酒店/仰光核心商务区/ADR $55-65</p>
+          <div class="data-cards">
+            <div class="data-card"><div class="label">翻牌总投资</div><div class="value accent-gold">$150-180万</div><div class="source">含FF&E $15K/间+系统+培训+预备金</div></div>
+            <div class="data-card"><div class="label">ADR</div><div class="value accent-gold">$60</div><div class="source">仰光upper-scale ADR $59（<a href="https://cambodiainvestmentreview.com/2025/09/11/cim-mid-year-2025-yangon-property-report-highlights-domestic-demand-as-key-driver" target="_blank">CIM</a>）</div></div>
+            <div class="data-card"><div class="label">OCC（Y1→Y3）</div><div class="value accent-gold">45%→65%</div><div class="source">基于2019年仰光中端70-80%的审慎推测</div></div>
+            <div class="data-card"><div class="label">名义IRR</div><div class="value accent-red">6%-9%</div><div class="source">风险调整后期望1-4%</div></div>
+          </div>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            运营成本率65-70%（含电力成本：电网$0.144/kWh，发电机$0.45+/kWh（<a href="https://www.globalpetrolprices.com/Burma-Myanmar/electricity_prices/" target="_blank">GlobalPetrolPrices</a>））。贷款利率12-15%（<a href="https://www.uab.com.mm/deposit-rate/" target="_blank">uab bank</a>）。<strong>七国IRR对比：</strong>越南8-9%/印尼6-9%/泰国8-10%/马来西亚7-8%/菲律宾7-9%/新加坡6-8%/<strong>缅甸6-9%（名义）→1-4%（风险调整后）</strong>。缅甸风险调整后折价3-5个百分点（FATF黑名单+内战+制裁），其他六国调整幅度在1个百分点内。<strong>敏感性分析：</strong>OCC每下降5个百分点→IRR降1.5-2pp；缅币贬值10%（黑市已从2,100飙至4,500+缅币/美元（<a href="https://new.qq.com/rain/a/20250621A06VXM00" target="_blank">腾讯新闻</a>））→美元计价IRR再降2-3pp。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>5.4 风险管控与合规框架 <span class="weight-badge">权重 9/10</span></h3>
+          <p style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:4px;">制裁合规（最高优先级）</p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-bottom:12px;">
+            OFAC依据第14014号行政令对缅甸实施定向制裁。关键合规要求：必须执行"50%规则"穿透——被一个或多个SDN主体合计拥有50%以上的实体自动受制裁（<a href="https://legalclarity.org/myanmar-sanctions-targets-compliance-and-penalties" target="_blank">Legal Clarity</a>）。2025年9月OFAC扩展至网络诈骗和强迫劳动实体（<a href="https://cambodiainvestmentreview.com/2025/09/09/u-s-treasury-departments-office-of-foreign-assets-control-updates-list-for-cambodian-and-burmese-entities-september-2025/" target="_blank">Cambodia Investment Review</a>）。关键警示：OFAC曾制裁注册在新加坡的控股公司（Shoon Energy），表明新加坡中间架构并非制裁避风港（<a href="https://editorials.voa.gov/a/cantonese-editorial-more-sanctions-for-violence-against-the-burmese-people-20230906-ry/7257363.html" target="_blank">VOA</a>）。<strong>HTOO集团绝对不可触碰</strong>。
+          </p>
+          <p style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:4px;">FATF黑名单与资金通道</p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-bottom:12px;">
+            缅甸2022年10月起列入FATF黑名单（仅与伊朗、朝鲜并列）。FATF已警告：若2026年10月前无重大进展将考虑"反制措施"——完全切断全球金融系统（<a href="https://www.fatf-gafi.org/content/fatf-gafi/en/publications/High-risk-and-other-monitored-jurisdictions/Call-for-action-october-2025.html" target="_blank">FATF October 2025</a>）。实务影响：SWIFT支付被标记高风险/自动拦截/代理行"去风险化"退出。建议资金通道：新加坡/泰国中间控股→新加坡银行结算→避免直接缅甸银行SWIFT（<a href="https://rates.fm/expert-opinion/fatf-lists-why-they-matter" target="_blank">Rates.fm</a>）。
+          </p>
+          <p style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:4px;">政治风险保险</p>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;margin-bottom:12px;">
+            中信保（中国信保）海外投资保险承保征收/汇兑限制/战争及政治暴乱/政府违约四类风险，赔偿比例最高95%，期限不超过20年（<a href="https://www.sinosure.com.cn/ywjs/xmxcp/hwtzbx/hwtzbxjj/index.shtml" target="_blank">中信保</a>）。中信保已有缅甸实战理赔经验——2011年缅甸政府与地方武装冲突导致中资水电站停产，赔付超$1,500万（<a href="https://www.xiangrikui.com/licai/zhuanjia/20130319/302524.html" target="_blank">中信保理赔案例</a>）。MIGA（多边投资担保机构）缅甸2013年成为第180个成员国，已覆盖仰光韩国工业园项目（<a href="https://www.miga.org/project/korea-myanmar-industrial-complex-1" target="_blank">MIGA</a>）。
+          </p>
+          <p style="font-size:14px;font-weight:600;color:var(--text-primary);margin-bottom:4px;">内战风险地图</p>
+          <table style="width:100%;border-collapse:collapse;font-size:13px;margin:8px 0;">
+            <thead><tr style="border-bottom:2px solid var(--border-subtle);text-align:left;">
+              <th style="padding:6px;">区域</th><th style="padding:6px;">风险等级</th><th style="padding:6px;">可投性</th><th style="padding:6px;">主要城市/目的地</th>
+            </tr></thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-subtle);background:rgba(16,185,129,0.06);"><td style="padding:6px;">仰光省</td><td style="padding:6px;">🟢 绿区</td><td style="padding:6px;">可投（审慎）</td><td style="padding:6px;">仰光</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);background:rgba(245,158,11,0.06);"><td style="padding:6px;">曼德勒省</td><td style="padding:6px;">🟠 橙区</td><td style="padding:6px;">谨慎（重建窗口）</td><td style="padding:6px;">曼德勒、蒲甘</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);background:rgba(245,158,11,0.06);"><td style="padding:6px;">掸邦南部</td><td style="padding:6px;">🟠 橙区</td><td style="padding:6px;">谨慎（仅度假）</td><td style="padding:6px;">茵莱湖</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);background:rgba(239,68,68,0.08);"><td style="padding:6px;">若开/克钦/克伦/钦邦等</td><td style="padding:6px;">🔴 红区</td><td style="padding:6px;">绝对不可投</td><td style="padding:6px;">额布里/密支那/妙瓦底等</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:12px;color:var(--text-muted);">分区依据：<a href="https://www.gomyanmartours.com/myanmar-travel-advisory-safety-updated-2025-2026/" target="_blank">Myanmar Travel Advisory 2025-2026</a>。法律架构建议：新加坡私人有限公司作为中间控股平台（新加坡与缅甸有BIT），以人民币或新加坡元结算避免美元通道——OFAC长臂管辖不因新加坡架构豁免（<a href="https://www.hankunlaw.com/remark/1291434432133242880" target="_blank">汉坤律所</a>）。</p>
+        </div>
+        <div class="subsection">
+          <h3>5.5 七国投资组合定位 <span class="weight-badge">权重 8/10</span></h3>
+          <table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;">
+            <thead><tr style="border-bottom:2px solid var(--border-subtle);text-align:left;">
+              <th style="padding:8px 6px;">国家</th><th style="padding:8px 6px;">评级</th><th style="padding:8px 6px;">优先级</th><th style="padding:8px 6px;">建议模式</th><th style="padding:8px 6px;">预期IRR</th><th style="padding:8px 6px;">风险</th>
+            </tr></thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td>越南</td><td>A-</td><td style="font-weight:600;">P1</td><td>收购+HMA</td><td>8-9%</td><td>中低</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td>印尼</td><td>A-</td><td style="font-weight:600;">P1</td><td>特许+合资</td><td>6-9%</td><td>中低</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td>泰国</td><td>B+</td><td style="font-weight:600;">P2</td><td>HMA</td><td>8-10%</td><td>低</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td>马来西亚</td><td>B+</td><td style="font-weight:600;">P2</td><td>合资</td><td>7-8%</td><td>低</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td>菲律宾</td><td>B</td><td style="font-weight:600;">P3</td><td>HMA</td><td>7-9%</td><td>中</td></tr>
+              <tr style="border-bottom:1px solid var(--border-subtle);"><td>新加坡</td><td>B</td><td style="font-weight:600;">P3</td><td>租赁</td><td>6-8%</td><td>低</td></tr>
+              <tr style="background:rgba(239,68,68,0.08);font-weight:600;"><td style="padding:6px;">🇲🇲 缅甸</td><td style="color:#f59e0b;">C+</td><td style="color:#ef4444;">P4</td><td>HMA（观望）</td><td>6-9%</td><td style="color:#ef4444;">极高</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>资源配置建议：</strong>缅甸当前应分配<strong>不超过东南亚总投资预算的5%</strong>，全部用于情报收集、合规调研和关系网络建设，不投入物业CAPEX。<strong>五项触发条件（从观望转向积极进入）：</strong>①FATF将缅甸从黑名单降级至灰名单（2026年10月为关键节点）；②内战达成实质性和平协议或仰光安全显著改善；③国际制裁环境出现实质性放松；④入境游客恢复至年100万人次以上（当前1-5月仅11.8万）；⑤投资评级上调至B-或以上，或Coface上调至C或以上。
+          </p>
+        </div>
+        <div class="subsection">
+          <h3>5.6 行动Checklist <span class="weight-badge">权重 7/10</span></h3>
+          <table style="width:100%;border-collapse:collapse;font-size:13px;margin:12px 0;">
+            <thead><tr style="border-bottom:2px solid var(--border-subtle);text-align:left;">
+              <th style="padding:6px;">阶段</th><th style="padding:6px;">行动项</th><th style="padding:6px;">时间</th>
+            </tr></thead>
+            <tbody>
+              <tr><td style="padding:6px;" rowspan="4" style="font-weight:600;">短期</td><td style="padding:6px;">1. 委托第三方合规律所完成OFAC/欧盟/英/加SDN全量筛查，建立缅甸实体准入白名单</td><td style="padding:6px;">0-6月</td></tr>
+              <tr><td style="padding:6px;">2. 与中信保建立缅甸国别风险对话机制，获取最新费率报价</td><td style="padding:6px;">0-6月</td></tr>
+              <tr><td style="padding:6px;">3. 新加坡设立控股公司（仅架构准备不注资），维护成本S$2,000-5,000/年（<a href="https://linkdasg.com/archives/2794.en.html" target="_blank">LinkdaSG</a>）</td><td style="padding:6px;">6-12月</td></tr>
+              <tr><td style="padding:6px;">4. 建立缅甸酒店市场情报月报体系，监测入境游客/汇率/冲突/电力</td><td style="padding:6px;">持续</td></tr>
+              <tr><td style="padding:6px;" rowspan="3" style="font-weight:600;">中期</td><td style="padding:6px;">5. 评估1-2家仰光物业管理合同机会（优先政府招标）</td><td style="padding:6px;">2-4年</td></tr>
+              <tr><td style="padding:6px;">6. 接触Clover Hotels等非制裁本土品牌探讨合作</td><td style="padding:6px;">2-3年</td></tr>
+              <tr><td style="padding:6px;">7. 购买中信保/MIGA政治风险保险（若进入）</td><td style="padding:6px;">进入时</td></tr>
+              <tr><td style="padding:6px;" rowspan="3" style="font-weight:600;">长期</td><td style="padding:6px;">8. 触发条件满足3项以上时启动首店落地</td><td style="padding:6px;">4-7年</td></tr>
+              <tr><td style="padding:6px;">9. 从仰光扩展至蒲甘/茵莱湖度假物业</td><td style="padding:6px;">5-7年</td></tr>
+              <tr><td style="padding:6px;">10. 曼德勒震后重建窗口评估</td><td style="padding:6px;">4-6年</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:14px;color:var(--text-secondary);line-height:1.75;">
+            <strong>关键风险预警指标（季度监测）：</strong>FATF评估进展（2026年10月为关键节点）/入境游客季度数据（目标恢复年50万+）/缅币黑市汇率波动（当前4,500缅币/USD，若突破6,000触发红色警报）/OFAC制裁更新频率/军方控制区面积/电力供应稳定性（LNG供电计划落地）。
+          </p>
+        </div>
       </div>
     </div>
 
@@ -6187,6 +6652,23 @@ function showSgChapter(n) {
   }
 }
 
+
+function showMMChapter(n) {
+  playClick();
+  const ch = document.getElementById('mmch' + n);
+  if (!ch) return;
+  // Expand the target chapter
+  ch.classList.add('open');
+  // Scroll to it
+  ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  // Update nav buttons
+  const nav = document.getElementById('mm-chapter-nav');
+  if (nav) {
+    nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx + 1 === n);
+    });
+  }
+}
 
 function toggleSidebar() {
   playClick();
