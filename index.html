@@ -1222,6 +1222,28 @@ tbody tr:last-child td {
       </div>
       <p class="overview-guide">点击左侧国家或下方卡片，开始查看研究内容 →</p>
 
+      <!-- 东南亚七国投资对比总结 -->
+      <div class="chapter animate-in" style="margin-bottom:24px;">
+        <div class="chapter-header">
+          <div class="chapter-number">对比</div>
+          <h2>📊 东南亚七国投资对比总结</h2>
+        </div>
+        <div class="core-conclusion">
+          <table class="data-table"><tr><th>维度</th><th>🇸🇬新加坡</th><th>🇻🇳越南</th><th>🇹🇭泰国</th><th>🇮🇩印尼</th><th>🇲🇾马来西亚</th><th>🇵🇭菲律宾</th><th>🇲🇲缅甸</th></tr>
+          <tr><td><strong>投资评级</strong></td><td><strong>B</strong></td><td>A-</td><td>B+</td><td>A-</td><td>B+</td><td>B</td><td>C+</td></tr>
+          <tr><td>市场定位</td><td>品牌标杆</td><td>规模化主战场</td><td>度假中端</td><td>双引擎</td><td>中端蓝海</td><td>长线布局</td><td>战略性观望</td></tr>
+          <tr><td>中端缺口</td><td>S$200-300品质真空</td><td>中端缺口显著</td><td>300-800元精品缺位</td><td>两头强中间空</td><td>S$180-300空白</td><td>US$60-120空白</td><td>$50-70完全空白</td></tr>
+          <tr><td>外资友好度</td><td>极高(100%)</td><td>中高</td><td>中(BOI)</td><td>中低</td><td>中(4-5星100%)</td><td>中(4-5星100%)</td><td>极低(FATF黑名单)</td></tr>
+          <tr><td>进入模式</td><td>管理合同/特许经营</td><td>管理合同/租赁</td><td>管理合同/特许经营</td><td>管理合同</td><td>管理合同/特许经营</td><td>管理合同</td><td>HMA唯一推荐</td></tr>
+          <tr><td>首荐城市</td><td>乌节路/武吉士</td><td>胡志明/河内</td><td>曼谷/普吉</td><td>雅加达/巴厘岛</td><td>吉隆坡/新山</td><td>马尼拉</td><td>内比都(试点)</td></tr>
+          <tr><td>中端IRR</td><td>8-12%</td><td>12-18%</td><td>8-12%</td><td>12-15%</td><td>9-13%</td><td>10-18%</td><td>6-9%名义</td></tr>
+          <tr><td>回本周期</td><td>6-9年</td><td>5-7年</td><td>6-8年</td><td>6-7年</td><td>5-8年</td><td>4-8年</td><td>不适用</td></tr>
+          <tr><td>战略优先级</td><td><strong>P2</strong></td><td>P1</td><td>P1</td><td>P1</td><td>P2</td><td>P3</td><td><strong>P4</strong></td></tr>
+          </table>
+          <p><strong>优先级逻辑</strong>：越南/印尼/泰国为P1（市场规模+中端缺口+IRR最优），马来西亚/新加坡为P2（品牌战略价值+安全边际），菲律宾为P3（窗口观望），缅甸为P4（战略性观望，待触发条件满足后以HMA模式切入）。</p>
+        </div>
+      </div>
+
       <div class="country-grid">
         <div class="country-card" onclick="showCountry('vietnam')">
           <span class="flag">🇻🇳</span>
@@ -1306,6 +1328,15 @@ tbody tr:last-child td {
           <div class="stat-label">投资评级</div>
           <div class="stat-note">精品中端窗口期明显</div>
         </div>
+      </div>
+
+      <div class="chapter-nav" id="vn-chapter-nav">
+        <button class="ch-btn active" onclick="showVnChapter(1)">一、市场基本面</button>
+        <button class="ch-btn" onclick="showVnChapter(2)">二、酒店市场格局</button>
+        <button class="ch-btn" onclick="showVnChapter(3)">三、本地品牌深研</button>
+        <button class="ch-btn" onclick="showVnChapter(4)">四、竞争与机会</button>
+        <button class="ch-btn" onclick="showVnChapter(5)">五、出海投资视角</button>
+        <button class="ch-btn" onclick="showVnChapter(6)">六、2026年H1更新</button>
       </div>
 
       <!-- Chapter 1: Market Fundamentals -->
@@ -5889,8 +5920,8 @@ tbody tr:last-child td {
         <div class="key-finding">🔑 新加坡不是"量"的市场而是"质"的市场——品牌制高点价值 &gt; 单店EBITDA，安全资产配置 + 东南亚运营标准输出基地</div>
       </div>
 
-      <!-- 六国对比总结 -->
-      <div class="chapter animate-in" id="sgch6">
+      <!--（七国对比表已移至总览页）-->
+      <div class="chapter animate-in" id="sgch6" style="display:none">
         <div class="chapter-header">
           <div class="chapter-number">对比</div>
           <h2>📊 东南亚六国投资对比总结</h2>
@@ -6060,7 +6091,7 @@ tbody tr:last-child td {
       <!-- 第2章 酒店市场格局 -->
       <div class="chapter" id="mmch2">
         <div class="chapter-header" onclick="toggleChapter(this)">
-          <span class="chapter-number">二</span>
+          <div class="chapter-number">第二章</div>
           <h2>酒店市场格局</h2>
           <span class="chapter-date">三重冲击下的极端重构</span>
           <span class="ch-arrow">▼</span>
@@ -6132,7 +6163,7 @@ tbody tr:last-child td {
       <!-- 第3章 本土品牌深研 -->
       <div class="chapter" id="mmch3">
         <div class="chapter-header" onclick="toggleChapter(this)">
-          <span class="chapter-number">三</span>
+          <div class="chapter-number">第三章</div>
           <h2>本土品牌深研</h2>
           <span class="chapter-date">碎片化高原：无中端品牌</span>
           <span class="ch-arrow">▼</span>
@@ -6198,7 +6229,7 @@ tbody tr:last-child td {
       <!-- 第4章 竞争与机会 -->
       <div class="chapter" id="mmch4">
         <div class="chapter-header" onclick="toggleChapter(this)">
-          <span class="chapter-number">四</span>
+          <div class="chapter-number">第四章</div>
           <h2>竞争与机会</h2>
           <span class="chapter-date">退出与留守并存 · 中端空白最彻底</span>
           <span class="ch-arrow">▼</span>
@@ -6279,7 +6310,7 @@ tbody tr:last-child td {
       <!-- 第5章 出海投资视角 -->
       <div class="chapter" id="mmch5">
         <div class="chapter-header" onclick="toggleChapter(this)">
-          <span class="chapter-number">五</span>
+          <div class="chapter-number">第五章</div>
           <h2>出海投资视角</h2>
           <span class="chapter-date">战略性观望 · P4优先级 · 预算≤5%</span>
           <span class="ch-arrow">▼</span>
@@ -6663,6 +6694,19 @@ function showMMChapter(n) {
   ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
   // Update nav buttons
   const nav = document.getElementById('mm-chapter-nav');
+  if (nav) {
+    nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
+      btn.classList.toggle('active', idx + 1 === n);
+    });
+  }
+}
+
+function showVnChapter(n) {
+  playClick();
+  const ch = document.getElementById('ch' + n);
+  if (!ch) return;
+  ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const nav = document.getElementById('vn-chapter-nav');
   if (nav) {
     nav.querySelectorAll('.ch-btn').forEach((btn, idx) => {
       btn.classList.toggle('active', idx + 1 === n);
